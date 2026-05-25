@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -31,3 +32,8 @@ jobs:
           git add hotlist/
           git diff --cached --quiet || git commit -m "hotlist: $(date -u +%Y-%m-%dT%H:%M)Z"
           git push
+
+      - name: Deploy Pages
+        run: gh workflow run pages.yml --repo ${{ github.repository }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

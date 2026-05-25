@@ -42,7 +42,7 @@ def parse_zhihu(raw: str) -> list[dict]:
         title = (target.get("title_area", {}).get("text") or "").strip()
         url = target.get("link", {}).get("url", "")
         heat = target.get("metrics_area", {}).get("text", "")
-        excerpt = (target.get("excerpt_area", {}).get("text") or "")[:50]
+        excerpt = ""
         if not title or not url:
             continue
         items.append({

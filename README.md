@@ -1,6 +1,6 @@
 # lz-feeds
 
-每日 RSS 摘要，由 GitHub Actions 自动抓取，Anthropic API 生成中文摘要，GitHub Pages 展示。
+每日 RSS 摘要，由 GitHub Actions 自动抓取，LLM API 生成中文摘要，GitHub Pages 展示。
 
 ## 目录结构
 
@@ -9,7 +9,7 @@ lz-feeds/
 ├── sources.yaml          # 订阅源配置
 ├── scripts/
 │   ├── fetch_feeds.py    # RSS 抓取脚本
-│   └── summarize.py      # 摘要生成脚本（调用 Anthropic API）
+│   └── summarize.py      # 摘要生成脚本（调用 LLM API）
 ├── data/
 │   ├── source_stats.json # 历史统计
 │   └── web_seen.json     # web 源去重缓存
@@ -25,7 +25,7 @@ lz-feeds/
 ### 本地运行
 
 ```bash
-pip install pyyaml anthropic
+pip install pyyaml
 python scripts/fetch_feeds.py --hours 72 --output /tmp/feed_entries.json
 python scripts/summarize.py --input /tmp/feed_entries.json --output digests/$(date +%F).md
 ```
@@ -38,4 +38,4 @@ GitHub Actions 每天 UTC 01:00（北京时间 09:00）自动运行，结果 com
 
 在 GitHub 仓库 Settings → Secrets 中设置：
 
-- `ANTHROPIC_API_KEY` — Anthropic API key
+- `LLM_API_KEY` — LLM API key

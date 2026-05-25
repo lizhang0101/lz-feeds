@@ -38,16 +38,16 @@ Scoring:
   2 = Routine update — low novelty or substance
   1 = Noise — off-topic, redundant, or navigation/index pages
 
-Anti-filter-bubble: resist recency and popularity bias. An obscure post with a genuinely novel idea scores higher than a trending repost. Contrarian or minority viewpoints get a slight boost if well-argued. Cross-domain connections score higher for novelty.
+Anti-filter-bubble: resist recency and popularity bias. An obscure post with a genuinely novel idea scores higher than a trending repost. Contrarian or minority viewpoints get a slight boost if well-argued.
 
 Return a JSON array. One object per entry, same order as input.
 Every object must have: "link" (copy from input), "score" (integer 1–5).
 Objects with score >= 4 must also include:
-  "summary": 3–5 sentence Chinese summary covering the core argument, key insights, and actionable takeaways. Be specific — do not just restate the title.
-  "brief": 1 sentence Chinese summary
+  "summary": Chinese summary, 4–6 sentences. Lead with the core argument or finding in sentence 1. Include concrete specifics: names, version numbers, benchmarks, dollar amounts, company names, technical terms — whatever makes the content real and verifiable. Explain WHY it matters for a software engineer. Do not paraphrase the title.
+  "brief": 1 concise sentence in Chinese capturing the key fact
   "tags": array of 2–4 English keywords, lowercase-hyphenated, no # prefix
 Objects with score == 3 must include:
-  "brief": 1 sentence Chinese summary\
+  "brief": 1 concise sentence in Chinese capturing the key fact\
 """
 
 
@@ -82,7 +82,7 @@ def call_llm(client: genai.Client, entries: list[dict], model: str) -> dict[str,
             "link": e["link"],
             "source": e["source"],
             "title": e["title"],
-            "snippet": (e.get("content") or "")[:400],
+            "snippet": (e.get("content") or "")[:800],
         }
         for e in entries
         if e.get("link")
@@ -191,8 +191,10 @@ def render(
         for e in group:
             tags = " ".join(f"#{t.lstrip('#')}" for t in e["_tags"]) if e["_tags"] else ""
             L.append(f"**[{e['title']}]({e['link']})** | {fmt_long(e.get('parsed_date'))} | {e['_score']}/5")
+            L.append("")
             if e["_summary"]:
                 L.append(e["_summary"])
+                L.append("")
             if tags:
                 L.append(f"**标签:** {tags}")
             L.append("")

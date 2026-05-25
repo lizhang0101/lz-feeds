@@ -32,17 +32,22 @@ SYSTEM_PROMPT = """\
 You are a personal information curator. Score and summarize RSS feed entries for a technical reader interested in: AI/LLM research and safety, software engineering, distributed systems, programming languages, open source, tech culture.
 
 Scoring:
-  5 = Must-read: major insight, important development, or novel perspective
-  4 = Valuable: worth reading soon
-  3 = Mildly interesting: worth bookmarking
-  2 = Routine: minor update, short link post, low substance
-  1 = Irrelevant: navigation/team/index pages, off-topic content
+  5 = Breakthrough or highly actionable — must read immediately
+  4 = Novel insight or important development — worth reading soon
+  3 = Useful context — worth skimming or bookmarking
+  2 = Routine update — low novelty or substance
+  1 = Noise — off-topic, redundant, or navigation/index pages
+
+Anti-filter-bubble: resist recency and popularity bias. An obscure post with a genuinely novel idea scores higher than a trending repost. Contrarian or minority viewpoints get a slight boost if well-argued. Cross-domain connections score higher for novelty.
 
 Return a JSON array. One object per entry, same order as input.
 Every object must have: "link" (copy from input), "score" (integer 1–5).
 Objects with score >= 4 must also include:
-  "summary": 1–2 sentence Chinese summary, ≤120 chars, factual and specific
-  "tags": array of 3–5 English hashtags, lowercase-hyphenated, no # prefix\
+  "summary": 3–5 sentence Chinese summary covering the core argument, key insights, and actionable takeaways. Be specific — do not just restate the title.
+  "brief": 1 sentence Chinese summary
+  "tags": array of 2–4 English keywords, lowercase-hyphenated, no # prefix
+Objects with score == 3 must include:
+  "brief": 1 sentence Chinese summary\
 """
 
 
@@ -88,19 +93,17 @@ def call_llm(client: genai.Client, entries: list[dict], model: str) -> dict[str,
         contents=f"Score these {len(payload)} entries:\n\n{json.dumps(payload, ensure_ascii=False)}",
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
-            max_output_tokens=8192,
+            max_output_tokens=65536,
+            response_mime_type="application/json",
         ),
     )
 
-    text = response.text
-    match = re.search(r'\[.*\]', text, re.DOTALL)
-    if not match:
-        print("Warning: LLM response didn't contain a JSON array", file=sys.stderr)
-        return {}
     try:
-        result = json.loads(match.group())
+        result = json.loads(response.text)
+        if isinstance(result, dict):
+            result = list(result.values())
         return {item["link"]: item for item in result if "link" in item}
-    except json.JSONDecodeError as exc:
+    except (json.JSONDecodeError, KeyError) as exc:
         print(f"Warning: JSON parse error: {exc}", file=sys.stderr)
         return {}
 
@@ -141,6 +144,7 @@ def render(
         info = scores.get(e["link"], {})
         e["_score"] = info.get("score", 2)
         e["_summary"] = info.get("summary", "")
+        e["_brief"] = info.get("brief", "")
         e["_tags"] = info.get("tags", [])
         e["_flag"] = "—"
 
@@ -203,8 +207,9 @@ def render(
         L.append("")
         for e in group:
             L.append(f"**[{e['title']}]({e['link']})** | {fmt_long(e.get('parsed_date'))} | {e['_score']}/5")
-            if e["_summary"]:
-                L.append(e["_summary"])
+            brief = e["_brief"] or e["_summary"]
+            if brief:
+                L.append(brief)
             L.append("")
 
     L += ["---", ""]

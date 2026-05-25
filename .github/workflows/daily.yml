@@ -5,6 +5,9 @@ on:
     - cron: '0 1 * * *'  # UTC 01:00 = 北京 09:00
   workflow_dispatch:       # 支持手动触发
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   digest:
     runs-on: ubuntu-latest

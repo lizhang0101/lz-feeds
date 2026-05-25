@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "date": "2026-05-22",
+      "sources": {
+        "Simon Willison": {"entries": 14, "top_picks": 2, "max_score": 5},
+        "Daring Fireball": {"entries": 10, "top_picks": 0, "max_score": 4},
+        "The Pragmatic Engineer": {"entries": 3, "top_picks": 1, "max_score": 4},
+        "Xe Iaso": {"entries": 3, "top_picks": 1, "max_score": 4},
+        "Terence Eden": {"entries": 3, "top_picks": 0, "max_score": 3},
+        "Sean Goedecke": {"entries": 2, "top_picks": 1, "max_score": 5},
+        "Google DeepMind Blog": {"entries": 1, "top_picks": 0, "max_score": 2},
+        "Jeff Geerling": {"entries": 1, "top_picks": 0, "max_score": 2}
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "sources": {
+        "Anthropic Research": {"entries": 10, "top_picks": 3, "max_score": 5},
+        "Simon Willison": {"entries": 8, "top_picks": 1, "max_score": 4},
+        "Herman (bearblog)": {"entries": 10, "top_picks": 0, "max_score": 2},
+        "Daring Fireball": {"entries": 5, "top_picks": 0, "max_score": 2},
+        "Armin Ronacher (lucumr)": {"entries": 1, "top_picks": 1, "max_score": 4},
+        "Terence Eden": {"entries": 1, "top_picks": 0, "max_score": 3},
+        "Jeff Geerling": {"entries": 1, "top_picks": 0, "max_score": 3}
+      }
+    }
+  ]
+}

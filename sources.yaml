@@ -1,0 +1,205 @@
+# RSS Feed Sources
+# Edit this file to add/remove information sources.
+#
+# Fields:
+#   name: Display name
+#   url: RSS/Atom feed URL (or blog URL if type: web)
+#   category: Grouping category
+#   type: rss (default) | podcast | web
+#   language: en | zh (helps with summarization context)
+
+sources:
+  # --- AI & LLM ---
+
+  - name: Simon Willison
+    url: https://simonwillison.net/atom/everything/
+    category: AI
+    type: rss
+    language: en
+
+  - name: Xe Iaso
+    url: https://xeiaso.net/blog.rss
+    category: AI & DevOps
+    type: rss
+    language: en
+
+  - name: Philipp Schmid
+    url: https://www.philschmid.de/rss
+    category: AI & MLOps
+    type: rss
+    language: en
+
+  - name: Matt Shumer
+    url: https://shumer.dev/blog
+    category: AI
+    type: web
+    language: en
+
+  # --- Software Engineering ---
+
+  - name: Paul Graham
+    url: http://www.aaronsw.com/2002/feeds/pgessays.rss
+    category: Startups & Essays
+    type: rss
+    language: en
+
+  - name: DHH (David Heinemeier Hansson)
+    url: https://world.hey.com/dhh/feed.atom
+    category: Software & Business
+    type: rss
+    language: en
+
+  - name: Armin Ronacher (lucumr)
+    url: https://lucumr.pocoo.org/feed.atom
+    category: Programming
+    type: rss
+    language: en
+
+  - name: antirez (Salvatore Sanfilippo)
+    url: https://antirez.com/rss
+    category: Programming
+    type: rss
+    language: en
+
+  - name: Ryan Dahl (tinyclouds)
+    url: https://tinyclouds.org/feed
+    category: Programming
+    type: rss
+    language: en
+
+  - name: Mitchell Hashimoto
+    url: https://mitchellh.com/feed.xml
+    category: Infrastructure
+    type: rss
+    language: en
+
+  - name: The Pragmatic Engineer
+    url: https://newsletter.pragmaticengineer.com/feed
+    category: Engineering Management
+    type: rss
+    language: en
+
+  - name: Dan Abramov (overreacted)
+    url: https://overreacted.io/rss.xml
+    category: Frontend & Programming
+    type: rss
+    language: en
+
+  - name: Boris Cherny
+    url: https://borischerny.com/feed
+    category: Programming
+    type: rss
+    language: en
+
+  - name: Mario Zechner
+    url: https://mariozechner.at/feed
+    category: Programming
+    type: rss
+    language: en
+
+  - name: Sean Goedecke
+    url: https://www.seangoedecke.com/rss.xml
+    category: Software Engineering
+    type: rss
+    language: en
+
+  - name: Herman (bearblog)
+    url: https://herman.bearblog.dev/feed/
+    category: Programming
+    type: rss
+    language: en
+
+  - name: Ibrahim Diallo
+    url: https://idiallo.com/feed.rss
+    category: Programming
+    type: rss
+    language: en
+
+  # --- Tech & Design ---
+
+  - name: Nikita Prokopov (tonsky)
+    url: https://tonsky.me/atom.xml
+    category: Software & Design
+    type: rss
+    language: en
+
+  - name: Daring Fireball
+    url: https://daringfireball.net/feeds/main
+    category: Apple & Tech
+    type: rss
+    language: en
+
+  - name: Terence Eden
+    url: https://shkspr.mobi/blog/feed/atom
+    category: Tech & Digital Rights
+    type: rss
+    language: en
+
+  # --- Hardware & Maker ---
+
+  - name: The Shamblog
+    url: https://theshamblog.com/feed/
+    category: Hardware & Maker
+    type: rss
+    language: en
+
+  - name: Jeff Geerling
+    url: https://www.jeffgeerling.com/blog.xml
+    category: Open Source
+    type: rss
+    language: en
+
+  # --- Distributed Systems ---
+
+  - name: Aphyr (Kyle Kingsbury)
+    url: https://aphyr.com/posts.atom
+    category: Distributed Systems
+    type: rss
+    language: en
+
+  # --- AI Research (Labs & Researchers) ---
+
+  - name: OpenAI Blog
+    url: https://openai.com/news
+    category: AI Research
+    type: web
+    language: en
+
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/feed
+    category: AI Research
+    type: rss
+    language: en
+
+  - name: Anthropic Research
+    url: https://claude.com/blog
+    category: AI Research
+    type: web
+    language: en
+
+  - name: DeepSeek Blog
+    url: https://deepseek.ai/blog/
+    category: AI Research
+    type: web
+    language: en
+
+  - name: Andrej Karpathy
+    url: https://karpathy.bearblog.dev/feed/
+    category: AI Research
+    type: rss
+    language: en
+
+  # - name: Jason Wei
+  #   url: https://www.jasonwei.net/blog/practicing-ai-research
+  #   category: AI Research
+  #   type: web
+  #   language: en
+  #   note: last updated ~1 year ago
+
+  # --- Chinese ---
+
+  - name: 阮一峰的网络日志
+    url: http://feeds.feedburner.com/ruanyifeng
+    category: Tech Blog
+    type: rss
+    language: zh

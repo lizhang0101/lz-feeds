@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'digests/**'
+      - 'hotlist/**'
       - 'mkdocs.yml'
   workflow_dispatch:
 

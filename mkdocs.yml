@@ -1,6 +1,6 @@
 site_name: lz-feeds
 site_description: 每日信息摘要
-docs_dir: digests
+docs_dir: docs
 
 theme:
   name: material

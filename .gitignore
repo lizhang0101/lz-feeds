@@ -8,6 +8,8 @@ venv/
 dist/
 build/
 .DS_Store
+docs/
+site/
 
 # GitHub Actions secrets are stored in repo settings, not here
 # Local-only overrides

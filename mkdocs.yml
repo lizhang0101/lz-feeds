@@ -1,0 +1,20 @@
+site_name: lz-feeds
+site_description: 每日信息摘要
+docs_dir: digests
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.top
+  palette:
+    scheme: default
+    primary: indigo
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - meta

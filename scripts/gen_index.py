@@ -32,7 +32,9 @@ for f in hotlist_files:
 # Generate index
 lines = ["# lz-feeds", ""]
 
-lines += ["## 🔥 热榜", ""]
+HOTLIST_REFRESH_URL = "https://github.com/lizhang0101/lz-feeds/actions/workflows/hotlist.yml"
+
+lines += [f"## 🔥 热榜 · [🔄 手动刷新]({HOTLIST_REFRESH_URL})", ""]
 if hotlist_files:
     for f in hotlist_files:
         lines.append(f"- [{f.stem}](hotlist/{f.name})")

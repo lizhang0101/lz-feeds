@@ -45,9 +45,11 @@ Every object must have: "link" (copy from input), "score" (integer 1–5).
 Objects with score >= 4 must also include:
   "summary": Chinese summary, 4–6 sentences. Lead with the core argument or finding in sentence 1. Include concrete specifics: names, version numbers, benchmarks, dollar amounts, company names, technical terms — whatever makes the content real and verifiable. Explain WHY it matters for a software engineer. Do not paraphrase the title.
   "brief": 1 concise sentence in Chinese capturing the key fact
+  "rationale": 1 concise sentence in Chinese explaining the score — what specifically made this score high or low (novelty, relevance, density, timeliness)
   "tags": array of 2–4 English keywords, lowercase-hyphenated, no # prefix
 Objects with score == 3 must include:
-  "brief": 1 concise sentence in Chinese capturing the key fact\
+  "brief": 1 concise sentence in Chinese capturing the key fact
+  "rationale": 1 concise sentence in Chinese explaining the score\
 """
 
 
@@ -145,6 +147,7 @@ def render(
         e["_score"] = info.get("score", 2)
         e["_summary"] = info.get("summary", "")
         e["_brief"] = info.get("brief", "")
+        e["_rationale"] = info.get("rationale", "")
         e["_tags"] = info.get("tags", [])
         e["_flag"] = "—"
 
@@ -195,6 +198,9 @@ def render(
             if e["_summary"]:
                 L.append(e["_summary"])
                 L.append("")
+            if e["_rationale"]:
+                L.append(f"*评分理由: {e['_rationale']}*")
+                L.append("")
             if tags:
                 L.append(f"**标签:** {tags}")
             L.append("")
@@ -212,6 +218,8 @@ def render(
             brief = e["_brief"] or e["_summary"]
             if brief:
                 L.append(brief)
+            if e["_rationale"]:
+                L.append(f"*评分理由: {e['_rationale']}*")
             L.append("")
 
     L += ["---", ""]
@@ -248,6 +256,8 @@ def main():
     parser.add_argument("--extended", type=int, default=5, help="Number of extended reads")
     parser.add_argument("--digests-dir", type=Path, default=None,
                         help="Directory with past digests for dedup (default: beside output)")
+    parser.add_argument("--force", action="store_true",
+                        help="Overwrite today's digest if it already exists")
     args = parser.parse_args()
 
     if not args.input.exists():
@@ -265,6 +275,10 @@ def main():
     repo_root = Path(__file__).parent.parent
     output = args.output or (repo_root / "digests" / f"{today}.md")
     digests_dir = args.digests_dir or output.parent
+
+    if output.exists() and not args.force:
+        print(f"Digest already exists: {output} (use --force to overwrite)")
+        return
 
     prev_featured = get_prev_featured(digests_dir, today)
     if prev_featured:

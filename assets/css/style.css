@@ -138,8 +138,61 @@ main.page-content {
 :target { scroll-margin-top: 68px; }
 
 @media (max-width: 768px) {
-  .page-with-sidebar { flex-direction: column; }
-  .sidebar { display: none; }
+  .page-with-sidebar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    padding: 0 12px;
+    padding-right: 0;
+  }
+
+  .sidebar-section {
+    display: contents;
+    margin: 0;
+  }
+
+  .sidebar-label { display: none; }
+
+  .sidebar-nav a {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-size: 12px;
+    background: #fff;
+  }
+
+  .sidebar-nav a.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+  }
+
+  .sidebar-nav a.sidebar-stale {
+    opacity: 0.65;
+  }
+
+  main.page-content {
+    padding: 20px 16px 48px;
+  }
 }
 
 /* ── Typography ────────────────────────────────── */

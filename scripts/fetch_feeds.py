@@ -398,9 +398,15 @@ def save_web_cache(cache_path: Path, cache: dict[str, list[str]]):
 
 
 def process_source(src: dict, now: datetime, cutoff: datetime,
-                   seen_urls: set[str], web_cache: dict[str, list[str]]
-                   ) -> tuple[list[str], list[dict], dict, str | None]:
-    """Fetch and parse one source. Returns (log_lines, entries, stat, error_name|None)."""
+                   seen_urls: set[str], web_cache: dict[str, list[str]],
+                   reader_per_source: int = 5,
+                   ) -> tuple[list[str], list[dict], list[dict], dict, str | None]:
+    """Fetch and parse one source.
+
+    Returns (log_lines, recent_entries, reader_entries, stat, error_name|None).
+    recent_entries: time-filtered, used by summarize.py.
+    reader_entries: top N per source regardless of age, used by reader page.
+    """
     name = src["name"]
     url = src["url"]
     category = src.get("category", "Uncategorized")
@@ -410,40 +416,41 @@ def process_source(src: dict, now: datetime, cutoff: datetime,
     content = fetch_url(url)
     if not content:
         logs.append("  FAILED to fetch")
-        return logs, [], {"name": name, "status": "fetch_failed", "total": 0, "recent": 0}, name
+        return logs, [], [], {"name": name, "status": "fetch_failed", "total": 0, "recent": 0}, name
 
     if src_type == "web":
         entries = parse_web_page(content, name, category, url)
         if not entries:
             logs.append("  No articles found on page")
-            return logs, [], {"name": name, "status": "parse_failed", "total": 0, "recent": 0}, None
-        # Compare against cache to find new links
+            return logs, [], [], {"name": name, "status": "parse_failed", "total": 0, "recent": 0}, None
         cached = set(web_cache.get(name, []))
         all_links = [e["link"] for e in entries]
         new_entries = [e for e in entries if e["link"] not in cached]
         for e in new_entries:
             e["parsed_date"] = now.isoformat()
             e["web_notice"] = True
-        # Update cache with current links
         web_cache[name] = all_links
         stat = {"name": name, "status": "ok", "total": len(entries), "recent": len(new_entries)}
         logs.append(f"  Found {len(entries)} links, {len(new_entries)} new")
-        return logs, new_entries, stat, None
+        reader_entries = new_entries[:reader_per_source]
+        return logs, new_entries, reader_entries, stat, None
     else:
         entries = parse_feed(content, name, category)
         if not entries:
             logs.append("  No entries parsed (possibly empty or parse error)")
-            return logs, [], {"name": name, "status": "parse_failed", "total": 0, "recent": 0}, None
+            return logs, [], [], {"name": name, "status": "parse_failed", "total": 0, "recent": 0}, None
         recent = []
         for e in entries:
             dt = parse_date(e["date"])
-            if dt and dt >= cutoff:
+            if dt:
                 e["parsed_date"] = dt.isoformat()
-                recent.append(e)
+                if dt >= cutoff:
+                    recent.append(e)
         stat = {"name": name, "status": "ok", "total": len(entries), "recent": len(recent)}
         hours = round((now - cutoff).total_seconds() / 3600)
         logs.append(f"  Found {len(entries)} total, {len(recent)} within {hours}h")
-        return logs, recent, stat, None
+        reader_entries = entries[:reader_per_source]
+        return logs, recent, reader_entries, stat, None
 
 
 def main():
@@ -462,7 +469,11 @@ def main():
     parser.add_argument("--workers", type=int, default=10,
                         help="Parallel fetch workers (default: 10)")
     parser.add_argument("--data-out", type=Path, default=None,
-                        help="Also save output to this path (for persistent storage)")
+                        help="Also save flat output to this path (for persistent storage)")
+    parser.add_argument("--reader-out", type=Path, default=None,
+                        help="Write grouped-by-source reader JSON to this path")
+    parser.add_argument("--reader-per-source", type=int, default=5,
+                        help="Entries per source for reader output (default: 5)")
     args = parser.parse_args()
 
     sources = load_sources(args.sources)
@@ -483,21 +494,33 @@ def main():
     all_entries: list[dict] = []
     errors: list[str] = []
     stats: list[dict] = []
+    reader_sources: list[dict] = []
 
     # Fetch all sources in parallel, preserve source order for output
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         results = list(pool.map(
-            lambda src: process_source(src, now, cutoff, seen_urls, web_cache),
+            lambda src: process_source(src, now, cutoff, seen_urls, web_cache,
+                                       args.reader_per_source),
             sources
         ))
 
-    for logs, entries, stat, err in results:
+    for src, (logs, recent, reader_entries, stat, err) in zip(sources, results):
         for line in logs:
             print(line)
         stats.append(stat)
         if err:
             errors.append(err)
-        all_entries.extend(entries)
+        all_entries.extend(recent)
+        if reader_entries:
+            reader_sources.append({
+                "name": src["name"],
+                "category": src.get("category", "Uncategorized"),
+                "entries": [
+                    {"title": e["title"], "link": e["link"],
+                     "parsed_date": e.get("parsed_date", "")}
+                    for e in reader_entries
+                ],
+            })
 
     # Save updated web cache
     save_web_cache(cache_path, web_cache)
@@ -523,6 +546,15 @@ def main():
         args.data_out.parent.mkdir(parents=True, exist_ok=True)
         with open(args.data_out, "w", encoding="utf-8") as f:
             json.dump(output, f, ensure_ascii=False, indent=2)
+
+    if args.reader_out:
+        reader_output = {
+            "fetched_at": now.isoformat(),
+            "sources": reader_sources,
+        }
+        args.reader_out.parent.mkdir(parents=True, exist_ok=True)
+        with open(args.reader_out, "w", encoding="utf-8") as f:
+            json.dump(reader_output, f, ensure_ascii=False, indent=2)
 
     print(f"\n{'='*40}")
     print(f"Sources checked: {len(sources)}")

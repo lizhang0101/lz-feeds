@@ -7,31 +7,19 @@ title: RSS 阅读
 
 {% if site.data.latest_entries %}
 {% assign feed = site.data.latest_entries %}
-<p class="meta">
-  最后更新: {{ feed.fetched_at | slice: 0, 16 }} UTC &nbsp;·&nbsp;
-  {{ feed.cutoff_hours }}h 窗口 &nbsp;·&nbsp;
-  {{ feed.entries_found }} 条 / {{ feed.sources_checked }} 个来源
-</p>
+<p class="meta">最后更新: {{ feed.fetched_at | slice: 0, 16 }} UTC</p>
 
-{% if feed.entries.size > 0 %}
-<table>
-  <thead>
-    <tr><th>时间</th><th>来源</th><th>标题</th><th>分类</th></tr>
-  </thead>
-  <tbody>
-  {% for entry in feed.entries %}
-    <tr>
-      <td>{{ entry.parsed_date | slice: 5, 5 }}</td>
-      <td>{{ entry.source }}</td>
-      <td><a href="{{ entry.link }}">{{ entry.title }}</a></td>
-      <td>{{ entry.category }}</td>
-    </tr>
+{% for src in feed.sources %}
+<h2>{{ src.name }}</h2>
+<ul>
+  {% for entry in src.entries %}
+  <li>
+    <a href="{{ entry.link }}">{{ entry.title }}</a>
+    {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+  </li>
   {% endfor %}
-  </tbody>
-</table>
-{% else %}
-<p>72小时内暂无新文章。</p>
-{% endif %}
+</ul>
+{% endfor %}
 
 {% else %}
 <p class="meta">暂无数据，待每日摘要任务运行后自动更新。</p>

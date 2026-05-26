@@ -588,6 +588,9 @@ def main():
 
     if args.reader_out:
         reader_sources.sort(key=lambda s: s["latest_date"], reverse=True)
+        thirty_days_ago = (now - timedelta(days=30)).isoformat()
+        for s in reader_sources:
+            s["stale"] = not s["latest_date"] or s["latest_date"] < thirty_days_ago
         reader_output = {
             "fetched_at": now.isoformat(),
             "sources": reader_sources,

@@ -143,6 +143,23 @@ tr:hover td { background: #fafafa; }
   line-height: 1.5;
 }
 
+.stale-divider {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 16px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.stale-divider::before,
+.stale-divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--border);
+}
+
+.stale-divider span { padding: 0 10px; white-space: nowrap; }
+
 .badge-new {
   display: inline-block;
   background: #e53935;

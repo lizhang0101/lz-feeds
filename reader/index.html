@@ -11,6 +11,8 @@ title: RSS 阅读
 
 {% assign vendors = feed.sources | where: "group", "vendor" %}
 {% assign blogs = feed.sources | where_exp: "s", "s.group != 'vendor'" %}
+{% assign active_blogs = blogs | where: "stale", false %}
+{% assign stale_blogs  = blogs | where: "stale", true %}
 
 {% if vendors.size > 0 %}
 <h2 class="section-heading">🏢 厂商</h2>
@@ -24,7 +26,8 @@ title: RSS 阅读
       <a href="{{ entry.link }}">{{ entry.title }}</a>
       {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
     </div>
-    {% if entry.snippet %}<p class="snippet">{{ entry.snippet }}</p>{% endif %}
+    {% assign summary = entry.ai_summary | default: entry.snippet %}
+    {% if summary %}<p class="snippet">{{ summary }}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>
@@ -33,7 +36,8 @@ title: RSS 阅读
 
 {% if blogs.size > 0 %}
 <h2 class="section-heading">✍️ 个人博客</h2>
-{% for src in blogs %}
+
+{% for src in active_blogs %}
 <h3>{{ src.name }}</h3>
 <ul>
   {% for entry in src.entries %}
@@ -43,11 +47,32 @@ title: RSS 阅读
       <a href="{{ entry.link }}">{{ entry.title }}</a>
       {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
     </div>
-    {% if entry.snippet %}<p class="snippet">{{ entry.snippet }}</p>{% endif %}
+    {% assign summary = entry.ai_summary | default: entry.snippet %}
+    {% if summary %}<p class="snippet">{{ summary }}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>
 {% endfor %}
+
+{% if stale_blogs.size > 0 %}
+<div class="stale-divider"><span>30 天内未更新</span></div>
+{% for src in stale_blogs %}
+<h3>{{ src.name }}</h3>
+<ul>
+  {% for entry in src.entries %}
+  <li>
+    <div>
+      <a href="{{ entry.link }}">{{ entry.title }}</a>
+      {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+    </div>
+    {% assign summary = entry.ai_summary | default: entry.snippet %}
+    {% if summary %}<p class="snippet">{{ summary }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% endif %}
+
 {% endif %}
 
 {% else %}

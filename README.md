@@ -6,7 +6,7 @@
 
 ## 功能
 
-- **每日摘要**：每天 09:00（北京时间）自动抓取 RSS/Atom 订阅源，Gemini 打分（1-5）并生成中文摘要，重点推荐 5 篇 + 扩展阅读 5 篇
+- **每日摘要**：每天 08:17（北京时间）自动抓取 RSS/Atom 订阅源，Gemini 打分（1-5）并生成中文摘要，重点推荐 5 篇 + 扩展阅读 5 篇
 - **知乎热榜**：每 2 小时自动抓取，实时更新
 
 ## 目录结构
@@ -17,18 +17,27 @@ lz-feeds/
 ├── scripts/
 │   ├── fetch_feeds.py        # RSS 抓取脚本
 │   ├── fetch_hotlist.py      # 热榜抓取脚本
-│   ├── summarize.py          # Gemini 摘要生成
-│   └── gen_index.py          # Pages 构建：生成 docs/
+│   └── summarize.py          # Gemini 摘要生成
+├── _digests/                 # Jekyll collection：每日摘要
+│   └── YYYY-MM-DD.md
+├── _hotlist/                 # Jekyll collection：热榜快照
+│   └── zhihu.md
+├── _data/
+│   └── latest_entries.json   # RSS 阅读页数据（fetch_feeds.py 生成）
+├── _layouts/                 # Jekyll 布局模板
+├── assets/css/style.css      # 样式
 ├── data/
 │   ├── source_stats.json     # 历史统计
 │   └── web_seen.json         # web 源去重缓存
-├── digests/                  # 每日摘要
-│   └── YYYY-MM-DD.md
-├── hotlist/                  # 热榜快照
-│   └── zhihu.md
-├── mkdocs.yml                # MkDocs 配置
+├── digests/index.html        # 摘要列表页
+├── hotlist/index.html        # 热榜列表页
+├── reader/index.html         # RSS 阅读页
+├── index.md                  # 首页
+├── _config.yml               # Jekyll 配置
+├── Gemfile                   # Ruby 依赖
+├── requirements.txt          # Python 依赖
 └── .github/workflows/
-    ├── daily.yml             # 每日摘要（UTC 01:00）
+    ├── daily.yml             # 每日摘要（UTC 00:17）
     ├── hotlist.yml           # 热榜更新（每 2 小时）
     └── pages.yml             # GitHub Pages 部署
 ```
@@ -44,6 +53,13 @@ GEMINI_API_KEY=your_key python scripts/summarize.py
 
 # 热榜
 python scripts/fetch_hotlist.py
+```
+
+## 本地预览 Pages
+
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
 ## 配置

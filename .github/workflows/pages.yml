@@ -6,6 +6,8 @@ on:
     paths:
       - '_layouts/**'
       - '_includes/**'
+      - '_digests/**'
+      - '_hotlist/**'
       - 'assets/**'
       - '*.md'
       - '*.html'

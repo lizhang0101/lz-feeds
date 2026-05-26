@@ -262,7 +262,7 @@ def enrich_reader(client: genai.Client, reader_path: Path, model: str):
     to_summarize = []
     for src in data.get("sources", []):
         for entry in src.get("entries", []):
-            if entry.get("snippet"):
+            if entry.get("snippet") and not entry.get("ai_summary"):
                 to_summarize.append({
                     "link": entry["link"],
                     "title": entry.get("title", ""),

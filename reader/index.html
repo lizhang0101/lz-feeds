@@ -17,7 +17,7 @@ title: RSS 阅读
 {% if vendors.size > 0 %}
 <h2 class="section-heading">🏢 厂商</h2>
 {% for src in vendors %}
-<h3>{{ src.name }}</h3>
+<h3 id="{{ src.name | slugify }}">{{ src.name }}</h3>
 <ul>
   {% for entry in src.entries %}
   <li>
@@ -38,7 +38,7 @@ title: RSS 阅读
 <h2 class="section-heading">✍️ 个人博客</h2>
 
 {% for src in active_blogs %}
-<h3>{{ src.name }}</h3>
+<h3 id="{{ src.name | slugify }}">{{ src.name }}</h3>
 <ul>
   {% for entry in src.entries %}
   <li>
@@ -57,7 +57,7 @@ title: RSS 阅读
 {% if stale_blogs.size > 0 %}
 <div class="stale-divider"><span>30 天内未更新</span></div>
 {% for src in stale_blogs %}
-<h3>{{ src.name }}</h3>
+<h3 id="{{ src.name | slugify }}">{{ src.name }}</h3>
 <ul>
   {% for entry in src.entries %}
   <li>

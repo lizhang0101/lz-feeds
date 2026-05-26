@@ -3,16 +3,12 @@ layout: default
 title: 热榜
 ---
 
-<h1>🔥 热榜</h1>
-
-<ul class="index-list">
 {% for item in site.hotlist %}
-  <li>
-    <a href="{{ item.url | relative_url }}">{{ item.name | remove: ".md" }}</a>
-    {% if item.updated %}<span class="meta">&nbsp;{{ item.updated }}</span>{% endif %}
-  </li>
+<div class="hotlist-panel" id="panel-{{ item.name | slugify }}" {% unless forloop.first %}style="display:none"{% endunless %}>
+{{ item.content }}
+</div>
 {% endfor %}
+
 {% if site.hotlist.size == 0 %}
-  <li>暂无数据</li>
+<p class="meta">暂无热榜数据。</p>
 {% endif %}
-</ul>

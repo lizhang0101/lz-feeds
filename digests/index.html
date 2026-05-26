@@ -3,19 +3,15 @@ layout: default
 title: 每日摘要
 ---
 
-<h1>📰 每日摘要</h1>
-
-{% assign sorted = site.digests | sort: "date" | reverse %}
-<ul class="index-list">
-{% for digest in sorted %}
-  <li>
-    <a href="{{ digest.url | relative_url }}">{{ digest.date | date: "%Y-%m-%d" }}</a>
-    {% if digest.top_picks %}
-      <span class="meta">&nbsp;⭐ {{ digest.top_picks }} 条推荐</span>
-    {% endif %}
-  </li>
-{% endfor %}
-{% if sorted.size == 0 %}
-  <li>暂无摘要</li>
+{% assign latest = site.digests | sort: "date" | last %}
+{% if latest %}
+<div class="digest-meta">
+  来源检查: {{ latest.sources_checked }} &nbsp;·&nbsp;
+  条目总数: {{ latest.entries_found }} &nbsp;·&nbsp;
+  重点推荐: {{ latest.top_picks }} &nbsp;·&nbsp;
+  扩展阅读: {{ latest.extended }}
+</div>
+{{ latest.content }}
+{% else %}
+<p class="meta">暂无摘要。</p>
 {% endif %}
-</ul>

@@ -1,0 +1,14 @@
+{% assign sorted = site.digests | sort: "date" | reverse %}
+<nav class="sidebar-nav">
+  <div class="sidebar-section">
+    <span class="sidebar-label">📰 摘要归档</span>
+    {% for digest in sorted %}
+    <a href="{{ digest.url | relative_url }}"
+       {% if page.url == digest.url %}class="active"{% endif %}>
+      {{ digest.date | date: "%Y-%m-%d" }}
+      {% if digest.top_picks %}<span class="sidebar-meta">⭐ {{ digest.top_picks }}</span>{% endif %}
+    </a>
+    {% endfor %}
+    {% if sorted.size == 0 %}<span class="sidebar-empty">暂无摘要</span>{% endif %}
+  </div>
+</nav>

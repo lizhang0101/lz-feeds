@@ -1,0 +1,33 @@
+{% if site.data.latest_entries %}
+{% assign feed = site.data.latest_entries %}
+{% assign vendors = feed.sources | where: "group", "vendor" %}
+{% assign blogs = feed.sources | where_exp: "s", "s.group != 'vendor'" %}
+{% assign active_blogs = blogs | where: "stale", false %}
+{% assign stale_blogs  = blogs | where: "stale", true %}
+<nav class="sidebar-nav">
+  {% if vendors.size > 0 %}
+  <div class="sidebar-section">
+    <span class="sidebar-label">🏢 厂商</span>
+    {% for src in vendors %}
+    <a href="#{{ src.name | slugify }}">{{ src.name }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if active_blogs.size > 0 %}
+  <div class="sidebar-section">
+    <span class="sidebar-label">✍️ 个人博客</span>
+    {% for src in active_blogs %}
+    <a href="#{{ src.name | slugify }}">{{ src.name }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if stale_blogs.size > 0 %}
+  <div class="sidebar-section">
+    <span class="sidebar-label">30天未更新</span>
+    {% for src in stale_blogs %}
+    <a href="#{{ src.name | slugify }}" class="sidebar-stale">{{ src.name }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</nav>
+{% endif %}

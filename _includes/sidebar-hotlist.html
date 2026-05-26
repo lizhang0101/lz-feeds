@@ -1,0 +1,25 @@
+<nav class="sidebar-nav">
+  <div class="sidebar-section">
+    <span class="sidebar-label">🔥 热榜源</span>
+    {% for item in site.hotlist %}
+    {% assign slug = item.name | slugify %}
+    <a href="{{ item.url | relative_url }}"
+       onclick="return !switchHotlist('{{ slug }}', this)"
+       {% if forloop.first and page.url contains '/hotlist/index' %}class="active"{% endif %}
+       {% if page.url == item.url %}class="active"{% endif %}>
+      {{ item.name | remove: ".md" }}
+    </a>
+    {% endfor %}
+  </div>
+</nav>
+<script>
+function switchHotlist(id, el) {
+  var panel = document.getElementById('panel-' + id);
+  if (!panel) return false;
+  document.querySelectorAll('.hotlist-panel').forEach(function(p) { p.style.display = 'none'; });
+  panel.style.display = '';
+  document.querySelectorAll('.sidebar-nav a').forEach(function(a) { a.classList.remove('active'); });
+  el.classList.add('active');
+  return true;
+}
+</script>

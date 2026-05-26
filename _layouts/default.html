@@ -14,7 +14,7 @@
         lz-feeds
       </a>
       <a href="{{ '/reader/' | relative_url }}"
-         {% if page.url contains '/reader/' %}class="active"{% endif %}>
+         {% if page.url contains '/reader' %}class="active"{% endif %}>
         📡 RSS 阅读
       </a>
       <a href="{{ '/digests/' | relative_url }}"
@@ -27,8 +27,17 @@
       </a>
     </nav>
   </header>
-  <main>
-    {{ content }}
-  </main>
+  {% if page.url contains '/reader' or page.url contains '/digests' or page.url contains '/hotlist' %}
+  <div class="page-with-sidebar">
+    <aside class="sidebar">
+      {% if page.url contains '/reader' %}{% include sidebar-reader.html %}{% endif %}
+      {% if page.url contains '/digests' %}{% include sidebar-digests.html %}{% endif %}
+      {% if page.url contains '/hotlist' %}{% include sidebar-hotlist.html %}{% endif %}
+    </aside>
+    <main class="page-content">{{ content }}</main>
+  </div>
+  {% else %}
+  <main>{{ content }}</main>
+  {% endif %}
 </body>
 </html>

@@ -160,9 +160,9 @@ sources:
   # --- AI Research (Labs & Researchers) ---
 
   - name: OpenAI Blog
-    url: https://openai.com/news
+    url: https://openai.com/blog/rss.xml
     category: AI Research
-    type: web
+    type: rss
     language: en
     group: vendor
 
@@ -173,17 +173,17 @@ sources:
     language: en
     group: vendor
 
-  - name: Anthropic Research
-    url: https://claude.com/blog
+  - name: Anthropic News
+    url: https://www.anthropic.com/news
     category: AI Research
-    type: web
+    type: link
     language: en
     group: vendor
 
   - name: DeepSeek Blog
     url: https://deepseek.ai/blog/
     category: AI Research
-    type: web
+    type: link
     language: en
     group: vendor
 

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-26T08:26:56.222368+00:00",
+  "fetched_at": "2026-05-26T09:03:21.461972+00:00",
   "sources": [
     {
       "name": "Ibrahim Diallo",
@@ -187,6 +187,44 @@
           "title": "Book Review: Terrible Worlds: Destinations by Adrian Tchaikovsky ★★★★★",
           "link": "https://shkspr.mobi/blog/2026/05/book-review-terrible-worlds-destinations-by-adrian-tchaikovsky/",
           "parsed_date": "2026-05-19T11:34:17+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "OpenAI Blog",
+      "category": "AI Research",
+      "group": "vendor",
+      "latest_date": "2026-05-25T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+          "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+          "parsed_date": "2026-05-25T00:00:00+00:00",
+          "is_new": true
+        },
+        {
+          "title": "How Virgin Atlantic ships faster with Codex",
+          "link": "https://openai.com/index/virgin-atlantic",
+          "parsed_date": "2026-05-22T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+          "link": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+          "parsed_date": "2026-05-22T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "AdventHealth advances whole-person care with OpenAI",
+          "link": "https://openai.com/index/adventhealth",
+          "parsed_date": "2026-05-21T12:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+          "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+          "parsed_date": "2026-05-20T00:00:00+00:00",
           "is_new": false
         }
       ]
@@ -876,6 +914,44 @@
       ]
     },
     {
+      "name": "Matt Shumer",
+      "category": "AI",
+      "group": "blog",
+      "latest_date": "",
+      "entries": [
+        {
+          "title": "The Ultimate Guide to Prompting AI Agents",
+          "link": "https://shumer.dev/prompting-ai-agents",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "My GPT-5.5 Review: A Big Upgrade That Doesn't Always Feel Like One",
+          "link": "https://shumer.dev/gpt55review",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "Something Big Is Happening",
+          "link": "https://shumer.dev/something-big-is-happening",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "My GPT-5.3-Codex Review: Full Autonomy Has Arrived",
+          "link": "https://shumer.dev/gpt53-codex-review",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "GPT-5.2 Pro Deep Dive: I Can't Live Without It",
+          "link": "https://shumer.dev/gpt52prodeepdive",
+          "parsed_date": "",
+          "is_new": false
+        }
+      ]
+    },
+    {
       "name": "Paul Graham",
       "category": "Startups & Essays",
       "group": "blog",
@@ -908,6 +984,34 @@
         {
           "title": "What You (Want to)* Want",
           "link": "http://www.paulgraham.com/want.html",
+          "parsed_date": "",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Anthropic News",
+      "category": "AI Research",
+      "group": "vendor",
+      "latest_date": "",
+      "entries": [
+        {
+          "title": "访问博客",
+          "link": "https://www.anthropic.com/news",
+          "parsed_date": "",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "DeepSeek Blog",
+      "category": "AI Research",
+      "group": "vendor",
+      "latest_date": "",
+      "entries": [
+        {
+          "title": "访问博客",
+          "link": "https://deepseek.ai/blog/",
           "parsed_date": "",
           "is_new": false
         }

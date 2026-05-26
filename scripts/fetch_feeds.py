@@ -413,6 +413,11 @@ def process_source(src: dict, now: datetime, cutoff: datetime,
     src_type = src.get("type", "rss")
     logs: list[str] = [f"Fetching: {name}..."]
 
+    if src_type == "link":
+        logs.append("  Static link (no fetch)")
+        reader_entry = {"title": "访问博客", "link": url, "parsed_date": "", "is_new": False}
+        return logs, [], [reader_entry], {"name": name, "status": "ok", "total": 0, "recent": 0}, None
+
     content = fetch_url(url)
     if not content:
         logs.append("  FAILED to fetch")
@@ -432,7 +437,12 @@ def process_source(src: dict, now: datetime, cutoff: datetime,
         web_cache[name] = all_links
         stat = {"name": name, "status": "ok", "total": len(entries), "recent": len(new_entries)}
         logs.append(f"  Found {len(entries)} links, {len(new_entries)} new")
-        reader_entries = new_entries[:reader_per_source]
+        # reader shows all current links (not just new), is_new marks uncached ones
+        new_links = {e["link"] for e in new_entries}
+        reader_entries = [
+            {**e, "is_new": e["link"] in new_links}
+            for e in entries[:reader_per_source]
+        ]
         return logs, new_entries, reader_entries, stat, None
     else:
         entries = parse_feed(content, name, category)

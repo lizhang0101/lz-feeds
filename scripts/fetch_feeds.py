@@ -461,6 +461,8 @@ def main():
                         help="Path to web source cache JSON (default: beside sources.yaml)")
     parser.add_argument("--workers", type=int, default=10,
                         help="Parallel fetch workers (default: 10)")
+    parser.add_argument("--data-out", type=Path, default=None,
+                        help="Also save output to this path (for persistent storage)")
     args = parser.parse_args()
 
     sources = load_sources(args.sources)
@@ -516,6 +518,11 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
+
+    if args.data_out:
+        args.data_out.parent.mkdir(parents=True, exist_ok=True)
+        with open(args.data_out, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"\n{'='*40}")
     print(f"Sources checked: {len(sources)}")

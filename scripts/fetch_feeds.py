@@ -361,6 +361,20 @@ def parse_web_page(html_text: str, source_name: str, category: str, base_url: st
     return entries
 
 
+def make_snippet(content: str, max_sentences: int = 3, max_chars: int = 320) -> str:
+    """Extract first few sentences from stripped content."""
+    if not content:
+        return ""
+    sentences = re.split(r'(?<=[.!?])\s+', content.strip())
+    result = ""
+    for s in sentences[:max_sentences]:
+        candidate = (result + " " + s).strip()
+        if len(candidate) > max_chars:
+            break
+        result = candidate
+    return result or content[:max_chars]
+
+
 def load_sources(path: Path) -> list[dict]:
     with open(path) as f:
         data = yaml.safe_load(f)
@@ -533,6 +547,7 @@ def main():
                     "link": e["link"],
                     "parsed_date": pd,
                     "is_new": is_new,
+                    "snippet": make_snippet(e.get("content", "")),
                 })
             latest_date = max(
                 (e["parsed_date"] for e in entries_out if e["parsed_date"]),

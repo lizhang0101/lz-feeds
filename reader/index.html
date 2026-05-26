@@ -19,9 +19,12 @@ title: RSS 阅读
 <ul>
   {% for entry in src.entries %}
   <li>
-    {% if entry.is_new %}<span class="badge-new">NEW</span> {% endif %}
-    <a href="{{ entry.link }}">{{ entry.title }}</a>
-    {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+    <div>
+      {% if entry.is_new %}<span class="badge-new">NEW</span> {% endif %}
+      <a href="{{ entry.link }}">{{ entry.title }}</a>
+      {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+    </div>
+    {% if entry.snippet %}<p class="snippet">{{ entry.snippet }}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>
@@ -35,9 +38,12 @@ title: RSS 阅读
 <ul>
   {% for entry in src.entries %}
   <li>
-    {% if entry.is_new %}<span class="badge-new">NEW</span> {% endif %}
-    <a href="{{ entry.link }}">{{ entry.title }}</a>
-    {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+    <div>
+      {% if entry.is_new %}<span class="badge-new">NEW</span> {% endif %}
+      <a href="{{ entry.link }}">{{ entry.title }}</a>
+      {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+    </div>
+    {% if entry.snippet %}<p class="snippet">{{ entry.snippet }}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>

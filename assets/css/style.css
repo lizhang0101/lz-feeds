@@ -136,6 +136,13 @@ tr:hover td { background: #fafafa; }
   color: var(--primary);
 }
 
+.snippet {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .badge-new {
   display: inline-block;
   background: #e53935;

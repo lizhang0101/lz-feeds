@@ -1,12 +1,13 @@
 # lz-feeds
 
-每日 RSS 摘要 + 实时热榜，由 GitHub Actions 自动运行，Gemini API 生成中文摘要，GitHub Pages 展示。
+个人信息阅读站，由 GitHub Actions 自动运行，Gemini API 生成中文摘要，GitHub Pages 展示。
 
 **Pages：** https://lizhang0101.github.io/lz-feeds/
 
 ## 功能
 
-- **每日摘要**：每天 08:17（北京时间）自动抓取 RSS/Atom 订阅源，Gemini 打分（1-5）并生成中文摘要，重点推荐 5 篇 + 扩展阅读 5 篇
+- **RSS 阅读**：展示所有订阅源的近期文章（每源 5 条），按更新时间排序，分厂商 / 个人博客两组；30 天未更新的博客折叠到分隔线下方；Gemini 生成中文摘要，新文章（72h 内）加 NEW 标记
+- **每日摘要**：每天 08:17（北京时间）自动抓取 72h 内新文章，Gemini 打分（1-5）并生成中文摘要，重点推荐 5 篇 + 扩展阅读 5 篇
 - **知乎热榜**：每 2 小时自动抓取，实时更新
 
 ## 目录结构
@@ -15,15 +16,15 @@
 lz-feeds/
 ├── sources.yaml              # RSS 订阅源配置
 ├── scripts/
-│   ├── fetch_feeds.py        # RSS 抓取脚本
-│   ├── fetch_hotlist.py      # 热榜抓取脚本
-│   └── summarize.py          # Gemini 摘要生成
+│   ├── fetch_feeds.py        # RSS 抓取；--reader-out 输出按源分组的阅读器 JSON
+│   ├── fetch_hotlist.py      # 热榜抓取
+│   └── summarize.py          # Gemini 摘要；--enrich-reader 为阅读器条目生成 AI 摘要
 ├── _digests/                 # Jekyll collection：每日摘要
 │   └── YYYY-MM-DD.md
 ├── _hotlist/                 # Jekyll collection：热榜快照
 │   └── zhihu.md
 ├── _data/
-│   └── latest_entries.json   # RSS 阅读页数据（fetch_feeds.py 生成）
+│   └── latest_entries.json   # 阅读器数据（按源分组，含 AI 摘要）
 ├── _layouts/                 # Jekyll 布局模板
 ├── assets/css/style.css      # 样式
 ├── data/
@@ -37,7 +38,7 @@ lz-feeds/
 ├── Gemfile                   # Ruby 依赖
 ├── requirements.txt          # Python 依赖
 └── .github/workflows/
-    ├── daily.yml             # 每日摘要（UTC 00:17）
+    ├── daily.yml             # 每日摘要 + 阅读器更新（UTC 00:17）
     ├── hotlist.yml           # 热榜更新（每 2 小时）
     └── pages.yml             # GitHub Pages 部署
 ```
@@ -47,8 +48,15 @@ lz-feeds/
 ```bash
 pip install -r requirements.txt
 
-# RSS 摘要
-python scripts/fetch_feeds.py --hours 24
+# 抓取 RSS 并生成阅读器数据
+python scripts/fetch_feeds.py --hours 72 --web-cache data/web_seen.json \
+  --reader-out _data/latest_entries.json
+
+# 为阅读器条目生成 AI 摘要（已有摘要的条目自动跳过）
+GEMINI_API_KEY=your_key python scripts/summarize.py \
+  --enrich-reader _data/latest_entries.json
+
+# 生成每日摘要
 GEMINI_API_KEY=your_key python scripts/summarize.py
 
 # 热榜
@@ -70,14 +78,18 @@ bundle exec jekyll serve
 
 ## 添加订阅源
 
-编辑 `sources.yaml`，支持三种类型：
+编辑 `sources.yaml`，支持四种类型：
 
 ```yaml
 - name: 示例博客
   url: https://example.com/feed.xml
   category: 分类名
-  type: rss       # rss | web | hotlist
+  type: rss       # rss：RSS/Atom feed
+                  # web：HTML 页面（解析文章链接）
+                  # link：仅显示跳转链接，不抓取（适合 JS 渲染的站）
+                  # hotlist：热榜源
   language: en    # en | zh
+  group: blog     # blog（默认）| vendor（厂商，显示在独立分组）
 ```
 
 ## 添加热榜源

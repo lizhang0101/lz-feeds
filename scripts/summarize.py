@@ -273,7 +273,7 @@ def main():
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     repo_root = Path(__file__).parent.parent
-    output = args.output or (repo_root / "digests" / f"{today}.md")
+    output = args.output or (repo_root / "_digests" / f"{today}.md")
     digests_dir = args.digests_dir or output.parent
 
     if output.exists() and not args.force:

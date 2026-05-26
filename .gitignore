@@ -8,8 +8,11 @@ venv/
 dist/
 build/
 .DS_Store
+_site/
 docs/
-site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
 
 # GitHub Actions secrets are stored in repo settings, not here
 # Local-only overrides

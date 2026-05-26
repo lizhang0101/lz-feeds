@@ -1,0 +1,21 @@
+---
+layout: default
+title: 每日摘要
+---
+
+<h1>📰 每日摘要</h1>
+
+{% assign sorted = site.digests | sort: "date" | reverse %}
+<ul class="index-list">
+{% for digest in sorted %}
+  <li>
+    <a href="{{ digest.url | relative_url }}">{{ digest.date | date: "%Y-%m-%d" }}</a>
+    {% if digest.top_picks %}
+      <span class="meta">&nbsp;⭐ {{ digest.top_picks }} 条推荐</span>
+    {% endif %}
+  </li>
+{% endfor %}
+{% if sorted.size == 0 %}
+  <li>暂无摘要</li>
+{% endif %}
+</ul>

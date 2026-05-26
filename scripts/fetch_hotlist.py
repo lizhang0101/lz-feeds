@@ -84,7 +84,7 @@ def render(name: str, items: list[dict], updated_at: str) -> str:
 def main():
     now = datetime.now(BEIJING_TZ)
     updated_at = now.strftime("%Y-%m-%d %H:%M 北京时间")
-    output_dir = Path(__file__).parent.parent / "hotlist"
+    output_dir = Path(__file__).parent.parent / "_hotlist"
     output_dir.mkdir(exist_ok=True)
 
     ok, failed = 0, 0

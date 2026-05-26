@@ -1,0 +1,36 @@
+title: lz-feeds
+description: 个人信息摘要
+
+baseurl: "/lz-feeds"
+url: "https://lizhang0101.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  digests:
+    output: true
+    permalink: /digests/:name/
+  hotlist:
+    output: true
+    permalink: /hotlist/:name/
+
+defaults:
+  - scope:
+      type: digests
+    values:
+      layout: digest
+  - scope:
+      type: hotlist
+    values:
+      layout: hotlist
+
+exclude:
+  - scripts/
+  - data/
+  - sources.yaml
+  - requirements.txt
+  - Gemfile.lock
+  - README.md
+  - "*.py"

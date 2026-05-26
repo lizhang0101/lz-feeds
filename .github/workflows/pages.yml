@@ -4,9 +4,16 @@ on:
   push:
     branches: [main]
     paths:
+      - '_layouts/**'
+      - '_includes/**'
+      - 'assets/**'
+      - '*.md'
+      - '*.html'
+      - 'reader/**'
       - 'digests/**'
       - 'hotlist/**'
-      - 'mkdocs.yml'
+      - '_config.yml'
+      - 'Gemfile'
   workflow_dispatch:
 
 permissions:
@@ -30,22 +37,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - uses: ruby/setup-ruby@v1
         with:
-          python-version: '3.12'
+          ruby-version: '3.3'
+          bundler-cache: true
 
-      - name: Install MkDocs
-        run: pip install mkdocs-material
-
-      - name: Generate index
-        run: python scripts/gen_index.py
-
-      - name: Build site
-        run: mkdocs build
+      - name: Build Jekyll
+        run: bundle exec jekyll build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: _site/
 
       - uses: actions/deploy-pages@v4
         id: deployment

@@ -95,3 +95,15 @@ bundle exec jekyll serve
 ## 添加热榜源
 
 在 `scripts/fetch_hotlist.py` 的 `SOURCES` 列表中添加新平台，并实现对应的 `parse_<platform>()` 函数。
+
+## Roadmap
+
+### 已知问题
+- **Anthropic / DeepSeek 无 RSS**：两个站点是 JS 渲染，目前以 `type: link` 占位。根本解法是自托管 RSSHub 实例
+- **Node.js 20 deprecation warning**：`pages.yml` 中 Actions 版本触发 GitHub 警告，升级 action 版本可消除
+
+### 待改进
+- **更多热榜源**：微博、V2EX、Hacker News 等，在 `fetch_hotlist.py` 中添加对应解析函数
+- **RSSHub 自托管**：为 Anthropic、DeepSeek 等 JS 渲染站点生成 RSS，替换当前 `type: link` 占位
+- **阅读器增强**：关键词搜索 / 过滤、条目折叠展开、已读标记
+- **摘要质量**：用户反馈机制，优化 prompt

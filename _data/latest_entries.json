@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-26T07:02:28.800572+00:00",
+  "fetched_at": "2026-05-26T07:54:23.595464+00:00",
   "cutoff_hours": 72,
   "sources_checked": 29,
   "entries_found": 20,
@@ -127,8 +127,8 @@
     },
     {
       "name": "The Shamblog",
-      "status": "parse_failed",
-      "total": 0,
+      "status": "ok",
+      "total": 10,
       "recent": 0
     },
     {

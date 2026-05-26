@@ -441,7 +441,8 @@ def process_source(src: dict, now: datetime, cutoff: datetime,
                 e["parsed_date"] = dt.isoformat()
                 recent.append(e)
         stat = {"name": name, "status": "ok", "total": len(entries), "recent": len(recent)}
-        logs.append(f"  Found {len(entries)} total, {len(recent)} within {cutoff.strftime('%Hh')}")
+        hours = round((now - cutoff).total_seconds() / 3600)
+        logs.append(f"  Found {len(entries)} total, {len(recent)} within {hours}h")
         return logs, recent, stat, None
 
 

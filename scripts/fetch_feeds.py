@@ -512,14 +512,28 @@ def main():
             errors.append(err)
         all_entries.extend(recent)
         if reader_entries:
+            cutoff_new = now - timedelta(hours=72)
+            entries_out = []
+            for e in reader_entries:
+                pd = e.get("parsed_date", "")
+                dt = parse_date(e["date"]) if e.get("date") else None
+                is_new = bool(dt and dt >= cutoff_new)
+                entries_out.append({
+                    "title": e["title"],
+                    "link": e["link"],
+                    "parsed_date": pd,
+                    "is_new": is_new,
+                })
+            latest_date = max(
+                (e["parsed_date"] for e in entries_out if e["parsed_date"]),
+                default=""
+            )
             reader_sources.append({
                 "name": src["name"],
                 "category": src.get("category", "Uncategorized"),
-                "entries": [
-                    {"title": e["title"], "link": e["link"],
-                     "parsed_date": e.get("parsed_date", "")}
-                    for e in reader_entries
-                ],
+                "group": src.get("group", "blog"),
+                "latest_date": latest_date,
+                "entries": entries_out,
             })
 
     # Save updated web cache
@@ -548,6 +562,7 @@ def main():
             json.dump(output, f, ensure_ascii=False, indent=2)
 
     if args.reader_out:
+        reader_sources.sort(key=lambda s: s["latest_date"], reverse=True)
         reader_output = {
             "fetched_at": now.isoformat(),
             "sources": reader_sources,

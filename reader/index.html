@@ -9,17 +9,40 @@ title: RSS 阅读
 {% assign feed = site.data.latest_entries %}
 <p class="meta">最后更新: {{ feed.fetched_at | slice: 0, 16 }} UTC</p>
 
-{% for src in feed.sources %}
-<h2>{{ src.name }}</h2>
+{% assign vendors = feed.sources | where: "group", "vendor" %}
+{% assign blogs = feed.sources | where_exp: "s", "s.group != 'vendor'" %}
+
+{% if vendors.size > 0 %}
+<h2 class="section-heading">🏢 厂商</h2>
+{% for src in vendors %}
+<h3>{{ src.name }}</h3>
 <ul>
   {% for entry in src.entries %}
   <li>
+    {% if entry.is_new %}<span class="badge-new">NEW</span> {% endif %}
     <a href="{{ entry.link }}">{{ entry.title }}</a>
     {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
   </li>
   {% endfor %}
 </ul>
 {% endfor %}
+{% endif %}
+
+{% if blogs.size > 0 %}
+<h2 class="section-heading">✍️ 个人博客</h2>
+{% for src in blogs %}
+<h3>{{ src.name }}</h3>
+<ul>
+  {% for entry in src.entries %}
+  <li>
+    {% if entry.is_new %}<span class="badge-new">NEW</span> {% endif %}
+    <a href="{{ entry.link }}">{{ entry.title }}</a>
+    {% if entry.parsed_date %}<span class="meta"> · {{ entry.parsed_date | slice: 0, 10 }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% endif %}
 
 {% else %}
 <p class="meta">暂无数据，待每日摘要任务运行后自动更新。</p>

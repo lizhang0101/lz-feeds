@@ -164,24 +164,28 @@ sources:
     category: AI Research
     type: web
     language: en
+    group: vendor
 
   - name: Google DeepMind Blog
     url: https://deepmind.google/blog/feed
     category: AI Research
     type: rss
     language: en
+    group: vendor
 
   - name: Anthropic Research
     url: https://claude.com/blog
     category: AI Research
     type: web
     language: en
+    group: vendor
 
   - name: DeepSeek Blog
     url: https://deepseek.ai/blog/
     category: AI Research
     type: web
     language: en
+    group: vendor
 
   - name: Andrej Karpathy
     url: https://karpathy.bearblog.dev/feed/

@@ -1,747 +1,915 @@
 {
-  "fetched_at": "2026-05-26T08:10:43.035626+00:00",
+  "fetched_at": "2026-05-26T08:26:56.222368+00:00",
   "sources": [
-    {
-      "name": "Simon Willison",
-      "category": "AI",
-      "entries": [
-        {
-          "title": "Quoting Corey Quinn",
-          "link": "https://simonwillison.net/2026/May/26/corey-quinn/#atom-everything",
-          "parsed_date": "2026-05-26T02:28:54+00:00"
-        },
-        {
-          "title": "Notes on Pope Leo XIV's encyclical on AI",
-          "link": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything",
-          "parsed_date": "2026-05-25T23:58:17+00:00"
-        },
-        {
-          "title": "datasette 1.0a30",
-          "link": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
-          "parsed_date": "2026-05-24T23:52:37+00:00"
-        },
-        {
-          "title": "datasette-agent 0.1a4",
-          "link": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
-          "parsed_date": "2026-05-24T23:19:34+00:00"
-        },
-        {
-          "title": "datasette-fixtures 0.1a0",
-          "link": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything",
-          "parsed_date": "2026-05-24T21:38:32+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Xe Iaso",
-      "category": "AI & DevOps",
-      "entries": [
-        {
-          "title": "\"No way to prevent this\" say users of only package manager where this regularly happens",
-          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
-          "parsed_date": "2026-05-21T00:00:00+00:00"
-        },
-        {
-          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45250/",
-          "parsed_date": "2026-05-21T00:00:00+00:00"
-        },
-        {
-          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
-          "parsed_date": "2026-05-20T00:00:00+00:00"
-        },
-        {
-          "title": "Amazonbot is finally respecting robots.txt",
-          "link": "https://xeiaso.net/notes/2026/amazonbot-respecting-robots-txt/",
-          "parsed_date": "2026-05-14T00:00:00+00:00"
-        },
-        {
-          "title": "I'm really frustrated that GitLab is doing layoffs",
-          "link": "https://xeiaso.net/notes/2026/gitlab-layoffs/",
-          "parsed_date": "2026-05-11T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Philipp Schmid",
-      "category": "AI & MLOps",
-      "entries": [
-        {
-          "title": "How Agents Manage Other Agents: Four Subagents Patterns in 2026",
-          "link": "https://www.philschmid.de/subagent-patterns-2026",
-          "parsed_date": "2026-05-05T00:00:00+00:00"
-        },
-        {
-          "title": "How to use Deep Research with the Gemini API",
-          "link": "https://www.philschmid.de/deep-research-update",
-          "parsed_date": "2026-04-29T00:00:00+00:00"
-        },
-        {
-          "title": "How to correctly use MCP servers with your AI Agents",
-          "link": "https://www.philschmid.de/use-mcp-servers",
-          "parsed_date": "2026-04-27T00:00:00+00:00"
-        },
-        {
-          "title": "8 Tips for Writing Agent Skills",
-          "link": "https://www.philschmid.de/agent-skills-tips",
-          "parsed_date": "2026-04-13T00:00:00+00:00"
-        },
-        {
-          "title": "How to use Gemma 4 with the Gemini API and Google AI Studio",
-          "link": "https://www.philschmid.de/gemma-4-gemini-api",
-          "parsed_date": "2026-04-07T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Paul Graham",
-      "category": "Startups & Essays",
-      "entries": [
-        {
-          "title": "Superlinear Returns",
-          "link": "http://www.paulgraham.com/superlinear.html",
-          "parsed_date": ""
-        },
-        {
-          "title": "How to Do Great Work",
-          "link": "http://www.paulgraham.com/greatwork.html",
-          "parsed_date": ""
-        },
-        {
-          "title": "How to Get New Ideas",
-          "link": "http://www.paulgraham.com/getideas.html",
-          "parsed_date": ""
-        },
-        {
-          "title": "The Need to Read",
-          "link": "http://www.paulgraham.com/read.html",
-          "parsed_date": ""
-        },
-        {
-          "title": "What You (Want to)* Want",
-          "link": "http://www.paulgraham.com/want.html",
-          "parsed_date": ""
-        }
-      ]
-    },
-    {
-      "name": "DHH (David Heinemeier Hansson)",
-      "category": "Software & Business",
-      "entries": [
-        {
-          "title": "Celebrating computers at Omacon",
-          "link": "https://world.hey.com/dhh/celebrating-computers-at-omacon-163eb568",
-          "parsed_date": "2026-04-21T10:56:33+00:00"
-        },
-        {
-          "title": "The malleable computer",
-          "link": "https://world.hey.com/dhh/the-malleable-computer-7c187a9b",
-          "parsed_date": "2026-04-15T15:06:27+00:00"
-        },
-        {
-          "title": "Panther Lake is the real deal",
-          "link": "https://world.hey.com/dhh/panther-lake-is-the-real-deal-4bd731f1",
-          "parsed_date": "2026-04-06T12:39:21+00:00"
-        },
-        {
-          "title": "Basecamp becomes agent accessible",
-          "link": "https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949",
-          "parsed_date": "2026-03-25T17:37:25+00:00"
-        },
-        {
-          "title": "Denmark desperately needs more inequality",
-          "link": "https://world.hey.com/dhh/denmark-desperately-needs-more-inequality-8e84a8d0",
-          "parsed_date": "2026-03-23T17:35:04+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Armin Ronacher (lucumr)",
-      "category": "Programming",
-      "entries": [
-        {
-          "title": "Building Pi With Pi",
-          "link": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
-          "parsed_date": "2026-05-24T00:00:00+00:00"
-        },
-        {
-          "title": "Pushing Local Models With Focus And Polish",
-          "link": "https://lucumr.pocoo.org/2026/5/8/local-models/",
-          "parsed_date": "2026-05-08T00:00:00+00:00"
-        },
-        {
-          "title": "Content for Content’s Sake",
-          "link": "https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/",
-          "parsed_date": "2026-05-04T00:00:00+00:00"
-        },
-        {
-          "title": "Before GitHub",
-          "link": "https://lucumr.pocoo.org/2026/4/28/before-github/",
-          "parsed_date": "2026-04-28T00:00:00+00:00"
-        },
-        {
-          "title": "Equity for Europeans",
-          "link": "https://lucumr.pocoo.org/2026/4/23/equity-for-europeans/",
-          "parsed_date": "2026-04-23T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "antirez (Salvatore Sanfilippo)",
-      "category": "Programming",
-      "entries": [
-        {
-          "title": "Distributing LLM inference in DwarfStar",
-          "link": "http://antirez.com/news/167",
-          "parsed_date": "2026-05-25T16:54:59+02:00"
-        },
-        {
-          "title": "Alternatives for the EDIT tool of LLM agents",
-          "link": "http://antirez.com/news/166",
-          "parsed_date": "2026-05-19T09:26:03+02:00"
-        },
-        {
-          "title": "A few words on DS4",
-          "link": "http://antirez.com/news/165",
-          "parsed_date": "2026-05-15T00:22:45+02:00"
-        },
-        {
-          "title": "Redis array type: short story of a long development",
-          "link": "http://antirez.com/news/164",
-          "parsed_date": "2026-05-04T16:21:45+02:00"
-        },
-        {
-          "title": "AI cybersecurity is not proof of work",
-          "link": "http://antirez.com/news/163",
-          "parsed_date": "2026-04-16T12:46:46+02:00"
-        }
-      ]
-    },
-    {
-      "name": "Ryan Dahl (tinyclouds)",
-      "category": "Programming",
-      "entries": [
-        {
-          "title": "Humans Are Just Stochastic Parrots",
-          "link": "https://tinyclouds/humans/",
-          "parsed_date": "2025-10-10T00:00:00+00:00"
-        },
-        {
-          "title": "We're Still Underestimating What AI Really Means",
-          "link": "https://tinyclouds/underestimating-ai/",
-          "parsed_date": "2025-06-14T00:00:00+00:00"
-        },
-        {
-          "title": "Dear Oracle, Please Release the JavaScript Trademark",
-          "link": "https://tinyclouds/trademark/",
-          "parsed_date": "2022-09-03T00:00:00+00:00"
-        },
-        {
-          "title": "City Worker Exchange Program",
-          "link": "https://tinyclouds/city-worker-exchange-program/",
-          "parsed_date": "2022-08-04T00:00:00+00:00"
-        },
-        {
-          "title": "JavaScript Containers",
-          "link": "https://tinyclouds/javascript-containers/",
-          "parsed_date": "2022-05-04T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Mitchell Hashimoto",
-      "category": "Infrastructure",
-      "entries": [
-        {
-          "title": "Ghostty Is Leaving GitHub",
-          "link": "https://mitchellh.com/writing/ghostty-leaving-github",
-          "parsed_date": "2026-04-28T00:00:00+00:00"
-        },
-        {
-          "title": "Simdutf Can Now Be Used Without libc++ or libc++abi",
-          "link": "https://mitchellh.com/writing/simdutf-no-libcxx",
-          "parsed_date": "2026-04-15T00:00:00+00:00"
-        },
-        {
-          "title": "The Building Block Economy",
-          "link": "https://mitchellh.com/writing/building-block-economy",
-          "parsed_date": "2026-04-07T00:00:00+00:00"
-        },
-        {
-          "title": "My AI Adoption Journey",
-          "link": "https://mitchellh.com/writing/my-ai-adoption-journey",
-          "parsed_date": "2026-02-05T00:00:00+00:00"
-        },
-        {
-          "title": "Don't Trip[wire] Yourself: Testing Error Recovery in Zig",
-          "link": "https://mitchellh.com/writing/tripwire",
-          "parsed_date": "2026-01-21T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "The Pragmatic Engineer",
-      "category": "Engineering Management",
-      "entries": [
-        {
-          "title": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
-          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
-          "parsed_date": "2026-05-21T17:01:39+00:00"
-        },
-        {
-          "title": "Why Rust is different, with Alice Ryhl",
-          "link": "https://newsletter.pragmaticengineer.com/p/why-rust-is-different-with-alice",
-          "parsed_date": "2026-05-20T16:22:00+00:00"
-        },
-        {
-          "title": "AI’s impact on software engineers in 2026: key trends, Part 2",
-          "link": "https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2",
-          "parsed_date": "2026-05-19T16:43:10+00:00"
-        },
-        {
-          "title": "The Pulse: Forward deployed engineering heats up again",
-          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-forward-deployed-engineering",
-          "parsed_date": "2026-05-14T16:09:57+00:00"
-        },
-        {
-          "title": "TypeScript, C# and Turbo Pascal with Anders Hejlsberg",
-          "link": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
-          "parsed_date": "2026-05-13T17:06:59+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Dan Abramov (overreacted)",
-      "category": "Frontend & Programming",
-      "entries": [
-        {
-          "title": "A Social Filesystem",
-          "link": "https://overreacted.io/a-social-filesystem/",
-          "parsed_date": "2026-01-18T00:00:00+00:00"
-        },
-        {
-          "title": "Introducing RSC Explorer",
-          "link": "https://overreacted.io/introducing-rsc-explorer/",
-          "parsed_date": "2025-12-19T00:00:00+00:00"
-        },
-        {
-          "title": "Hire Me in Japan",
-          "link": "https://overreacted.io/hire-me-in-japan/",
-          "parsed_date": "2025-11-11T00:00:00+00:00"
-        },
-        {
-          "title": "How to Fix Any Bug",
-          "link": "https://overreacted.io/how-to-fix-any-bug/",
-          "parsed_date": "2025-10-21T00:00:00+00:00"
-        },
-        {
-          "title": "Where It's at://",
-          "link": "https://overreacted.io/where-its-at/",
-          "parsed_date": "2025-10-02T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Boris Cherny",
-      "category": "Programming",
-      "entries": [
-        {
-          "title": "NPM and NodeJS should do more to make ES Modules easy to use",
-          "link": "/javascript,/typescript/2024/06/19/ES-Modules-Are-A-Mess.html",
-          "parsed_date": "2024-06-19T00:00:00+00:00"
-        },
-        {
-          "title": "Learning to work (very) remotely",
-          "link": "/tech/2023/12/10/Working-Remotely.html",
-          "parsed_date": "2023-12-10T00:00:00+00:00"
-        },
-        {
-          "title": "Time and Timing",
-          "link": "/2022/09/07/time-and-timing.html",
-          "parsed_date": "2022-09-07T00:00:00+00:00"
-        },
-        {
-          "title": "Dinosaur Food: 100 million year old foods we still eat today",
-          "link": "/food/2022/01/17/Dinosaur-food.html",
-          "parsed_date": "2022-01-17T00:00:00+00:00"
-        },
-        {
-          "title": "Data Management on the Web Still Sucks",
-          "link": "/javascript/2021/03/13/Data-Fetching.html",
-          "parsed_date": "2021-03-13T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Sean Goedecke",
-      "category": "Software Engineering",
-      "entries": [
-        {
-          "title": "The famous o3 \"GeoGuessr\" prompt did not work",
-          "link": "https://seangoedecke.com/the-o3-geoguessr-prompt-did-not-work/",
-          "parsed_date": "2026-05-21T00:00:00+00:00"
-        },
-        {
-          "title": "Prompts are technical debt too",
-          "link": "https://seangoedecke.com/prompts-are-technical-debt-too/",
-          "parsed_date": "2026-05-20T00:00:00+00:00"
-        },
-        {
-          "title": "The just-say-no engineer was a ZIRP phenomenon",
-          "link": "https://seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon/",
-          "parsed_date": "2026-05-18T00:00:00+00:00"
-        },
-        {
-          "title": "How I use LLMs as a staff engineer in 2026",
-          "link": "https://seangoedecke.com/how-i-use-llms-in-2026/",
-          "parsed_date": "2026-05-17T00:00:00+00:00"
-        },
-        {
-          "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
-          "link": "https://seangoedecke.com/steering-vectors/",
-          "parsed_date": "2026-05-16T00:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Herman (bearblog)",
-      "category": "Programming",
-      "entries": [
-        {
-          "title": "The commodification of travel",
-          "link": "https://herman.bearblog.dev/the-commodification-of-travel/",
-          "parsed_date": "2026-04-22T01:28:00+00:00"
-        },
-        {
-          "title": "On becoming a day person",
-          "link": "https://herman.bearblog.dev/becoming-a-day-person/",
-          "parsed_date": "2026-03-19T09:17:00+00:00"
-        },
-        {
-          "title": "Vulnerability as a Service",
-          "link": "https://herman.bearblog.dev/vulnerability-as-a-service/",
-          "parsed_date": "2026-02-24T11:43:00+00:00"
-        },
-        {
-          "title": "Pockets of Humanity",
-          "link": "https://herman.bearblog.dev/pockets-of-humanity/",
-          "parsed_date": "2026-02-23T13:25:00+00:00"
-        },
-        {
-          "title": "Things that work (for me)",
-          "link": "https://herman.bearblog.dev/things-that-work/",
-          "parsed_date": "2026-01-20T08:30:00+00:00"
-        }
-      ]
-    },
     {
       "name": "Ibrahim Diallo",
       "category": "Programming",
+      "group": "blog",
+      "latest_date": "2026-05-26T03:25:17+00:00",
       "entries": [
         {
           "title": "Amber Alert with Spam URL?",
           "link": "https://idiallo.com/byte-size/amber-alert-with-spam-link?src=feed",
-          "parsed_date": "2026-05-26T03:25:17+00:00"
+          "parsed_date": "2026-05-26T03:25:17+00:00",
+          "is_new": true
         },
         {
           "title": "The commencement speech that shook the world",
           "link": "https://idiallo.com/blog/the-commencement-speech-that-shook-the-world?src=feed",
-          "parsed_date": "2026-05-23T01:14:24+00:00"
+          "parsed_date": "2026-05-23T01:14:24+00:00",
+          "is_new": false
         },
         {
           "title": "How to Talk to Your Coworkers",
           "link": "https://idiallo.com/blog/how-to-talk-to-your-coworkers?src=feed",
-          "parsed_date": "2026-05-22T19:00:00+00:00"
+          "parsed_date": "2026-05-22T19:00:00+00:00",
+          "is_new": false
         },
         {
           "title": "Don't call yourself a Software Engineer, and other Career Advice",
           "link": "https://idiallo.com/blog/you-are-an-ai-enabled-engineer-now?src=feed",
-          "parsed_date": "2026-05-18T12:00:00+00:00"
+          "parsed_date": "2026-05-18T12:00:00+00:00",
+          "is_new": false
         },
         {
           "title": "In the Empire's Defense",
           "link": "https://idiallo.com/blog/the-empire-won?src=feed",
-          "parsed_date": "2026-05-17T12:00:00+00:00"
+          "parsed_date": "2026-05-17T12:00:00+00:00",
+          "is_new": false
         }
       ]
     },
     {
-      "name": "Nikita Prokopov (tonsky)",
-      "category": "Software & Design",
+      "name": "Simon Willison",
+      "category": "AI",
+      "group": "blog",
+      "latest_date": "2026-05-26T02:28:54+00:00",
       "entries": [
         {
-          "title": "Claude is an Electron App because we’ve lost native",
-          "link": "https://tonsky.me/blog/fall-of-native/",
-          "parsed_date": "2026-03-03T00:00:00+00:00"
+          "title": "Quoting Corey Quinn",
+          "link": "https://simonwillison.net/2026/May/26/corey-quinn/#atom-everything",
+          "parsed_date": "2026-05-26T02:28:54+00:00",
+          "is_new": true
         },
         {
-          "title": "Podcast: На Маке нет никаких шкафов @ Думаем дальше",
-          "link": "https://tonsky.me/talks/#2026-01-15",
-          "parsed_date": "2026-01-15T00:00:00+00:00"
+          "title": "Notes on Pope Leo XIV's encyclical on AI",
+          "link": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything",
+          "parsed_date": "2026-05-25T23:58:17+00:00",
+          "is_new": true
         },
         {
-          "title": "It’s hard to justify Tahoe icons",
-          "link": "https://tonsky.me/blog/tahoe-icons/",
-          "parsed_date": "2026-01-05T00:00:00+00:00"
+          "title": "datasette 1.0a30",
+          "link": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
+          "parsed_date": "2026-05-24T23:52:37+00:00",
+          "is_new": true
         },
         {
-          "title": "Statistics made simple",
-          "link": "https://tonsky.me/blog/clj-simple-stats/",
-          "parsed_date": "2025-12-15T00:00:00+00:00"
+          "title": "datasette-agent 0.1a4",
+          "link": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+          "parsed_date": "2026-05-24T23:19:34+00:00",
+          "is_new": true
         },
         {
-          "title": "How to get hired in 2025",
-          "link": "https://tonsky.me/blog/hiring-ai/",
-          "parsed_date": "2025-11-26T00:00:00+00:00"
+          "title": "datasette-fixtures 0.1a0",
+          "link": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything",
+          "parsed_date": "2026-05-24T21:38:32+00:00",
+          "is_new": true
         }
       ]
     },
     {
       "name": "Daring Fireball",
       "category": "Apple & Tech",
+      "group": "blog",
+      "latest_date": "2026-05-25T23:57:24+00:00",
       "entries": [
         {
           "title": "[Sponsor] exe.dev",
           "link": "https://exe.dev/?df",
-          "parsed_date": "2026-05-25T23:57:24+00:00"
+          "parsed_date": "2026-05-25T23:57:24+00:00",
+          "is_new": true
         },
         {
           "title": "Awarding Jay Haynes His Being Right Points for Predicting Apple Hitting $3 Trillion in Market Cap",
           "link": "https://daringfireball.net/linked/2014/01/29/haynes-aapl",
-          "parsed_date": "2026-05-25T20:32:29+00:00"
+          "parsed_date": "2026-05-25T20:32:29+00:00",
+          "is_new": true
         },
         {
           "title": "Thieves Are Texting Threats to Victims of iPhone Theft in London",
           "link": "https://www.nytimes.com/2026/05/23/world/europe/phone-theft-threats-london.html?unlocked_article_code=1.lFA.OUt7.VJ_FoDpINr0L",
-          "parsed_date": "2026-05-25T19:23:32+00:00"
+          "parsed_date": "2026-05-25T19:23:32+00:00",
+          "is_new": true
         },
         {
           "title": "Trump Mobile Website Exposed the Number of Pre-Orders — Both Completed and Abandoned — and the Associated Customer Information",
           "link": "https://www.theguardian.com/us-news/2026/may/23/trump-mobile-investigating-potential-exposure-of-would-be-customers-personal-information",
-          "parsed_date": "2026-05-25T18:54:37+00:00"
+          "parsed_date": "2026-05-25T18:54:37+00:00",
+          "is_new": true
         },
         {
           "title": "The History of ‘OK’",
           "link": "https://www.merriam-webster.com/wordplay/the-hilarious-history-of-ok-okay",
-          "parsed_date": "2026-05-25T17:18:56+00:00"
+          "parsed_date": "2026-05-25T17:18:56+00:00",
+          "is_new": true
+        }
+      ]
+    },
+    {
+      "name": "antirez (Salvatore Sanfilippo)",
+      "category": "Programming",
+      "group": "blog",
+      "latest_date": "2026-05-25T16:54:59+02:00",
+      "entries": [
+        {
+          "title": "Distributing LLM inference in DwarfStar",
+          "link": "http://antirez.com/news/167",
+          "parsed_date": "2026-05-25T16:54:59+02:00",
+          "is_new": true
+        },
+        {
+          "title": "Alternatives for the EDIT tool of LLM agents",
+          "link": "http://antirez.com/news/166",
+          "parsed_date": "2026-05-19T09:26:03+02:00",
+          "is_new": false
+        },
+        {
+          "title": "A few words on DS4",
+          "link": "http://antirez.com/news/165",
+          "parsed_date": "2026-05-15T00:22:45+02:00",
+          "is_new": false
+        },
+        {
+          "title": "Redis array type: short story of a long development",
+          "link": "http://antirez.com/news/164",
+          "parsed_date": "2026-05-04T16:21:45+02:00",
+          "is_new": false
+        },
+        {
+          "title": "AI cybersecurity is not proof of work",
+          "link": "http://antirez.com/news/163",
+          "parsed_date": "2026-04-16T12:46:46+02:00",
+          "is_new": false
         }
       ]
     },
     {
       "name": "Terence Eden",
       "category": "Tech & Digital Rights",
+      "group": "blog",
+      "latest_date": "2026-05-25T11:34:38+00:00",
       "entries": [
         {
           "title": "PHP - simple way to send HTTP headers before a script ends",
           "link": "https://shkspr.mobi/blog/2026/05/php-simple-way-to-send-http-headers-before-a-script-ends/",
-          "parsed_date": "2026-05-25T11:34:38+00:00"
+          "parsed_date": "2026-05-25T11:34:38+00:00",
+          "is_new": true
         },
         {
           "title": "Which age-gates should be skill-gates and vice-versa?",
           "link": "https://shkspr.mobi/blog/2026/05/which-age-gates-should-be-skill-gates-and-vice-versa/",
-          "parsed_date": "2026-05-23T11:34:31+00:00"
+          "parsed_date": "2026-05-23T11:34:31+00:00",
+          "is_new": true
         },
         {
           "title": "Whale Fall",
           "link": "https://shkspr.mobi/blog/2026/05/whale-fall/",
-          "parsed_date": "2026-05-21T11:34:15+00:00"
+          "parsed_date": "2026-05-21T11:34:15+00:00",
+          "is_new": false
         },
         {
           "title": "[RSS Club] Let's meet up AFK",
           "link": "https://shkspr.mobi/blog/2026/05/rss-club-lets-meet-up-afk/",
-          "parsed_date": "2026-05-20T11:34:04+00:00"
+          "parsed_date": "2026-05-20T11:34:04+00:00",
+          "is_new": false
         },
         {
           "title": "Book Review: Terrible Worlds: Destinations by Adrian Tchaikovsky ★★★★★",
           "link": "https://shkspr.mobi/blog/2026/05/book-review-terrible-worlds-destinations-by-adrian-tchaikovsky/",
-          "parsed_date": "2026-05-19T11:34:17+00:00"
+          "parsed_date": "2026-05-19T11:34:17+00:00",
+          "is_new": false
         }
       ]
     },
     {
-      "name": "The Shamblog",
-      "category": "Hardware & Maker",
+      "name": "Armin Ronacher (lucumr)",
+      "category": "Programming",
+      "group": "blog",
+      "latest_date": "2026-05-24T00:00:00+00:00",
       "entries": [
         {
-          "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
-          "link": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
-          "parsed_date": "2026-02-20T03:04:23+00:00"
+          "title": "Building Pi With Pi",
+          "link": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
+          "parsed_date": "2026-05-24T00:00:00+00:00",
+          "is_new": true
         },
         {
-          "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
-          "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
-          "parsed_date": "2026-02-17T19:28:48+00:00"
+          "title": "Pushing Local Models With Focus And Polish",
+          "link": "https://lucumr.pocoo.org/2026/5/8/local-models/",
+          "parsed_date": "2026-05-08T00:00:00+00:00",
+          "is_new": false
         },
         {
-          "title": "An AI Agent Published a Hit Piece on Me – More Things Have Happened",
-          "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/",
-          "parsed_date": "2026-02-14T00:24:47+00:00"
+          "title": "Content for Content’s Sake",
+          "link": "https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/",
+          "parsed_date": "2026-05-04T00:00:00+00:00",
+          "is_new": false
         },
         {
-          "title": "An AI Agent Published a Hit Piece on Me",
-          "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
-          "parsed_date": "2026-02-12T16:22:39+00:00"
+          "title": "Before GitHub",
+          "link": "https://lucumr.pocoo.org/2026/4/28/before-github/",
+          "parsed_date": "2026-04-28T00:00:00+00:00",
+          "is_new": false
         },
         {
-          "title": "The Dog Park Sabbatical: Monthly Logs",
-          "link": "https://theshamblog.com/the-dog-park-sabbatical-monthly-logs/",
-          "parsed_date": "2025-02-07T18:53:51+00:00"
+          "title": "Equity for Europeans",
+          "link": "https://lucumr.pocoo.org/2026/4/23/equity-for-europeans/",
+          "parsed_date": "2026-04-23T00:00:00+00:00",
+          "is_new": false
         }
       ]
     },
     {
       "name": "Jeff Geerling",
       "category": "Open Source",
+      "group": "blog",
+      "latest_date": "2026-05-22T15:15:00-05:00",
       "entries": [
         {
           "title": "News about Raspberry Pi 6 and Microcontroller Development",
           "link": "https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/",
-          "parsed_date": "2026-05-22T15:15:00-05:00"
+          "parsed_date": "2026-05-22T15:15:00-05:00",
+          "is_new": false
         },
         {
           "title": "Wi-Wi Is Wireless Time Sync at 1 nanosecond",
           "link": "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
-          "parsed_date": "2026-05-19T09:00:00-05:00"
+          "parsed_date": "2026-05-19T09:00:00-05:00",
+          "is_new": false
         },
         {
           "title": "Bambu Lab is abusing the open source social contract",
           "link": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/",
-          "parsed_date": "2026-05-12T09:00:00-05:00"
+          "parsed_date": "2026-05-12T09:00:00-05:00",
+          "is_new": false
         },
         {
           "title": "HomePod mini feels like magic, but it's just good timing",
           "link": "https://www.jeffgeerling.com/blog/2026/homepod-mini-feels-like-magic--but-it-s-just-good-timing/",
-          "parsed_date": "2026-05-08T09:00:00-05:00"
+          "parsed_date": "2026-05-08T09:00:00-05:00",
+          "is_new": false
         },
         {
           "title": "SBC Clusters are a terrible value, but they're fun anyway",
           "link": "https://www.jeffgeerling.com/blog/2026/deskpi-super4c-sbc-cluster/",
-          "parsed_date": "2026-05-01T09:00:00-05:00"
-        }
-      ]
-    },
-    {
-      "name": "Aphyr (Kyle Kingsbury)",
-      "category": "Distributed Systems",
-      "entries": [
-        {
-          "title": "The Kyle Kingsbury Podcast Podcast - Episode 2 - Dave Rossi",
-          "link": "https://aphyr.com/posts/423-the-kyle-kingsbury-podcast-podcast-episode-2-dave-rossi",
-          "parsed_date": "2026-05-08T15:07:42-05:00"
-        },
-        {
-          "title": "The Kyle Kingsbury Podcast Podcast - Episode 1 - Alex Dripchak",
-          "link": "https://aphyr.com/posts/422-the-kyle-kingsbury-podcast-podcast-episode-1-alex-dripchak",
-          "parsed_date": "2026-05-07T18:17:13-05:00"
-        },
-        {
-          "title": "JStack by Command String",
-          "link": "https://aphyr.com/posts/421-jstack-by-command-string",
-          "parsed_date": "2026-05-04T10:30:26-05:00"
-        },
-        {
-          "title": "The Future of Everything is Lies, I Guess: Where Do We Go From Here?",
-          "link": "https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here",
-          "parsed_date": "2026-04-16T08:30:01-05:00"
-        },
-        {
-          "title": "The Future of Everything is Lies, I Guess: New Jobs",
-          "link": "https://aphyr.com/posts/419-the-future-of-everything-is-lies-i-guess-new-jobs",
-          "parsed_date": "2026-04-15T08:19:45-05:00"
-        }
-      ]
-    },
-    {
-      "name": "Google DeepMind Blog",
-      "category": "AI Research",
-      "entries": [
-        {
-          "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
-          "link": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
-          "parsed_date": "2026-05-21T19:46:42+00:00"
-        },
-        {
-          "title": "Fast-tracking genetic leads to reverse cellular aging",
-          "link": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
-          "parsed_date": "2026-05-18T18:21:39+00:00"
-        },
-        {
-          "title": "Simulate real-world places with Project Genie and Street View",
-          "link": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
-          "parsed_date": "2026-05-17T19:53:18+00:00"
-        },
-        {
-          "title": "Introducing Gemini Omni",
-          "link": "https://deepmind.google/blog/introducing-gemini-omni/",
-          "parsed_date": "2026-05-17T19:50:57+00:00"
-        },
-        {
-          "title": "Introducing Google Antigravity 2.0",
-          "link": "https://deepmind.google/blog/introducing-google-antigravity-2-0/",
-          "parsed_date": "2026-05-17T19:43:45+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Andrej Karpathy",
-      "category": "AI Research",
-      "entries": [
-        {
-          "title": "Sequoia Ascent 2026 summary",
-          "link": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
-          "parsed_date": "2026-04-30T16:00:00+00:00"
-        },
-        {
-          "title": "2025 LLM Year in Review",
-          "link": "https://karpathy.bearblog.dev/year-in-review-2025/",
-          "parsed_date": "2025-12-19T18:00:00+00:00"
-        },
-        {
-          "title": "Chemical hygiene",
-          "link": "https://karpathy.bearblog.dev/chemical-hygiene/",
-          "parsed_date": "2025-12-18T18:00:00+00:00"
-        },
-        {
-          "title": "Auto-grading decade-old Hacker News discussions with hindsight",
-          "link": "https://karpathy.bearblog.dev/auto-grade-hn/",
-          "parsed_date": "2025-12-10T15:00:00+00:00"
-        },
-        {
-          "title": "The space of minds",
-          "link": "https://karpathy.bearblog.dev/the-space-of-minds/",
-          "parsed_date": "2025-11-29T18:00:00+00:00"
+          "parsed_date": "2026-05-01T09:00:00-05:00",
+          "is_new": false
         }
       ]
     },
     {
       "name": "阮一峰的网络日志",
       "category": "Tech Blog",
+      "group": "blog",
+      "latest_date": "2026-05-22T07:58:35+08:00",
       "entries": [
         {
           "title": "科技爱好者周刊（第 397 期）：财富正在向 AI 集中",
           "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-397.html",
-          "parsed_date": "2026-05-22T07:58:35+08:00"
+          "parsed_date": "2026-05-22T07:58:35+08:00",
+          "is_new": false
         },
         {
           "title": "科技爱好者周刊（第 396 期）：互联网通信的替代方案",
           "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-396.html",
-          "parsed_date": "2026-05-15T08:01:51+08:00"
+          "parsed_date": "2026-05-15T08:01:51+08:00",
+          "is_new": false
         },
         {
           "title": "科技爱好者周刊（第 395 期）：软件开发的第三种方式",
           "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-395.html",
-          "parsed_date": "2026-05-08T07:40:44+08:00"
+          "parsed_date": "2026-05-08T07:40:44+08:00",
+          "is_new": false
         },
         {
           "title": "科技爱好者周刊（第 394 期）：第二次 API 开放浪潮",
           "link": "http://www.ruanyifeng.com/blog/2026/04/weekly-issue-394.html",
-          "parsed_date": "2026-04-24T07:43:01+08:00"
+          "parsed_date": "2026-04-24T07:43:01+08:00",
+          "is_new": false
         },
         {
           "title": "科技爱好者周刊（第 393 期）：脑腐状态",
           "link": "http://www.ruanyifeng.com/blog/2026/04/weekly-issue-393.html",
-          "parsed_date": "2026-04-17T07:20:16+08:00"
+          "parsed_date": "2026-04-17T07:20:16+08:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "category": "AI Research",
+      "group": "vendor",
+      "latest_date": "2026-05-21T19:46:42+00:00",
+      "entries": [
+        {
+          "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+          "link": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+          "parsed_date": "2026-05-21T19:46:42+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Fast-tracking genetic leads to reverse cellular aging",
+          "link": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+          "parsed_date": "2026-05-18T18:21:39+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Simulate real-world places with Project Genie and Street View",
+          "link": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+          "parsed_date": "2026-05-17T19:53:18+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Introducing Gemini Omni",
+          "link": "https://deepmind.google/blog/introducing-gemini-omni/",
+          "parsed_date": "2026-05-17T19:50:57+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Introducing Google Antigravity 2.0",
+          "link": "https://deepmind.google/blog/introducing-google-antigravity-2-0/",
+          "parsed_date": "2026-05-17T19:43:45+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "The Pragmatic Engineer",
+      "category": "Engineering Management",
+      "group": "blog",
+      "latest_date": "2026-05-21T17:01:39+00:00",
+      "entries": [
+        {
+          "title": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
+          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
+          "parsed_date": "2026-05-21T17:01:39+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Why Rust is different, with Alice Ryhl",
+          "link": "https://newsletter.pragmaticengineer.com/p/why-rust-is-different-with-alice",
+          "parsed_date": "2026-05-20T16:22:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "AI’s impact on software engineers in 2026: key trends, Part 2",
+          "link": "https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2",
+          "parsed_date": "2026-05-19T16:43:10+00:00",
+          "is_new": false
+        },
+        {
+          "title": "The Pulse: Forward deployed engineering heats up again",
+          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-forward-deployed-engineering",
+          "parsed_date": "2026-05-14T16:09:57+00:00",
+          "is_new": false
+        },
+        {
+          "title": "TypeScript, C# and Turbo Pascal with Anders Hejlsberg",
+          "link": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
+          "parsed_date": "2026-05-13T17:06:59+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Xe Iaso",
+      "category": "AI & DevOps",
+      "group": "blog",
+      "latest_date": "2026-05-21T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "\"No way to prevent this\" say users of only package manager where this regularly happens",
+          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
+          "parsed_date": "2026-05-21T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45250/",
+          "parsed_date": "2026-05-21T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
+          "parsed_date": "2026-05-20T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Amazonbot is finally respecting robots.txt",
+          "link": "https://xeiaso.net/notes/2026/amazonbot-respecting-robots-txt/",
+          "parsed_date": "2026-05-14T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "I'm really frustrated that GitLab is doing layoffs",
+          "link": "https://xeiaso.net/notes/2026/gitlab-layoffs/",
+          "parsed_date": "2026-05-11T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Sean Goedecke",
+      "category": "Software Engineering",
+      "group": "blog",
+      "latest_date": "2026-05-21T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "The famous o3 \"GeoGuessr\" prompt did not work",
+          "link": "https://seangoedecke.com/the-o3-geoguessr-prompt-did-not-work/",
+          "parsed_date": "2026-05-21T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Prompts are technical debt too",
+          "link": "https://seangoedecke.com/prompts-are-technical-debt-too/",
+          "parsed_date": "2026-05-20T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "The just-say-no engineer was a ZIRP phenomenon",
+          "link": "https://seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon/",
+          "parsed_date": "2026-05-18T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "How I use LLMs as a staff engineer in 2026",
+          "link": "https://seangoedecke.com/how-i-use-llms-in-2026/",
+          "parsed_date": "2026-05-17T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
+          "link": "https://seangoedecke.com/steering-vectors/",
+          "parsed_date": "2026-05-16T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Aphyr (Kyle Kingsbury)",
+      "category": "Distributed Systems",
+      "group": "blog",
+      "latest_date": "2026-05-08T15:07:42-05:00",
+      "entries": [
+        {
+          "title": "The Kyle Kingsbury Podcast Podcast - Episode 2 - Dave Rossi",
+          "link": "https://aphyr.com/posts/423-the-kyle-kingsbury-podcast-podcast-episode-2-dave-rossi",
+          "parsed_date": "2026-05-08T15:07:42-05:00",
+          "is_new": false
+        },
+        {
+          "title": "The Kyle Kingsbury Podcast Podcast - Episode 1 - Alex Dripchak",
+          "link": "https://aphyr.com/posts/422-the-kyle-kingsbury-podcast-podcast-episode-1-alex-dripchak",
+          "parsed_date": "2026-05-07T18:17:13-05:00",
+          "is_new": false
+        },
+        {
+          "title": "JStack by Command String",
+          "link": "https://aphyr.com/posts/421-jstack-by-command-string",
+          "parsed_date": "2026-05-04T10:30:26-05:00",
+          "is_new": false
+        },
+        {
+          "title": "The Future of Everything is Lies, I Guess: Where Do We Go From Here?",
+          "link": "https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here",
+          "parsed_date": "2026-04-16T08:30:01-05:00",
+          "is_new": false
+        },
+        {
+          "title": "The Future of Everything is Lies, I Guess: New Jobs",
+          "link": "https://aphyr.com/posts/419-the-future-of-everything-is-lies-i-guess-new-jobs",
+          "parsed_date": "2026-04-15T08:19:45-05:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Philipp Schmid",
+      "category": "AI & MLOps",
+      "group": "blog",
+      "latest_date": "2026-05-05T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "How Agents Manage Other Agents: Four Subagents Patterns in 2026",
+          "link": "https://www.philschmid.de/subagent-patterns-2026",
+          "parsed_date": "2026-05-05T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "How to use Deep Research with the Gemini API",
+          "link": "https://www.philschmid.de/deep-research-update",
+          "parsed_date": "2026-04-29T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "How to correctly use MCP servers with your AI Agents",
+          "link": "https://www.philschmid.de/use-mcp-servers",
+          "parsed_date": "2026-04-27T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "8 Tips for Writing Agent Skills",
+          "link": "https://www.philschmid.de/agent-skills-tips",
+          "parsed_date": "2026-04-13T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "How to use Gemma 4 with the Gemini API and Google AI Studio",
+          "link": "https://www.philschmid.de/gemma-4-gemini-api",
+          "parsed_date": "2026-04-07T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Andrej Karpathy",
+      "category": "AI Research",
+      "group": "blog",
+      "latest_date": "2026-04-30T16:00:00+00:00",
+      "entries": [
+        {
+          "title": "Sequoia Ascent 2026 summary",
+          "link": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+          "parsed_date": "2026-04-30T16:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "2025 LLM Year in Review",
+          "link": "https://karpathy.bearblog.dev/year-in-review-2025/",
+          "parsed_date": "2025-12-19T18:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Chemical hygiene",
+          "link": "https://karpathy.bearblog.dev/chemical-hygiene/",
+          "parsed_date": "2025-12-18T18:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Auto-grading decade-old Hacker News discussions with hindsight",
+          "link": "https://karpathy.bearblog.dev/auto-grade-hn/",
+          "parsed_date": "2025-12-10T15:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "The space of minds",
+          "link": "https://karpathy.bearblog.dev/the-space-of-minds/",
+          "parsed_date": "2025-11-29T18:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "category": "Infrastructure",
+      "group": "blog",
+      "latest_date": "2026-04-28T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "Ghostty Is Leaving GitHub",
+          "link": "https://mitchellh.com/writing/ghostty-leaving-github",
+          "parsed_date": "2026-04-28T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Simdutf Can Now Be Used Without libc++ or libc++abi",
+          "link": "https://mitchellh.com/writing/simdutf-no-libcxx",
+          "parsed_date": "2026-04-15T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "The Building Block Economy",
+          "link": "https://mitchellh.com/writing/building-block-economy",
+          "parsed_date": "2026-04-07T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "My AI Adoption Journey",
+          "link": "https://mitchellh.com/writing/my-ai-adoption-journey",
+          "parsed_date": "2026-02-05T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Don't Trip[wire] Yourself: Testing Error Recovery in Zig",
+          "link": "https://mitchellh.com/writing/tripwire",
+          "parsed_date": "2026-01-21T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Herman (bearblog)",
+      "category": "Programming",
+      "group": "blog",
+      "latest_date": "2026-04-22T01:28:00+00:00",
+      "entries": [
+        {
+          "title": "The commodification of travel",
+          "link": "https://herman.bearblog.dev/the-commodification-of-travel/",
+          "parsed_date": "2026-04-22T01:28:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "On becoming a day person",
+          "link": "https://herman.bearblog.dev/becoming-a-day-person/",
+          "parsed_date": "2026-03-19T09:17:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Vulnerability as a Service",
+          "link": "https://herman.bearblog.dev/vulnerability-as-a-service/",
+          "parsed_date": "2026-02-24T11:43:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Pockets of Humanity",
+          "link": "https://herman.bearblog.dev/pockets-of-humanity/",
+          "parsed_date": "2026-02-23T13:25:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Things that work (for me)",
+          "link": "https://herman.bearblog.dev/things-that-work/",
+          "parsed_date": "2026-01-20T08:30:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "DHH (David Heinemeier Hansson)",
+      "category": "Software & Business",
+      "group": "blog",
+      "latest_date": "2026-04-21T10:56:33+00:00",
+      "entries": [
+        {
+          "title": "Celebrating computers at Omacon",
+          "link": "https://world.hey.com/dhh/celebrating-computers-at-omacon-163eb568",
+          "parsed_date": "2026-04-21T10:56:33+00:00",
+          "is_new": false
+        },
+        {
+          "title": "The malleable computer",
+          "link": "https://world.hey.com/dhh/the-malleable-computer-7c187a9b",
+          "parsed_date": "2026-04-15T15:06:27+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Panther Lake is the real deal",
+          "link": "https://world.hey.com/dhh/panther-lake-is-the-real-deal-4bd731f1",
+          "parsed_date": "2026-04-06T12:39:21+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Basecamp becomes agent accessible",
+          "link": "https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949",
+          "parsed_date": "2026-03-25T17:37:25+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Denmark desperately needs more inequality",
+          "link": "https://world.hey.com/dhh/denmark-desperately-needs-more-inequality-8e84a8d0",
+          "parsed_date": "2026-03-23T17:35:04+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Nikita Prokopov (tonsky)",
+      "category": "Software & Design",
+      "group": "blog",
+      "latest_date": "2026-03-03T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "Claude is an Electron App because we’ve lost native",
+          "link": "https://tonsky.me/blog/fall-of-native/",
+          "parsed_date": "2026-03-03T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Podcast: На Маке нет никаких шкафов @ Думаем дальше",
+          "link": "https://tonsky.me/talks/#2026-01-15",
+          "parsed_date": "2026-01-15T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "It’s hard to justify Tahoe icons",
+          "link": "https://tonsky.me/blog/tahoe-icons/",
+          "parsed_date": "2026-01-05T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Statistics made simple",
+          "link": "https://tonsky.me/blog/clj-simple-stats/",
+          "parsed_date": "2025-12-15T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "How to get hired in 2025",
+          "link": "https://tonsky.me/blog/hiring-ai/",
+          "parsed_date": "2025-11-26T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "The Shamblog",
+      "category": "Hardware & Maker",
+      "group": "blog",
+      "latest_date": "2026-02-20T03:04:23+00:00",
+      "entries": [
+        {
+          "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
+          "link": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
+          "parsed_date": "2026-02-20T03:04:23+00:00",
+          "is_new": false
+        },
+        {
+          "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
+          "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
+          "parsed_date": "2026-02-17T19:28:48+00:00",
+          "is_new": false
+        },
+        {
+          "title": "An AI Agent Published a Hit Piece on Me – More Things Have Happened",
+          "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/",
+          "parsed_date": "2026-02-14T00:24:47+00:00",
+          "is_new": false
+        },
+        {
+          "title": "An AI Agent Published a Hit Piece on Me",
+          "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+          "parsed_date": "2026-02-12T16:22:39+00:00",
+          "is_new": false
+        },
+        {
+          "title": "The Dog Park Sabbatical: Monthly Logs",
+          "link": "https://theshamblog.com/the-dog-park-sabbatical-monthly-logs/",
+          "parsed_date": "2025-02-07T18:53:51+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Dan Abramov (overreacted)",
+      "category": "Frontend & Programming",
+      "group": "blog",
+      "latest_date": "2026-01-18T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "A Social Filesystem",
+          "link": "https://overreacted.io/a-social-filesystem/",
+          "parsed_date": "2026-01-18T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Introducing RSC Explorer",
+          "link": "https://overreacted.io/introducing-rsc-explorer/",
+          "parsed_date": "2025-12-19T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Hire Me in Japan",
+          "link": "https://overreacted.io/hire-me-in-japan/",
+          "parsed_date": "2025-11-11T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "How to Fix Any Bug",
+          "link": "https://overreacted.io/how-to-fix-any-bug/",
+          "parsed_date": "2025-10-21T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Where It's at://",
+          "link": "https://overreacted.io/where-its-at/",
+          "parsed_date": "2025-10-02T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Ryan Dahl (tinyclouds)",
+      "category": "Programming",
+      "group": "blog",
+      "latest_date": "2025-10-10T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "Humans Are Just Stochastic Parrots",
+          "link": "https://tinyclouds/humans/",
+          "parsed_date": "2025-10-10T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "We're Still Underestimating What AI Really Means",
+          "link": "https://tinyclouds/underestimating-ai/",
+          "parsed_date": "2025-06-14T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Dear Oracle, Please Release the JavaScript Trademark",
+          "link": "https://tinyclouds/trademark/",
+          "parsed_date": "2022-09-03T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "City Worker Exchange Program",
+          "link": "https://tinyclouds/city-worker-exchange-program/",
+          "parsed_date": "2022-08-04T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "JavaScript Containers",
+          "link": "https://tinyclouds/javascript-containers/",
+          "parsed_date": "2022-05-04T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Boris Cherny",
+      "category": "Programming",
+      "group": "blog",
+      "latest_date": "2024-06-19T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "NPM and NodeJS should do more to make ES Modules easy to use",
+          "link": "/javascript,/typescript/2024/06/19/ES-Modules-Are-A-Mess.html",
+          "parsed_date": "2024-06-19T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Learning to work (very) remotely",
+          "link": "/tech/2023/12/10/Working-Remotely.html",
+          "parsed_date": "2023-12-10T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Time and Timing",
+          "link": "/2022/09/07/time-and-timing.html",
+          "parsed_date": "2022-09-07T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Dinosaur Food: 100 million year old foods we still eat today",
+          "link": "/food/2022/01/17/Dinosaur-food.html",
+          "parsed_date": "2022-01-17T00:00:00+00:00",
+          "is_new": false
+        },
+        {
+          "title": "Data Management on the Web Still Sucks",
+          "link": "/javascript/2021/03/13/Data-Fetching.html",
+          "parsed_date": "2021-03-13T00:00:00+00:00",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "name": "Paul Graham",
+      "category": "Startups & Essays",
+      "group": "blog",
+      "latest_date": "",
+      "entries": [
+        {
+          "title": "Superlinear Returns",
+          "link": "http://www.paulgraham.com/superlinear.html",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "How to Do Great Work",
+          "link": "http://www.paulgraham.com/greatwork.html",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "How to Get New Ideas",
+          "link": "http://www.paulgraham.com/getideas.html",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "The Need to Read",
+          "link": "http://www.paulgraham.com/read.html",
+          "parsed_date": "",
+          "is_new": false
+        },
+        {
+          "title": "What You (Want to)* Want",
+          "link": "http://www.paulgraham.com/want.html",
+          "parsed_date": "",
+          "is_new": false
         }
       ]
     }

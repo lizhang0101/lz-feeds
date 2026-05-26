@@ -128,6 +128,26 @@ tr:hover td { background: #fafafa; }
 
 .index-list li:last-child { border-bottom: none; }
 
+/* ── Reader ────────────────────────────────────── */
+.section-heading {
+  margin-top: 32px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.badge-new {
+  display: inline-block;
+  background: #e53935;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 600px) {
   .tabs a { padding: 12px 10px; font-size: 12px; }

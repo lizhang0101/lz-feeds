@@ -323,3 +323,78 @@ tr:hover td { background: #fafafa; }
   table { font-size: 12px; }
   th, td { padding: 6px 8px; }
 }
+
+/* ── Reader: mark as read ──────────────────────── */
+.reader-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 16px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.reader-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.reader-toggle input { cursor: pointer; }
+
+.reader-read-count { font-variant-numeric: tabular-nums; }
+
+.mark-read-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 1px 6px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.mark-read-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: #fff;
+}
+
+.mark-all-btn {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Read entry: de-emphasized. Hidden by default; visible when
+ * .reader-page has .show-read. Transition for the fade. */
+.reader-page li {
+  transition: opacity 0.2s ease;
+}
+
+.reader-page li.entry-read {
+  opacity: 0.45;
+}
+
+.reader-page li.entry-read a {
+  text-decoration: line-through;
+  text-decoration-color: var(--muted);
+}
+
+.reader-page:not(.show-read) li.entry-read {
+  display: none;
+}
+
+.reader-page.show-read li.entry-read .mark-read-btn {
+  color: var(--primary);
+  border-color: var(--primary);
+}

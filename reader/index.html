@@ -3,11 +3,21 @@ layout: default
 title: RSS 阅读
 ---
 
+<div class="reader-page">
+
 <h1>📡 RSS 阅读</h1>
 
 {% if site.data.latest_entries %}
 {% assign feed = site.data.latest_entries %}
 <p class="meta">最后更新: {{ feed.fetched_at | slice: 0, 16 }} UTC</p>
+
+<div class="reader-controls">
+  <label class="reader-toggle">
+    <input type="checkbox" id="show-read-toggle">
+    <span>显示已读</span>
+  </label>
+  <span class="reader-read-count" id="reader-read-count" aria-live="polite"></span>
+</div>
 
 {% assign vendors = feed.sources | where: "group", "vendor" %}
 {% assign blogs = feed.sources | where_exp: "s", "s.group != 'vendor'" %}
@@ -78,3 +88,6 @@ title: RSS 阅读
 {% else %}
 <p class="meta">暂无数据，待每日摘要任务运行后自动更新。</p>
 {% endif %}
+
+</div>{%- comment -%} /.reader-page {%- endcomment -%}
+<script src="{{ '/assets/js/reader.js' | relative_url }}" defer></script>

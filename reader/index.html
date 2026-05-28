@@ -9,7 +9,7 @@ title: RSS 阅读
 
 {% if site.data.latest_entries %}
 {% assign feed = site.data.latest_entries %}
-<p class="meta">最后更新: {{ feed.fetched_at | slice: 0, 16 }} UTC</p>
+<p class="meta">最后更新: {{ feed.fetched_at_beijing | default: feed.fetched_at | slice: 0, 16 }} 北京时间</p>
 
 <div class="reader-controls">
   <label class="reader-toggle">

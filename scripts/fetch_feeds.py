@@ -300,7 +300,12 @@ def _assemble_reader_output(
     stale_cutoff = (now - timedelta(days=READER_STALE_DAYS)).isoformat()
     for src in reader_sources:
         src["stale"] = not src["latest_date"] or src["latest_date"] < stale_cutoff
-    return {"fetched_at": now.isoformat(), "sources": reader_sources}
+    beijing = now.astimezone(timezone(timedelta(hours=8)))
+    return {
+        "fetched_at": now.isoformat(),
+        "fetched_at_beijing": beijing.strftime("%Y-%m-%d %H:%M"),
+        "sources": reader_sources,
+    }
 
 
 # ---------------------------------------------------------------------------

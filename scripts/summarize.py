@@ -245,66 +245,6 @@ def render(
     return "\n".join(L)
 
 
-READER_SYSTEM_PROMPT = """\
-You are summarizing RSS article excerpts for a personal reading page. For each entry, write a 1-2 sentence summary in Chinese that captures the main point concisely. Be specific — mention key facts, names, or findings.
-
-Return a JSON array. Each object must have:
-  "link": copy from input exactly
-  "ai_summary": 1-2 sentences in Chinese\
-"""
-
-
-def enrich_reader(client: genai.Client, reader_path: Path, model: str):
-    """Generate AI summaries for reader entries and write back to the JSON file."""
-    with open(reader_path, encoding="utf-8") as f:
-        data = json.load(f)
-
-    to_summarize = []
-    for src in data.get("sources", []):
-        for entry in src.get("entries", []):
-            if entry.get("snippet") and not entry.get("ai_summary"):
-                to_summarize.append({
-                    "link": entry["link"],
-                    "title": entry.get("title", ""),
-                    "snippet": entry["snippet"],
-                })
-
-    if not to_summarize:
-        print("No entries with snippets to summarize")
-        return
-
-    print(f"Summarizing {len(to_summarize)} reader entries with {model}...")
-    response = client.models.generate_content(
-        model=model,
-        contents=f"Summarize these {len(to_summarize)} entries:\n\n{json.dumps(to_summarize, ensure_ascii=False)}",
-        config=types.GenerateContentConfig(
-            system_instruction=READER_SYSTEM_PROMPT,
-            max_output_tokens=16384,
-            response_mime_type="application/json",
-        ),
-    )
-
-    try:
-        results = json.loads(response.text)
-        if isinstance(results, dict):
-            results = list(results.values())
-        summaries = {item["link"]: item.get("ai_summary", "") for item in results if "link" in item}
-    except (json.JSONDecodeError, KeyError) as exc:
-        print(f"Warning: JSON parse error: {exc}", file=sys.stderr)
-        return
-
-    updated = 0
-    for src in data["sources"]:
-        for entry in src["entries"]:
-            if entry["link"] in summaries:
-                entry["ai_summary"] = summaries[entry["link"]]
-                updated += 1
-
-    with open(reader_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"  Updated {updated} entries with AI summaries → {reader_path}")
-
-
 def main():
     parser = argparse.ArgumentParser(description="Summarize feed entries into daily digest")
     parser.add_argument("--input", type=Path, default=Path("/tmp/feed_entries.json"))
@@ -318,16 +258,7 @@ def main():
                         help="Directory with past digests for dedup (default: beside output)")
     parser.add_argument("--force", action="store_true",
                         help="Overwrite today's digest if it already exists")
-    parser.add_argument("--enrich-reader", type=Path, default=None, metavar="PATH",
-                        help="Enrich reader JSON at PATH with AI summaries (skips digest generation)")
     args = parser.parse_args()
-
-    if args.enrich_reader:
-        if not args.enrich_reader.exists():
-            sys.exit(f"Error: {args.enrich_reader} not found")
-        client = genai.Client(api_key=get_api_key())
-        enrich_reader(client, args.enrich_reader, args.model)
-        return
 
     if not args.input.exists():
         sys.exit(f"Error: {args.input} not found")

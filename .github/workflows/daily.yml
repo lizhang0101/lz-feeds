@@ -35,7 +35,7 @@ jobs:
       - name: Enrich reader with AI summaries
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/summarize.py --enrich-reader _data/latest_entries.json
+        run: python scripts/enrich_reader.py --reader _data/latest_entries.json
 
       - name: Commit & push digest
         run: |

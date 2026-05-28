@@ -2,33 +2,35 @@
 """Fetch hot lists and write to hotlist/<platform>.md."""
 
 import json
-import subprocess
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+# Make ``lib`` importable when run as ``python scripts/fetch_hotlist.py``.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from lib.http import fetch_url  # noqa: E402
+
+
 BEIJING_TZ = timezone(timedelta(hours=8))
+
+BROWSER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    ),
+    "Referer": "https://www.zhihu.com/",
+}
 
 SOURCES = [
     {
         "platform": "zhihu",
         "name": "知乎热榜",
         "url": "https://www.zhihu.com/api/v3/feed/topstory/hot-list-web?limit=20&desktop=true",
+        "headers": BROWSER_HEADERS,
     },
 ]
-
-
-def fetch_url(url: str) -> str | None:
-    result = subprocess.run(
-        [
-            "curl", "-sL", "--max-time", "15",
-            "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "-H", "Referer: https://www.zhihu.com/",
-            url,
-        ],
-        capture_output=True, text=True, timeout=20,
-    )
-    return result.stdout if result.returncode == 0 else None
 
 
 def parse_zhihu(raw: str) -> list[dict]:
@@ -91,7 +93,7 @@ def main():
     for src in SOURCES:
         platform = src["platform"]
         print(f"Fetching {src['name']}...")
-        raw = fetch_url(src["url"])
+        raw = fetch_url(src["url"], headers=src.get("headers"))
         if not raw:
             print(f"  FAILED to fetch", file=sys.stderr)
             failed += 1

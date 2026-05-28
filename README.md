@@ -18,7 +18,9 @@ lz-feeds/
 ├── scripts/
 │   ├── fetch_feeds.py        # RSS 抓取；--reader-out 输出按源分组的阅读器 JSON
 │   ├── fetch_hotlist.py      # 热榜抓取
-│   └── summarize.py          # Gemini 摘要；--enrich-reader 为阅读器条目生成 AI 摘要
+│   ├── summarize.py          # Gemini 摘要，生成 _digests/YYYY-MM-DD.md
+│   ├── enrich_reader.py      # 为阅读器条目生成 AI 摘要（重构后从 summarize.py 拆出）
+│   └── lib/                  # 共享工具：http、parsing、models、feed_parser
 ├── _digests/                 # Jekyll collection：每日摘要
 │   └── YYYY-MM-DD.md
 ├── _hotlist/                 # Jekyll collection：热榜快照
@@ -37,11 +39,18 @@ lz-feeds/
 ├── _config.yml               # Jekyll 配置
 ├── Gemfile                   # Ruby 依赖
 ├── requirements.txt          # Python 依赖
+├── docs/
+│   ├── architecture.md       # 架构与重构契约
+│   ├── sources.md            # 订阅源管理指南
+│   └── operations.md         # 流水线运行与本地开发
 └── .github/workflows/
     ├── daily.yml             # 每日摘要 + 阅读器更新（UTC 00:17）
     ├── hotlist.yml           # 热榜更新（每 2 小时）
     └── pages.yml             # GitHub Pages 部署
 ```
+
+更多细节见 [`docs/sources.md`](docs/sources.md)（订阅源）和
+[`docs/operations.md`](docs/operations.md)（流水线、调试、本地开发）。
 
 ## 本地运行
 
@@ -52,12 +61,11 @@ pip install -r requirements.txt
 python scripts/fetch_feeds.py --hours 72 --web-cache data/web_seen.json \
   --reader-out _data/latest_entries.json
 
-# 为阅读器条目生成 AI 摘要（已有摘要的条目自动跳过）
-GEMINI_API_KEY=your_key python scripts/summarize.py \
-  --enrich-reader _data/latest_entries.json
-
 # 生成每日摘要
 GEMINI_API_KEY=your_key python scripts/summarize.py
+
+# 为阅读器条目生成 AI 摘要（已有摘要的条目自动跳过）
+GEMINI_API_KEY=your_key python scripts/enrich_reader.py _data/latest_entries.json
 
 # 热榜
 python scripts/fetch_hotlist.py

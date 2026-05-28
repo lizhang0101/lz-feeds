@@ -1,6 +1,252 @@
 {
-  "fetched_at": "2026-05-28T04:39:21.846463+00:00",
+  "fetched_at": "2026-05-28T19:46:51.026996+00:00",
+  "fetched_at_beijing": "2026-05-29 03:46",
   "sources": [
+    {
+      "name": "The Pragmatic Engineer",
+      "category": "Engineering Management",
+      "group": "blog",
+      "latest_date": "2026-05-28T16:57:38+00:00",
+      "entries": [
+        {
+          "title": "The Pulse: a trend of trying to cut back on AI spend within eng departments?",
+          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut",
+          "parsed_date": "2026-05-28T16:57:38+00:00",
+          "is_new": true,
+          "snippet": "The Pulse is a series covering events, insights, and trends within Big Tech and startups. Notice an interesting event or trend? Hit reply and share it with me.",
+          "ai_summary": "工程部门内部似乎正在出现削减AI开支的趋势，这是一系列涵盖大型科技公司和初创企业事件、见解和趋势的“The Pulse”系列报道之一。"
+        },
+        {
+          "title": "Building OpenCode with Dax Raad",
+          "link": "https://newsletter.pragmaticengineer.com/p/opencode",
+          "parsed_date": "2026-05-27T16:07:30+00:00",
+          "is_new": true,
+          "snippet": "Stream the latest episode Listen and watch now on YouTube , Spotify , and Apple . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.",
+          "ai_summary": "本期节目与Dax Raad讨论了构建OpenCode，听众可在YouTube、Spotify和Apple上收听观看。"
+        },
+        {
+          "title": "State of the software engineering job market in 2026",
+          "link": "https://newsletter.pragmaticengineer.com/p/state-of-the-job-market-2026",
+          "parsed_date": "2026-05-26T18:10:59+00:00",
+          "is_new": true,
+          "snippet": "Last year, I described the tech jobs market as “weird”, based on reports from both job seekers and hiring managers. In this deepdive, we dig into what – if anything – has changed in 2026.",
+          "ai_summary": "本文深入探讨了2026年软件工程就业市场的现状，分析了与去年“奇怪”市场相比发生的变化。"
+        },
+        {
+          "title": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
+          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
+          "parsed_date": "2026-05-21T17:01:39+00:00",
+          "is_new": false,
+          "snippet": "The Pulse is a series covering events, insights, and trends within Big Tech and startups. Notice an interesting event or trend? Hit reply and share it with me.",
+          "ai_summary": "Antigravity 2.0推出了一款新的集成开发环境（IDE），但其名称中移除了“IDE”一词，这是“The Pulse”系列报道中的一个趋势。"
+        },
+        {
+          "title": "Why Rust is different, with Alice Ryhl",
+          "link": "https://newsletter.pragmaticengineer.com/p/why-rust-is-different-with-alice",
+          "parsed_date": "2026-05-20T16:22:00+00:00",
+          "is_new": false,
+          "snippet": "Stream the latest episode Listen and watch now on YouTube , Spotify , and Apple . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.",
+          "ai_summary": "本期节目邀请Alice Ryhl探讨Rust编程语言的独特之处，听众可在YouTube、Spotify和Apple上收听观看。"
+        }
+      ],
+      "stale": false
+    },
+    {
+      "name": "Daring Fireball",
+      "category": "Apple & Tech",
+      "group": "blog",
+      "latest_date": "2026-05-28T16:51:57+00:00",
+      "entries": [
+        {
+          "title": "Footage From the LA-Houston MLS Match That Apple Shot Using iPhone 17 Pro Cameras",
+          "link": "https://tv.apple.com/us/sporting-event/mls-wrap-up/umc.cse.3a198p24hrehwhonbhgx2zvhv",
+          "parsed_date": "2026-05-28T16:51:57+00:00",
+          "is_new": true,
+          "snippet": "I’m not sure if this link works outside the US, but Apple TV’s MLS Wrap-Up show has highlight from the LA Galaxy vs. Houston Dynamo FC match they shot exclusively using iPhone 17 Pros . Follow the link, choose “English”, and then choose “Full Replay” — then skip to 40m:15s or so.",
+          "ai_summary": "Apple TV的MLS Wrap-Up节目展示了使用iPhone 17 Pro拍摄的洛杉矶银河队对休斯顿迪纳摩队的MLS比赛集锦。"
+        },
+        {
+          "title": "Researchers Publish Method to Surveil Web Page Visitors by Analyzing Their SSD Activity",
+          "link": "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
+          "parsed_date": "2026-05-28T14:11:03+00:00",
+          "is_new": true,
+          "snippet": "Dan Goodin, reporting for Ars Technica: The technique, laid out in a research paper , exploits a side channel , a form of leak resulting from physical manifestations such as electromagnetic emanations, data caches, or the time required to complete a task.",
+          "ai_summary": "研究人员公布了一种通过分析访客SSD活动来监视网页访客的新方法，该技术利用了侧信道漏洞。"
+        },
+        {
+          "title": "[Sponsor] exe.dev",
+          "link": "https://exe.dev/?df",
+          "parsed_date": "2026-05-25T23:57:24+00:00",
+          "is_new": true,
+          "snippet": "A cloud for the agent era. Use exe.dev to get a pool of VMs with SSH, root, and web auth by default. Secrets injected at the network edge stay out of the LLM’s hands.",
+          "ai_summary": "exe.dev是一个为代理时代设计的云平台，提供带SSH、root和web认证的虚拟机池，并确保秘密在LLM之外注入。"
+        },
+        {
+          "title": "Awarding Jay Haynes His Being Right Points for Predicting Apple Hitting $3 Trillion in Market Cap",
+          "link": "https://daringfireball.net/linked/2014/01/29/haynes-aapl",
+          "parsed_date": "2026-05-25T20:32:29+00:00",
+          "is_new": true,
+          "snippet": "Here’s a fun one. Back in 2014 I linked to a post by Jay Haynes in which he projected that with a very reasonable level of annual growth, Apple ought to reach a $3 trillion market cap within 10 years. At the time of his writing, Apple’s market cap was “just” $450 billion, and no company had hit the $1 trillion market.",
+          "ai_summary": "Jay Haynes在2014年准确预测苹果将在十年内达到3万亿美元市值，当时苹果市值仅4500亿美元，而万亿市值对任何公司来说都是前所未有的。"
+        },
+        {
+          "title": "Thieves Are Texting Threats to Victims of iPhone Theft in London",
+          "link": "https://www.nytimes.com/2026/05/23/world/europe/phone-theft-threats-london.html?unlocked_article_code=1.lFA.OUt7.VJ_FoDpINr0L",
+          "parsed_date": "2026-05-25T19:23:32+00:00",
+          "is_new": false,
+          "snippet": "Lizzie Dearden and Amelia Nierenberg, reporting for The New York Times (gift link): The crime Alex Pikula reported to the police was one they had heard before: An e-bike rider had zoomed past as Mr. Pikula left a theater in London’s West End, ripping his phone from his hands. It was frustrating, Mr.",
+          "ai_summary": "《纽约时报》报道，伦敦的iPhone盗窃受害者正在收到小偷发来的威胁短信，要求他们提供设备密码以避免私人信息被公开。"
+        }
+      ],
+      "stale": false
+    },
+    {
+      "name": "Jeff Geerling",
+      "category": "Open Source",
+      "group": "blog",
+      "latest_date": "2026-05-28T09:00:00-05:00",
+      "entries": [
+        {
+          "title": "Tuning in FM Radio on a 3D Printer Heatbed",
+          "link": "https://www.jeffgeerling.com/blog/2026/tuning-in-fm-radio-on-a-3d-printer-heatbed/",
+          "parsed_date": "2026-05-28T09:00:00-05:00",
+          "is_new": true,
+          "snippet": "Pooch from Repkord dropped by my studio while he was in St. Louis, and asked a simple question: Can a 3D printer's heatbed act as an antenna? A fair question, as many an antenna is embedded in a PCB these days...",
+          "ai_summary": "Jeff Geerling与Repkord的Pooch合作，实验探讨了3D打印机的加热床是否能够充当天线来接收FM广播信号。"
+        },
+        {
+          "title": "I patched iozone for better disk benchmarks on modern macOS",
+          "link": "https://www.jeffgeerling.com/blog/2026/i-patched-iozone-for-better-disk-benchmarks-on-modern-macos/",
+          "parsed_date": "2026-05-26T20:32:00-05:00",
+          "is_new": true,
+          "snippet": "A decade ago, I settled on iozone for disk benchmarking on all my systems.",
+          "ai_summary": "作者为iozone打补丁，以在现代macOS系统上获得更好的磁盘基准测试性能，此前他已使用iozone进行磁盘基准测试十年。"
+        },
+        {
+          "title": "News about Raspberry Pi 6 and Microcontroller Development",
+          "link": "https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/",
+          "parsed_date": "2026-05-22T15:15:00-05:00",
+          "is_new": false,
+          "snippet": "On Thursday, three of the lead Raspberry Pi engineers hosted an AMA on the r/engineering subreddit . Raspberry Pi 6 One of the most interesting tidbits was on the Pi 6.",
+          "ai_summary": "树莓派的三位主要工程师在Reddit AMA中透露了有关树莓派6和微控制器开发的新消息。"
+        },
+        {
+          "title": "Wi-Wi Is Wireless Time Sync at 1 nanosecond",
+          "link": "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
+          "parsed_date": "2026-05-19T09:00:00-05:00",
+          "is_new": false,
+          "snippet": "At NAB, I found a demo of Wi-Wi STAMP , a wireless time synchronization protocol that came out of Japan's NICT . Wi-Wi stands for Wireless 2Way interferometry, and it uses the 900 MHz band for picosecond-level time sync, and mm-level distance accuracy, in a tiny box, currently the size of a smartphone.",
+          "ai_summary": "Wi-Wi STAMP是一种来自日本NICT的无线时间同步协议，能在900 MHz频段实现皮秒级时间同步和毫米级距离精度。"
+        },
+        {
+          "title": "Bambu Lab is abusing the open source social contract",
+          "link": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/",
+          "parsed_date": "2026-05-12T09:00:00-05:00",
+          "is_new": false,
+          "snippet": "Last year I said I'd probably never recommend another Bambu Lab printer again .",
+          "ai_summary": "作者指出Bambu Lab正在滥用开源社会契约，并表示自去年起他可能不再推荐任何Bambu Lab的打印机。"
+        }
+      ],
+      "stale": false
+    },
+    {
+      "name": "Xe Iaso",
+      "category": "AI & DevOps",
+      "group": "blog",
+      "latest_date": "2026-05-28T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "Dancing mad with sandboxing",
+          "link": "https://xeiaso.net/blog/2026/dancing-mad-sandboxing/",
+          "parsed_date": "2026-05-28T00:00:00+00:00",
+          "is_new": true,
+          "snippet": "Cadey What is an operating system, really? Aoi I mean, isn't it obvious? It's something like FreeBSD or Fedora that has a kernel, userspace, graphics stack, core set of programs, and everything else you need to be able to use a computer.",
+          "ai_summary": "文章探讨了操作系统的本质，并深入分析了其内核、用户空间、图形堆栈和核心程序的组成。"
+        },
+        {
+          "title": "\"No way to prevent this\" say users of only package manager where this regularly happens",
+          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
+          "parsed_date": "2026-05-21T00:00:00+00:00",
+          "is_new": false,
+          "snippet": "In the hours following the news that art-template fell victim to a supply chain attack via NPM, developers and systems administrators scrambled ensure all of their projects were unaffected from a supply chain attack where attackers have controlled the repository since 2025 and are using it to load unauthorized JavaScri",
+          "ai_summary": "art-template项目通过NPM遭受了供应链攻击，攻击者自2025年起一直控制该仓库并用于加载未经授权的JavaScript。"
+        },
+        {
+          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45250/",
+          "parsed_date": "2026-05-21T00:00:00+00:00",
+          "is_new": false,
+          "snippet": "In the hours following the release of CVE-2026-45250 for the project FreeBSD , site reliability workers and systems administrators scrambled to desperately rebuild and patch all their systems to fix a kernel stack overflow when validating permissions of the setcred(2) system call, allowing arbitrary code execution in t",
+          "ai_summary": "FreeBSD项目发布CVE-2026-45250，涉及setcred(2)系统调用权限验证中的内核堆栈溢出漏洞，允许任意代码执行。"
+        },
+        {
+          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
+          "parsed_date": "2026-05-20T00:00:00+00:00",
+          "is_new": false,
+          "snippet": "In the hours following the release of CVE-2026-45584 for the project Microsoft Windows , site reliability workers and systems administrators scrambled to desperately rebuild and patch all their systems to fix a memory safety vulnerability resulting in arbitrary code execution inside the virus scanner Windows Defender.",
+          "ai_summary": "微软Windows项目发布CVE-2026-45584，涉及Windows Defender病毒扫描器中的内存安全漏洞，允许任意代码执行。"
+        },
+        {
+          "title": "Amazonbot is finally respecting robots.txt",
+          "link": "https://xeiaso.net/notes/2026/amazonbot-respecting-robots-txt/",
+          "parsed_date": "2026-05-14T00:00:00+00:00",
+          "is_new": false,
+          "snippet": "I just got an email from Amazon saying they're finally going to respect robots.txt . Here's the verbatim email I got: We are writing to inform you that starting Monday, June 15, 2026, crawl preferences for Amazonbot will be managed solely through the industry-standard directives.",
+          "ai_summary": "亚马逊宣布，从2026年6月15日起，Amazonbot将完全遵守robots.txt的行业标准指令，以管理抓取偏好。"
+        }
+      ],
+      "stale": false
+    },
+    {
+      "name": "OpenAI Blog",
+      "category": "AI Research",
+      "group": "vendor",
+      "latest_date": "2026-05-28T00:00:00+00:00",
+      "entries": [
+        {
+          "title": "OpenAI’s Frontier Governance Framework",
+          "link": "https://openai.com/index/openai-frontier-governance-framework",
+          "parsed_date": "2026-05-28T00:00:00+00:00",
+          "is_new": true,
+          "snippet": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+          "ai_summary": "OpenAI发布其“前沿治理框架”，详细说明了其AI安全、保障和风险实践如何与欧盟和加利福尼亚州的新兴法规保持一致。"
+        },
+        {
+          "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+          "link": "https://openai.com/index/cisco",
+          "parsed_date": "2026-05-27T11:00:00+00:00",
+          "is_new": true,
+          "snippet": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+          "ai_summary": "思科与OpenAI合作，通过Codex重塑企业工程，助力思科扩展AI原生开发、加速AI防御工作并自动化缺陷修复。"
+        },
+        {
+          "title": "Building self-improving tax agents with Codex",
+          "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+          "parsed_date": "2026-05-27T07:00:00+00:00",
+          "is_new": true,
+          "snippet": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+          "ai_summary": "OpenAI、Thrive和Crete合作使用Codex构建了一个自我改进的税务代理，实现了报税自动化、提高了准确性并加速了工作流程。"
+        },
+        {
+          "title": "Warp’s big bet on building open source with GPT-5.5",
+          "link": "https://openai.com/index/warp",
+          "parsed_date": "2026-05-27T00:00:00+00:00",
+          "is_new": true,
+          "snippet": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
+          "ai_summary": "Warp利用GPT-5.5和OpenAI模型，协调本地、云端和开源开发工作流中的编码代理，致力于开源软件开发。"
+        },
+        {
+          "title": "Election information and safeguards in 2026",
+          "link": "https://openai.com/index/election-safeguards-2026",
+          "parsed_date": "2026-05-27T00:00:00+00:00",
+          "is_new": true,
+          "snippet": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+          "ai_summary": "在全球选举临近之际，OpenAI正在采取措施，帮助人们获取信息、支持网络防御者并提高AI透明度。"
+        }
+      ],
+      "stale": false
+    },
     {
       "name": "Simon Willison",
       "category": "AI",
@@ -13,7 +259,7 @@
           "parsed_date": "2026-05-27T23:44:37+00:00",
           "is_new": true,
           "snippet": "sqlite AGENTS.md SQLite gained an AGENTS.md file five days ago - but it's not intended for their own development, it's presumably aimed at people who are pointing agents at the SQLite codebase.",
-          "ai_summary": "SQLite 在五天前新增了 AGENTS.md 文件，但它并非用于内部开发，而是旨在指导外部代理如何与 SQLite 代码库交互。"
+          "ai_summary": "SQLite最近新增了一个AGENTS.md文件，但其目的并非针对内部开发，而是为了指导那些将AI代理指向SQLite代码库的用户。"
         },
         {
           "title": "I think Anthropic and OpenAI have found product-market fit",
@@ -21,7 +267,7 @@
           "parsed_date": "2026-05-27T16:38:35+00:00",
           "is_new": true,
           "snippet": "Anthropic are strongly rumored to be about to have their first profitable quarter. Stories are circulating of companies surprised at how expensive their LLM bills are becoming from usage by their staff. I think this is because OpenAI and Anthropic have both found product-market fit.",
-          "ai_summary": "Anthropic 和 OpenAI 据传即将实现首次盈利季度，这表明两家公司都已找到了产品市场契合点，因为企业因员工使用大型语言模型而产生的费用激增。"
+          "ai_summary": "业界传闻Anthropic即将首次实现盈利，并且公司因员工使用LLM而产生的巨额费用感到惊讶，这表明Anthropic和OpenAI已找到产品市场契合点。"
         },
         {
           "title": "Quoting Kyle Ferrana",
@@ -29,7 +275,7 @@
           "parsed_date": "2026-05-27T06:41:43+00:00",
           "is_new": true,
           "snippet": "PICARD: Data, shields up DATA: Brilliant! Shields can reduce damage we sustain. Not immunity.",
-          "ai_summary": "引用凯尔·费拉纳（Kyle Ferrana）的话，他以“数据，护盾升起！很好！护盾能减少我们所受的伤害，但不能免疫。”来比喻。"
+          "ai_summary": "文章引用了Kyle Ferrana关于数据护盾的观点，指出护盾能减少伤害而非提供免疫，暗示了防御的局限性。"
         },
         {
           "title": "The pressure",
@@ -37,7 +283,7 @@
           "parsed_date": "2026-05-26T23:48:45+00:00",
           "is_new": true,
           "snippet": "The pressure Daniel Stenberg on the unprecedented level of pressure the curl team are facing right now thanks to the deluge of (credible) AI-assisted security issues being reported.",
-          "ai_summary": "Daniel Stenberg 谈到 curl 团队正面临前所未有的压力，这归因于大量（可信的）AI 辅助安全问题报告。"
+          "ai_summary": "由于大量（可信的）AI辅助安全问题报告，curl团队目前正面临前所未有的巨大压力。"
         },
         {
           "title": "Microsoft Copilot Cowork Exfiltrates Files",
@@ -45,56 +291,7 @@
           "parsed_date": "2026-05-26T15:36:48+00:00",
           "is_new": true,
           "snippet": "Microsoft Copilot Cowork Exfiltrates Files The biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data.",
-          "ai_summary": "Microsoft Copilot Cowork 泄露文件，凸显了设计代理系统时最大的挑战仍然是防止它们帮助攻击者窃取数据。"
-        }
-      ],
-      "stale": false
-    },
-    {
-      "name": "The Pragmatic Engineer",
-      "category": "Engineering Management",
-      "group": "blog",
-      "latest_date": "2026-05-27T16:07:30+00:00",
-      "entries": [
-        {
-          "title": "Building OpenCode with Dax Raad",
-          "link": "https://newsletter.pragmaticengineer.com/p/opencode",
-          "parsed_date": "2026-05-27T16:07:30+00:00",
-          "is_new": true,
-          "snippet": "Stream the latest episode Listen and watch now on YouTube , Spotify , and Apple . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.",
-          "ai_summary": "最新一集《Building OpenCode with Dax Raad》现已在 YouTube、Spotify 和 Apple 上线，提供视频和音频收听，并附有文字稿和时间戳。"
-        },
-        {
-          "title": "State of the software engineering job market in 2026",
-          "link": "https://newsletter.pragmaticengineer.com/p/state-of-the-job-market-2026",
-          "parsed_date": "2026-05-26T18:10:59+00:00",
-          "is_new": true,
-          "snippet": "Last year, I described the tech jobs market as “weird”, based on reports from both job seekers and hiring managers. In this deepdive, we dig into what – if anything – has changed in 2026.",
-          "ai_summary": "本文深入探讨了 2026 年软件工程就业市场与去年“奇怪”状态相比有何变化，结合了求职者和招聘经理的反馈。"
-        },
-        {
-          "title": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
-          "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
-          "parsed_date": "2026-05-21T17:01:39+00:00",
-          "is_new": false,
-          "snippet": "The Pulse is a series covering events, insights, and trends within Big Tech and startups. Notice an interesting event or trend? Hit reply and share it with me.",
-          "ai_summary": "《The Pulse》系列报道了大型科技公司和初创企业的事件、见解和趋势，本期关注 Antigravity 2.0 如何在其新的 IDE 中移除了“IDE”一词。"
-        },
-        {
-          "title": "Why Rust is different, with Alice Ryhl",
-          "link": "https://newsletter.pragmaticengineer.com/p/why-rust-is-different-with-alice",
-          "parsed_date": "2026-05-20T16:22:00+00:00",
-          "is_new": false,
-          "snippet": "Stream the latest episode Listen and watch now on YouTube , Spotify , and Apple . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.",
-          "ai_summary": "最新一集《Why Rust is different, with Alice Ryhl》现已在 YouTube、Spotify 和 Apple 上线，提供视频和音频收听，并附有文字稿和时间戳。"
-        },
-        {
-          "title": "AI’s impact on software engineers in 2026: key trends, Part 2",
-          "link": "https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2",
-          "parsed_date": "2026-05-19T16:43:10+00:00",
-          "is_new": false,
-          "snippet": "Earlier this year, we asked The Pragmatic Engineer subscribers about the AI tools you use, how you use them, and, crucially, what you think of them. We received more than 900 responses, and with this article we conclude our analysis of that data, covering: Tradeoffs of AI tooling.",
-          "ai_summary": "本文作为《AI 对 2026 年软件工程师的影响》系列文章的第二部分，分析了 900 多份订阅者问卷数据，重点探讨了 AI 工具的权衡利弊。"
+          "ai_summary": "Microsoft Copilot Cowork被发现存在文件外泄风险，这表明在设计代理系统时，防止攻击者外泄数据仍是最大的挑战。"
         }
       ],
       "stale": false
@@ -111,15 +308,15 @@
           "parsed_date": "2026-05-27T11:34:36+00:00",
           "is_new": true,
           "snippet": "I needed a small and light laptop to take travelling. Something with a larger screen than my phone so I can use the Big Internet™. Nothing too expensive and something that uses the same USB-C charger as everything else.",
-          "ai_summary": "文章评测了 Chuwi Minibook X N150 笔记本电脑配合 Linux 系统，称赞它轻巧便携、屏幕比手机大、价格实惠且使用统一的 USB-C 充电器，非常适合旅行使用。"
+          "ai_summary": "作者评测了Chuwi Minibook X N150笔记本电脑搭配Linux系统，评价其小巧轻便，屏幕比手机大，适合旅行使用。"
         },
         {
           "title": "PHP - simple way to send HTTP headers before a script ends",
           "link": "https://shkspr.mobi/blog/2026/05/php-simple-way-to-send-http-headers-before-a-script-ends/",
           "parsed_date": "2026-05-25T11:34:38+00:00",
-          "is_new": true,
+          "is_new": false,
           "snippet": "Suppose you want PHP to keep processing after it has sent back an HTTP response. Normally, this doesn't work: <?php header( \"Location: https://example.com/\" ); // Long operation. sleep(10); die(); Try it yourself.",
-          "ai_summary": "本文介绍了 PHP 在发送 HTTP 响应后继续处理脚本的简单方法，解决了通常情况下无法实现此功能的问题，并提供了示例代码进行尝试。"
+          "ai_summary": "文章介绍了一种简单的PHP方法，允许脚本在发送HTTP响应（如重定向）后继续处理后台操作。"
         },
         {
           "title": "Which age-gates should be skill-gates and vice-versa?",
@@ -127,7 +324,7 @@
           "parsed_date": "2026-05-23T11:34:31+00:00",
           "is_new": false,
           "snippet": "In the UK, it is illegal to buy alcohol if you are under 18 . Similarly, in most countries, you cannot vote until you have reached a specific age. These are age-gates.",
-          "ai_summary": "文章探讨了英国购买酒精的年龄限制和大多数国家投票的年龄限制等“年龄门槛”，并反思哪些年龄门槛应该改为技能门槛，反之亦然。"
+          "ai_summary": "文章探讨了英国购买酒精的年龄限制和投票年龄等“年龄门槛”，并思考哪些“年龄门槛”应该改为“技能门槛”，反之亦然。"
         },
         {
           "title": "Whale Fall",
@@ -135,7 +332,7 @@
           "parsed_date": "2026-05-21T11:34:15+00:00",
           "is_new": false,
           "snippet": "Somewhere, in the endless blue ocean, a gigantic mammal shudders as it takes its last breath. Thanks to science, we know that all dogs go to heaven, but all whales descend through the murky depths until their carcasses litter the seabed. Imagine a giant dying.",
-          "ai_summary": "文章描绘了巨型鲸鱼在深海中逝去，其尸体沉入海底形成“鲸落”的景象，并对比了狗上天堂与鲸鱼下沉的意象。"
+          "ai_summary": "文章以鲸落现象为引子，描述了巨鲸死亡后尸体沉入海底，形成独特生态系统的过程。"
         },
         {
           "title": "[RSS Club] Let's meet up AFK",
@@ -143,56 +340,7 @@
           "parsed_date": "2026-05-20T11:34:04+00:00",
           "is_new": false,
           "snippet": "Shhhh! This post is only available to RSS subscribers like you 😊 My wife and I are preparing for a big Interrail journey through Europe. Whenever we go on holiday, we like to meet up with friendly locals to have a drink and chat.",
-          "ai_summary": "这篇文章仅供 RSS 订阅者阅读，作者分享了他和妻子计划进行欧洲铁路旅行，并希望在旅途中与当地朋友见面交流。"
-        }
-      ],
-      "stale": false
-    },
-    {
-      "name": "OpenAI Blog",
-      "category": "AI Research",
-      "group": "vendor",
-      "latest_date": "2026-05-27T11:00:00+00:00",
-      "entries": [
-        {
-          "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
-          "link": "https://openai.com/index/cisco",
-          "parsed_date": "2026-05-27T11:00:00+00:00",
-          "is_new": true,
-          "snippet": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
-          "ai_summary": "思科（Cisco）与 OpenAI 合作，利用 Codex 重塑企业工程，旨在扩展 AI 原生开发、加速 AI 防御工作并自动化缺陷修复。"
-        },
-        {
-          "title": "Building self-improving tax agents with Codex",
-          "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-          "parsed_date": "2026-05-27T07:00:00+00:00",
-          "is_new": true,
-          "snippet": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
-          "ai_summary": "OpenAI、Thrive 和 Crete 合作使用 Codex 构建了能够自我改进的税务代理，实现了报税自动化、提高了准确性并加速了工作流程。"
-        },
-        {
-          "title": "Warp’s big bet on building open source with GPT-5.5",
-          "link": "https://openai.com/index/warp",
-          "parsed_date": "2026-05-27T00:00:00+00:00",
-          "is_new": true,
-          "snippet": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
-          "ai_summary": "Warp 利用 GPT-5.5 和 OpenAI 模型，在本地、云端和开源开发工作流程中协调编码代理，致力于构建开源生态。"
-        },
-        {
-          "title": "Election information and safeguards in 2026",
-          "link": "https://openai.com/index/election-safeguards-2026",
-          "parsed_date": "2026-05-27T00:00:00+00:00",
-          "is_new": true,
-          "snippet": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
-          "ai_summary": "为迎接全球选举，OpenAI 正在努力帮助人们获取信息、支持网络防御者并提高 AI 透明度，以确保选举安全和信息准确性。"
-        },
-        {
-          "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
-          "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
-          "parsed_date": "2026-05-25T00:00:00+00:00",
-          "is_new": false,
-          "snippet": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
-          "ai_summary": "OpenAI 与 Grupo Folha 和 Grupo UOL 建立战略内容合作，将巴西的优质新闻引入 ChatGPT，通过署名和透明度扩大新闻获取途径。"
+          "ai_summary": "作者邀请RSS订阅者，在他们即将进行的欧洲Interrail旅行期间进行线下会面交流，与当地人喝一杯聊聊天。"
         }
       ],
       "stale": false
@@ -209,7 +357,7 @@
           "parsed_date": "2026-05-27T06:45:00+00:00",
           "is_new": true,
           "snippet": "One of the things I like best about blogs is that posts stick around (or at least they should). I enjoy scrolling through historic posts of bloggers and reading about what they were thinking about 1, 5, or even 10 years ago—if I'm lucky.",
-          "ai_summary": "文章作者表示，他喜欢博客文章能长期存在，并享受回顾博主们多年前的旧文章，了解他们彼时思想的乐趣。"
+          "ai_summary": "作者喜爱博客文章的持久性，享受回顾博主们过去几年甚至十年前的思考和旧帖。"
         },
         {
           "title": "The commodification of travel",
@@ -217,7 +365,7 @@
           "parsed_date": "2026-04-22T01:28:00+00:00",
           "is_new": false,
           "snippet": "I've noticed that travel has become, of late, an act of collecting places. I've literally heard people referring to visiting a place as doing that place, as in \"Have you done Japan?\", assuming that one can do an entire country, and once that country is done it remains as such.",
-          "ai_summary": "作者注意到旅行已成为一种“收集地点”的行为，人们甚至用“做完一个地方”来形容访问一个国家，仿佛可以将整个国家一次性体验完。"
+          "ai_summary": "作者观察到旅行已演变为一种“收集地点”的行为，人们用“做完某个国家”来形容去过某个地方。"
         },
         {
           "title": "On becoming a day person",
@@ -225,7 +373,7 @@
           "parsed_date": "2026-03-19T09:17:00+00:00",
           "is_new": false,
           "snippet": "I was recently asked on a podcast what my biggest game-changer was, whether it be a habit, way of thinking, purchase, or change of context. I didn't need to fish around for an answer, since I already know my biggest game-changer : becoming a day person.",
-          "ai_summary": "作者在播客中被问及最大的改变时，毫不犹豫地回答是“成为一个日间作息的人”，称这是他人生中最大的“游戏规则改变者”。"
+          "ai_summary": "作者在播客中分享，成为一个“白天型人”是其人生中最大的改变之一，无论是在习惯、思维方式还是环境方面。"
         },
         {
           "title": "Vulnerability as a Service",
@@ -233,7 +381,7 @@
           "parsed_date": "2026-02-24T11:43:00+00:00",
           "is_new": false,
           "snippet": "A few days ago some 4 or 5 OpenClaw instances opened blogs on Bear . These were picked up at review and blocked, and I've since locked down the signup and dashboard to this kind of automated traffic. What was quite funny is that I received a grumpy email from one of these instances contesting the ban.",
-          "ai_summary": "文章指出，Bear 博客遭遇了多个 OpenClaw 自动化实例开设博客，导致注册和仪表板对这类流量进行了限制，甚至收到了来自这些实例的抗议邮件。"
+          "ai_summary": "OpenClaw在Bear平台上开设了多个博客并被阻止，作者收到了对此禁令不满的邮件，指出自动化流量和漏洞利用服务的问题。"
         },
         {
           "title": "Pockets of Humanity",
@@ -241,7 +389,7 @@
           "parsed_date": "2026-02-23T13:25:00+00:00",
           "is_new": false,
           "snippet": "There's a conspiracy theory that suggests that since around 2016 most web activity is automated. This is called Dead Internet Theory , and while I think they may have jumped the gun by a few years, it's heading that way now that LLMs can simulate online interactions near-flawlessly.",
-          "ai_summary": "文章提及“僵尸互联网理论”，认为自 2016 年左右大部分网络活动已被自动化，并指出随着大型语言模型（LLMs）能够近乎完美地模拟在线互动，这一理论正逐渐成为现实。"
+          "ai_summary": "文章探讨了“死亡互联网理论”，认为自2016年以来，大部分网络活动已自动化，而LLM的进步正使在线互动模拟几近完美。"
         }
       ],
       "stale": false
@@ -258,7 +406,7 @@
           "parsed_date": "2026-05-27T00:31:22+00:00",
           "is_new": true,
           "snippet": "Early in my career, a manager at one of the big firms where I worked made a request so absurd it remains etched in my memory. I walked back to the team, repeated what he had asked, and couldn't finish the story without laughing. He wanted me to create a pie chart, of lines of code, per developer, per week.",
-          "ai_summary": "作者回忆起职业生涯早期，一位经理提出荒谬要求，要他制作一个按开发者和周划分的代码行数饼图，这让他至今觉得可笑。"
+          "ai_summary": "作者回忆了职业生涯早期经理提出的荒谬请求：按开发者、按周统计代码行数的饼图，以此讽刺无效的量化指标。"
         },
         {
           "title": "Amber Alert sends Spam URL?",
@@ -266,7 +414,7 @@
           "parsed_date": "2026-05-26T03:25:17+00:00",
           "is_new": true,
           "snippet": "Well that was weird. I just received an Amber Alert and the link led to a spammy looking website. Spam?",
-          "ai_summary": "作者收到一条 Amber Alert 紧急警报，但其中的链接却指向一个疑似垃圾邮件的网站，让他感到非常奇怪和困惑。"
+          "ai_summary": "作者收到了一条Amber Alert（安珀警报），但其中包含的链接指向了一个看起来像垃圾邮件的网站，令他感到困惑。"
         },
         {
           "title": "The commencement speech that shook the world",
@@ -274,7 +422,7 @@
           "parsed_date": "2026-05-23T01:14:24+00:00",
           "is_new": false,
           "snippet": "There he was, the man at the helm of innovation. Eric Schmidt, the former CEO of Google. The man who once said, google doesn't need to record your conversation, it already knows everything about you.",
-          "ai_summary": "文章回顾了前谷歌首席执行官埃里克·施密特（Eric Schmidt）的毕业演讲，他曾表示谷歌无需记录对话，因为早已了解你的一切，其言论震惊了世界。"
+          "ai_summary": "文章回顾了谷歌前CEO埃里克·施密特（Eric Schmidt）的一次毕业典礼演讲，他曾表示谷歌无需记录对话，因为它已无所不知。"
         },
         {
           "title": "How to Talk to Your Coworkers",
@@ -282,7 +430,7 @@
           "parsed_date": "2026-05-22T19:00:00+00:00",
           "is_new": false,
           "snippet": "You know you explained the same issue before in two or three different places, yet here they are asking again. Why don't they understand you? Why do they ask the same question when you've already given them the answer right there on Jira?",
-          "ai_summary": "文章探讨了职场中同事反复询问你已解释过的问题的现象，反思为何他们难以理解或记住答案，即使信息已明确提供在 Jira 上。"
+          "ai_summary": "文章探讨了与同事沟通的挑战，特别是当他们反复询问已解释过的问题时，并质疑为何他们难以理解或记住答案。"
         },
         {
           "title": "Don't call yourself a Software Engineer, and other Career Advice",
@@ -290,56 +438,7 @@
           "parsed_date": "2026-05-18T12:00:00+00:00",
           "is_new": false,
           "snippet": "I can only imagine what it's like learning the skill of programming in this day and age. What does an average college class look like? What is the CS professor teaching?",
-          "ai_summary": "文章以“不要称自己为软件工程师”为标题，探讨了在当今时代学习编程的体验以及计算机科学教授应教授的内容。"
-        }
-      ],
-      "stale": false
-    },
-    {
-      "name": "Jeff Geerling",
-      "category": "Open Source",
-      "group": "blog",
-      "latest_date": "2026-05-26T20:32:00-05:00",
-      "entries": [
-        {
-          "title": "I patched iozone for better disk benchmarks on modern macOS",
-          "link": "https://www.jeffgeerling.com/blog/2026/i-patched-iozone-for-better-disk-benchmarks-on-modern-macos/",
-          "parsed_date": "2026-05-26T20:32:00-05:00",
-          "is_new": true,
-          "snippet": "A decade ago, I settled on iozone for disk benchmarking on all my systems.",
-          "ai_summary": "作者为 iozone 打了补丁，以改善其在现代 macOS 系统上的磁盘基准测试表现，他十年前便开始使用 iozone 进行所有系统上的磁盘性能测试。"
-        },
-        {
-          "title": "News about Raspberry Pi 6 and Microcontroller Development",
-          "link": "https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/",
-          "parsed_date": "2026-05-22T15:15:00-05:00",
-          "is_new": false,
-          "snippet": "On Thursday, three of the lead Raspberry Pi engineers hosted an AMA on the r/engineering subreddit . Raspberry Pi 6 One of the most interesting tidbits was on the Pi 6.",
-          "ai_summary": "树莓派（Raspberry Pi）的三位核心工程师在 Reddit 上进行了 AMA 活动，其中最有趣的爆料是关于即将推出的 Raspberry Pi 6 的信息。"
-        },
-        {
-          "title": "Wi-Wi Is Wireless Time Sync at 1 nanosecond",
-          "link": "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
-          "parsed_date": "2026-05-19T09:00:00-05:00",
-          "is_new": false,
-          "snippet": "At NAB, I found a demo of Wi-Wi STAMP , a wireless time synchronization protocol that came out of Japan's NICT . Wi-Wi stands for Wireless 2Way interferometry, and it uses the 900 MHz band for picosecond-level time sync, and mm-level distance accuracy, in a tiny box, currently the size of a smartphone.",
-          "ai_summary": "Wi-Wi STAMP 是一种来自日本 NICT 的无线时间同步协议，能在 900 MHz 频段实现皮秒级时间同步和毫米级距离精度，体积小巧。"
-        },
-        {
-          "title": "Bambu Lab is abusing the open source social contract",
-          "link": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/",
-          "parsed_date": "2026-05-12T09:00:00-05:00",
-          "is_new": false,
-          "snippet": "Last year I said I'd probably never recommend another Bambu Lab printer again .",
-          "ai_summary": "作者表示，他去年曾说过可能不会再推荐任何 Bambu Lab 打印机，认为 Bambu Lab 正在滥用开源的社会契约。"
-        },
-        {
-          "title": "HomePod mini feels like magic, but it's just good timing",
-          "link": "https://www.jeffgeerling.com/blog/2026/homepod-mini-feels-like-magic--but-it-s-just-good-timing/",
-          "parsed_date": "2026-05-08T09:00:00-05:00",
-          "is_new": false,
-          "snippet": "Apple introduced the HomePod mini six years ago , in 2020. I'm not one into smart speakers, but the feature that made me take a closer look was their ability to form stereo pairs, without any direct wired connection.",
-          "ai_summary": "苹果 HomePod mini 于六年前推出，作者对其能组成立体声配对且无需有线连接的功能印象深刻，虽然看似魔法，实则是时机恰到好处。"
+          "ai_summary": "文章探讨了在当今时代学习编程的体验，并提出不要自称“软件工程师”等职业建议。"
         }
       ],
       "stale": false
@@ -356,7 +455,7 @@
           "parsed_date": "2026-05-26T10:52:29+00:00",
           "is_new": true,
           "snippet": "I've been working on Basecamp for half my life, and nearly my entire professional career in software. The first code was written in the summer of 2003 when I was just 23. Now I'm 46, and we've just released the fifth major version.",
-          "ai_summary": "作者已为 Basecamp 投入了半生和几乎全部专业软件职业生涯，他 23 岁时编写了第一行代码，如今 46 岁，并刚刚发布了 Basecamp 的第五个主要版本。"
+          "ai_summary": "作者DHH在23岁时开始编写Basecamp，现在46岁，发布了第五个主要版本，这是他半生和几乎整个软件职业生涯的重要部分。"
         },
         {
           "title": "Celebrating computers at Omacon",
@@ -364,7 +463,7 @@
           "parsed_date": "2026-04-21T10:56:33+00:00",
           "is_new": false,
           "snippet": "Do you see the same truth? That's how C.S. Lewis defined the essence of friendship.",
-          "ai_summary": "文章引用 C.S. Lewis 的观点，探讨友谊的本质在于是否能看到相同的真理，暗示在 Omacon 庆祝计算机的背后也有类似的共鸣。"
+          "ai_summary": "文章引用C.S. Lewis对友谊本质的定义，即看到相同的真理，并以此为主题在Omacon庆祝计算机。"
         },
         {
           "title": "The malleable computer",
@@ -372,7 +471,7 @@
           "parsed_date": "2026-04-15T15:06:27+00:00",
           "is_new": false,
           "snippet": "Open source promised that users would be free to change whatever code they were running. The reality, however, is that hardly any of them ever did — it was simply too hard. Now, with AI, it suddenly isn't.",
-          "ai_summary": "开源曾承诺用户可以自由修改运行的代码，但实际上这过于困难；如今，AI 的出现使其变得不再是难题，电脑变得更具可塑性。"
+          "ai_summary": "开源曾承诺用户可以自由修改代码，但实际操作困难；如今，AI的出现使得修改代码变得不再那么困难，实现了计算机的可塑性。"
         },
         {
           "title": "Panther Lake is the real deal",
@@ -380,7 +479,7 @@
           "parsed_date": "2026-04-06T12:39:21+00:00",
           "is_new": false,
           "snippet": "Intel really delivered with Panther Lake. A 2026 Dell XPS 14 using this chipset with an IPS screen can hit just 1.4 watts of idle power draw on Omarchy . That's good enough for over 47 hours!!",
-          "ai_summary": "英特尔的 Panther Lake 芯片表现出色，2026 年戴尔 XPS 14 配备该芯片和 IPS 屏幕在 Omarchy 下闲置功耗仅为 1.4 瓦，可续航超过 47 小时。"
+          "ai_summary": "英特尔的Panther Lake芯片表现出色，一款配备该芯片的2026款戴尔XPS 14笔记本电脑在Omarchy测试中空闲功耗仅1.4瓦，续航超过47小时。"
         },
         {
           "title": "Basecamp becomes agent accessible",
@@ -388,7 +487,7 @@
           "parsed_date": "2026-03-25T17:37:25+00:00",
           "is_new": false,
           "snippet": "In the past 18 months, we've experimented with a ton of AI-infused features at 37signals. Fizzy had all sorts of attempts. As did Basecamp.",
-          "ai_summary": "过去 18 个月，37signals 在 Fizzy 和 Basecamp 中尝试了大量 AI 融合功能，现在 Basecamp 也实现了代理可访问性。"
+          "ai_summary": "Basecamp经过18个月的实验，已开始集成AI功能，使其能够被AI代理访问。"
         }
       ],
       "stale": false
@@ -405,7 +504,7 @@
           "parsed_date": "2026-05-26T00:00:00+00:00",
           "is_new": true,
           "snippet": "Build, customize, and deploy production agents that reason, execute code, and manage files inside secure Linux sandboxes as a single API call.",
-          "ai_summary": "本文是 Gemini 托管代理的开发者指南，介绍了如何构建、定制和部署可在安全 Linux 沙盒中推理、执行代码和管理文件的生产级代理，并通过单一 API 调用实现。"
+          "ai_summary": "该开发者指南介绍了如何使用Gemini Managed Agents构建、定制和部署可在安全Linux沙箱内推理、执行代码和管理文件的生产级代理。"
         },
         {
           "title": "How Agents Manage Other Agents: Four Subagents Patterns in 2026",
@@ -413,7 +512,7 @@
           "parsed_date": "2026-05-05T00:00:00+00:00",
           "is_new": false,
           "snippet": "Subagents solve context pollution, but how the main agent manages them matters more than whether they run in sync or async. Four orchestration patterns, from a simple tool call to an autonomous agent team, each with different requirements for model capability and result collection.",
-          "ai_summary": "文章探讨了 2026 年代理管理子代理的四种编排模式，这些模式解决了上下文污染问题，强调了主代理如何管理子代理比其同步或异步运行更重要。"
+          "ai_summary": "文章探讨了2026年代理管理其他代理的四种子代理模式，强调了主代理管理方式的重要性，以解决上下文污染问题。"
         },
         {
           "title": "How to use Deep Research with the Gemini API",
@@ -421,7 +520,7 @@
           "parsed_date": "2026-04-29T00:00:00+00:00",
           "is_new": false,
           "snippet": "The Gemini Deep Research Agent autonomously plans, searches, and synthesizes long-horizon research tasks into detailed, cited reports.",
-          "ai_summary": "文章介绍了如何将 Gemini Deep Research Agent 与 Gemini API 结合使用，该代理能够自主规划、搜索和综合长期研究任务，生成详细且有引用的报告。"
+          "ai_summary": "Gemini Deep Research Agent能够自主规划、搜索并综合长期研究任务，生成详细且有引用的报告，用户可通过Gemini API使用此功能。"
         },
         {
           "title": "How to correctly use MCP servers with your AI Agents",
@@ -429,7 +528,7 @@
           "parsed_date": "2026-04-27T00:00:00+00:00",
           "is_new": false,
           "snippet": "MCP servers are not dead. Blindly enabling them bloats your context, which leads to higher cost and worse performance. Here are two proven patterns on how to correctly use MCP servers and avoid the bloat.",
-          "ai_summary": "MCP 服务器并未过时，但盲目启用会导致上下文膨胀，增加成本并降低性能。文章提供了两种正确使用 MCP 服务器并避免此问题的模式。"
+          "ai_summary": "文章提供了关于如何正确使用MCP服务器与AI代理的两种模式，以避免上下文膨胀，从而降低成本并提高性能。"
         },
         {
           "title": "8 Tips for Writing Agent Skills",
@@ -437,7 +536,7 @@
           "parsed_date": "2026-04-13T00:00:00+00:00",
           "is_new": false,
           "snippet": "8 Tips for Writing Agent Skills. Know What a Skill Is, Nail the Description, Write Instructions, Keep It Lean, Set the Right Level of Freedom, Don't Skip Negative Cases, Test It Before You Ship It, Know When to Retire a Skill.",
-          "ai_summary": "文章分享了编写代理技能的 8 条实用技巧，包括明确技能定义、精确描述、编写指令、保持精简、设置适当自由度、处理负面情况、发布前测试以及适时淘汰技能。"
+          "ai_summary": "文章提供了编写代理技能的8条实用建议，涵盖了从明确技能定义到测试和及时淘汰的各个方面。"
         }
       ],
       "stale": false
@@ -454,7 +553,7 @@
           "parsed_date": "2026-05-26T00:00:00+00:00",
           "is_new": true,
           "snippet": "In my last post I used the word “clanker 1 ” as an alternative to “agent” quite consistently and probably excessively.",
-          "ai_summary": "在上一篇文章中，作者持续且可能过度地使用“clanker”一词作为“agent”的替代词，探讨了机器的称谓问题。"
+          "ai_summary": "作者在前一篇文章中频繁使用“clanker”一词作为“agent”的替代词，并对此选择进行了探讨。"
         },
         {
           "title": "Building Pi With Pi",
@@ -462,7 +561,7 @@
           "parsed_date": "2026-05-24T00:00:00+00:00",
           "is_new": false,
           "snippet": "Pi is now part of Earendil, but in the important sense it is still Mario’s project. He has been living with its issue tracker longer than I have, and he has been exposed to the weirdness of the new form of agent traffic in Open Source projects for longer too.",
-          "ai_summary": "Pi 项目现在是 Earendil 的一部分，但其本质上仍是 Mario 的项目，他比作者更长时间地处理其问题跟踪器，并更早接触到开源项目中新型代理流量的怪异之处。"
+          "ai_summary": "Pi项目已成为Earendil的一部分，但其核心仍由Mario主导，他长期应对开源项目中代理流量带来的新问题。"
         },
         {
           "title": "Pushing Local Models With Focus And Polish",
@@ -470,7 +569,7 @@
           "parsed_date": "2026-05-08T00:00:00+00:00",
           "is_new": false,
           "snippet": "I really, really want local models to work. I want them to work in the very practical sense that I can open my coding agent, pick a local model, and get something that feels competitive enough that I do not immediately switch back to a hosted API after five minutes.",
-          "ai_summary": "作者强烈希望本地模型能够真正发挥作用，期待其在编码代理中能与托管 API 竞争，避免五分钟后就切换回去。"
+          "ai_summary": "作者强烈希望本地模型能够有效运行，达到即便作为编码代理也能与托管API竞争的实用水平。"
         },
         {
           "title": "Content for Content’s Sake",
@@ -478,7 +577,7 @@
           "parsed_date": "2026-05-04T00:00:00+00:00",
           "is_new": false,
           "snippet": "Language is constantly evolving, particularly in some communities. Not everybody is ready for it at all times.",
-          "ai_summary": "语言在不断演变，特别是在某些社区中，但并非所有人都随时准备好接受这种变化，引发了对“为内容而内容”的思考。"
+          "ai_summary": "语言在某些社区中不断演变，但并非所有人都能随时适应这种变化，这导致了“为了内容而内容”的现象。"
         },
         {
           "title": "Before GitHub",
@@ -486,56 +585,7 @@
           "parsed_date": "2026-04-28T00:00:00+00:00",
           "is_new": false,
           "snippet": "GitHub was not the first home of my Open Source software. SourceForge was . Before GitHub, I had my own Trac installation.",
-          "ai_summary": "在 GitHub 之前，作者的开源软件项目曾托管在 SourceForge，并且他还拥有自己的 Trac 安装。"
-        }
-      ],
-      "stale": false
-    },
-    {
-      "name": "Daring Fireball",
-      "category": "Apple & Tech",
-      "group": "blog",
-      "latest_date": "2026-05-25T23:57:24+00:00",
-      "entries": [
-        {
-          "title": "[Sponsor] exe.dev",
-          "link": "https://exe.dev/?df",
-          "parsed_date": "2026-05-25T23:57:24+00:00",
-          "is_new": true,
-          "snippet": "A cloud for the agent era. Use exe.dev to get a pool of VMs with SSH, root, and web auth by default. Secrets injected at the network edge stay out of the LLM’s hands.",
-          "ai_summary": "exe.dev 是一个为代理时代打造的云平台，默认提供带有 SSH、root 和 Web 认证的虚拟机池，并确保秘密信息在网络边缘注入，不被 LLM 获取。"
-        },
-        {
-          "title": "Awarding Jay Haynes His Being Right Points for Predicting Apple Hitting $3 Trillion in Market Cap",
-          "link": "https://daringfireball.net/linked/2014/01/29/haynes-aapl",
-          "parsed_date": "2026-05-25T20:32:29+00:00",
-          "is_new": true,
-          "snippet": "Here’s a fun one. Back in 2014 I linked to a post by Jay Haynes in which he projected that with a very reasonable level of annual growth, Apple ought to reach a $3 trillion market cap within 10 years. At the time of his writing, Apple’s market cap was “just” $450 billion, and no company had hit the $1 trillion market.",
-          "ai_summary": "作者回顾了 Jay Haynes 在 2014 年的预测，他当时认为苹果凭借合理的年增长率，将在十年内达到 3 万亿美元市值，而当时苹果市值仅 4500 亿美元，且尚无公司突破 1 万亿美元。"
-        },
-        {
-          "title": "Thieves Are Texting Threats to Victims of iPhone Theft in London",
-          "link": "https://www.nytimes.com/2026/05/23/world/europe/phone-theft-threats-london.html?unlocked_article_code=1.lFA.OUt7.VJ_FoDpINr0L",
-          "parsed_date": "2026-05-25T19:23:32+00:00",
-          "is_new": true,
-          "snippet": "Lizzie Dearden and Amelia Nierenberg, reporting for The New York Times (gift link): The crime Alex Pikula reported to the police was one they had heard before: An e-bike rider had zoomed past as Mr. Pikula left a theater in London’s West End, ripping his phone from his hands. It was frustrating, Mr.",
-          "ai_summary": "《纽约时报》报道称，伦敦的 iPhone 被盗受害者收到了窃贼发来的威胁短信，Alex Pikula 的手机被电动自行车手抢走，这已是警方常听闻的案件类型。"
-        },
-        {
-          "title": "Trump Mobile Website Exposed the Number of Pre-Orders — Both Completed and Abandoned — and the Associated Customer Information",
-          "link": "https://www.theguardian.com/us-news/2026/may/23/trump-mobile-investigating-potential-exposure-of-would-be-customers-personal-information",
-          "parsed_date": "2026-05-25T18:54:37+00:00",
-          "is_new": true,
-          "snippet": "Catie McLeod, The Guardian: Trump Mobile said in a statement that it was investigating the issue — “with the assistance of independent cybersecurity professionals” — in which the full names, addresses and phone numbers of people who filled out preorder forms appeared to be exposed.",
-          "ai_summary": "《卫报》报道称，Trump Mobile 网站暴露了潜在客户的预订数量及相关个人信息，包括全名、地址和电话号码，该公司正与网络安全专家合作调查此问题。"
-        },
-        {
-          "title": "The History of ‘OK’",
-          "link": "https://www.merriam-webster.com/wordplay/the-hilarious-history-of-ok-okay",
-          "parsed_date": "2026-05-25T17:18:56+00:00",
-          "is_new": true,
-          "snippet": "Merriam-Webster: The 1820s and 1830s shared another linguistic fad with today: an appreciation for deliberate misspellings. (Kewl, rite?) This trend, which had humorists adopting now-cringey bumpkin personas with ignorance manifested in uneducated spellings, turned no go into know go and no use into know yuse (lol).",
-          "ai_summary": "《韦氏词典》探讨了“OK”一词的有趣历史，指出 19 世纪 20 年代和 30 年代流行故意拼写错误，这与今天的一些语言趋势相似。"
+          "ai_summary": "GitHub并非作者开源软件的第一个家，SourceForge和作者自己的Trac安装是更早的平台。"
         }
       ],
       "stale": false
@@ -550,9 +600,9 @@
           "title": "Distributing LLM inference in DwarfStar",
           "link": "http://antirez.com/news/167",
           "parsed_date": "2026-05-25T16:54:59+02:00",
-          "is_new": true,
+          "is_new": false,
           "snippet": "High end NVIDIA cards, and the server and power needed to run them, cost a lot of money, especially if you plan to reach enough VRAM to run massive models.",
-          "ai_summary": "文章指出，高端 NVIDIA 显卡及其运行所需的服务器和电力成本高昂，尤其是在需要足够 VRAM 运行大型模型时，成本更高。"
+          "ai_summary": "文章探讨了在DwarfStar项目中分发LLM推理的挑战，指出高端NVIDIA显卡及其运行所需的服务器和电力成本高昂。"
         },
         {
           "title": "Alternatives for the EDIT tool of LLM agents",
@@ -560,7 +610,7 @@
           "parsed_date": "2026-05-19T09:26:03+02:00",
           "is_new": false,
           "snippet": "EDIT: of course this was already done in the past! I had little doubts but people just confirmed me about it on Twitter :) But, keep reading: the CRC32 compromise at the end is an interesting tradeoff, and this is a good discussion to have in general. Right now I'm working to an agent for my DS4 project.",
-          "ai_summary": "作者正在为他的 DS4 项目开发一个代理，并探讨了大型语言模型（LLM）代理 EDIT 工具的替代方案，特别是 CRC32 妥协方案作为一种有趣的权衡。"
+          "ai_summary": "文章讨论了LLM代理的EDIT工具替代方案，并提及了CRC32折衷方案作为一种有趣的权衡，这对正在开发DS4代理的作者来说是一个重要讨论。"
         },
         {
           "title": "A few words on DS4",
@@ -568,7 +618,7 @@
           "parsed_date": "2026-05-15T00:22:45+02:00",
           "is_new": false,
           "snippet": "I didn’t expect DwarfStar 4 (https://github.com/antirez/ds4) to become so popular so fast.",
-          "ai_summary": "作者对 DwarfStar 4 (DS4) 项目在短时间内迅速走红感到惊讶，并分享了对此的看法。"
+          "ai_summary": "作者对DwarfStar 4项目（DS4）意外的快速流行感到惊讶，该项目在短时间内获得了大量关注。"
         },
         {
           "title": "Redis array type: short story of a long development",
@@ -576,7 +626,7 @@
           "parsed_date": "2026-05-04T16:21:45+02:00",
           "is_new": false,
           "snippet": "I started working on the new Array data type for Redis in the first days of January. The PR landed the repository only now, so this code was cooked for four months.",
-          "ai_summary": "文章讲述了 Redis 新的 Array 数据类型从今年一月初开始开发到最近才合并到代码库的漫长过程，历时四个月。"
+          "ai_summary": "Redis新数组数据类型的开发历时四个月，从一月初开始到PR合并，过程漫长且充满挑战。"
         },
         {
           "title": "AI cybersecurity is not proof of work",
@@ -584,7 +634,7 @@
           "parsed_date": "2026-04-16T12:46:46+02:00",
           "is_new": false,
           "snippet": "The proof of work is the wrong analogy: finding hash collisions, while exponentially harder with N, is guaranteed to find, with enough work, some S so that H(S) satisfies N, so an asymmetry of resources used will see the side with more \"work ability\" eventually winning. But bugs are different: 1.",
-          "ai_summary": "文章认为 AI 网络安全并非工作量证明（proof of work）的类比，指出漏洞与哈希碰撞不同，无法通过投入更多资源保证找到，因此工作量证明是错误的类比。"
+          "ai_summary": "文章认为AI网络安全并非“工作量证明”的类比，因为寻找哈希碰撞与发现软件漏洞的本质不同，后者并非通过简单增加资源就能保证解决。"
         }
       ],
       "stale": false
@@ -601,7 +651,7 @@
           "parsed_date": "2026-05-22T07:58:35+08:00",
           "is_new": false,
           "snippet": "这里记录每周值得分享的科技内容，周五发布。 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 马岩松事务所设计的海南科技馆，今年五一开馆。（ via ） 财富正在向 AI 集中 AI 相关的所有东西，最近都在上涨。 看看股票，就知道了。内存、储存、CPU、服务器、液冷、光通信、变压器......股价全部在涨，更不要提，前期已经涨过的芯片、模型、算力了，甚至铜和铝也在涨。 这些股票的上涨幅度之大，令人咂舌。就以内存为例，世界三大内存厂商有两家在韩国，单单这两家公司就把韩国股市，从2600点一年之内拉到7600点。 2024年10月，三",
-          "ai_summary": "本期科技爱好者周刊关注到财富正向 AI 领域集中，内存、储存、CPU 等 AI 相关股票大幅上涨，甚至带动了韩国股市的飙升。"
+          "ai_summary": "科技爱好者周刊第397期指出，财富正加速向AI领域集中，与AI相关的股票（如内存、存储、CPU、服务器等）价格均大幅上涨。"
         },
         {
           "title": "科技爱好者周刊（第 396 期）：互联网通信的替代方案",
@@ -609,7 +659,7 @@
           "parsed_date": "2026-05-15T08:01:51+08:00",
           "is_new": false,
           "snippet": "这里记录每周值得分享的科技内容，周五发布。 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 浙江新昌县的\"新昌小球中心\"，将酒店、商场、体育馆、体育场、户外健身步道都融合在一个建筑里面。（ via ） 互联网通信的替代方案 某天清晨，你醒来发现互联网断了，怎么办？ 我说的是彻底的中断，完全不能运作，整个城市无法上网。这种事件虽然可能性很小，但还是有可能，比如遭遇了自然灾害或战事。 假设一时半会无法恢复通信，那么有没有替代方案？也就是说， 我们怎么自己组网 。 虽然互联网是无中心结构，搞一个子网并不难，但搞一个大规模子网，能够容纳一",
-          "ai_summary": "本期科技爱好者周刊探讨了互联网彻底中断时，如何自己组建大规模子网作为替代通信方案的可能性，即使互联网是无中心结构，组建大规模子网依然充满挑战。"
+          "ai_summary": "科技爱好者周刊第396期探讨了在互联网彻底中断的极端情况下，如何自行组建大规模子网作为替代通信方案。"
         },
         {
           "title": "科技爱好者周刊（第 395 期）：软件开发的第三种方式",
@@ -617,7 +667,7 @@
           "parsed_date": "2026-05-08T07:40:44+08:00",
           "is_new": false,
           "snippet": "这里记录每周值得分享的科技内容，周五发布。 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 即将在今年完工的深圳自然博物馆，它的形状模拟了一条弯曲的河流。（ via ） 软件开发的第三种方式 有一本很著名的软件开发著作，叫做《大教堂与集市》，大家了解吗？ 它提出软件开发有两种方式。 一种方式是大教堂（Cathedral），即软件经过精心规划，由一支专业的团队封闭式开发管理，全过程有严格的流程和管控，代码通常是闭源的。 另一种方式是集市（bazaar），即软件开发是开放的，没有围墙，任何人都可以加入，决策过程是透明的、由社区驱动，代",
-          "ai_summary": "本期科技爱好者周刊介绍了《大教堂与集市》中提出的两种软件开发模式，并在此基础上引出了“软件开发的第三种方式”这一主题。"
+          "ai_summary": "科技爱好者周刊第395期在著名的《大教堂与集市》的基础上，探讨了软件开发的第三种可能方式，扩展了封闭式开发和开放式社区驱动的两种模式。"
         },
         {
           "title": "科技爱好者周刊（第 394 期）：第二次 API 开放浪潮",
@@ -625,7 +675,7 @@
           "parsed_date": "2026-04-24T07:43:01+08:00",
           "is_new": false,
           "snippet": "这里记录每周值得分享的科技内容，周五发布。（ [通知] 下周五一假期，周刊休息。 ） 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 我见过的最酷广告牌，只有一行命令，推广一个 AI 工具包。普通人看不懂也没关系，反正不是给他们用的。（ via ） 第二次 API 开放浪潮 如果你在互联网行业足够久，大概会记得，以前有过一次 API 开放的浪潮。 那是15年前的2011年，云服务刚兴起不久，各种平台纷纷开放自己的 API。 那时，Facebook 和 Twitter 都发布了自己的 API，开放了平台数据。GitHub 的 API",
-          "ai_summary": "本期科技爱好者周刊探讨了互联网行业正在经历的“第二次 API 开放浪潮”，回溯了 15 年前 Facebook 和 Twitter 等平台开放 API 的首次浪潮。"
+          "ai_summary": "科技爱好者周刊第394期回顾了15年前的第一次API开放浪潮，并指出目前正迎来第二次API开放浪潮，各种平台纷纷开放其API。"
         },
         {
           "title": "科技爱好者周刊（第 393 期）：脑腐状态",
@@ -633,7 +683,7 @@
           "parsed_date": "2026-04-17T07:20:16+08:00",
           "is_new": false,
           "snippet": "这里记录每周值得分享的科技内容，周五发布。 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 湖南益阳的和平签证主题博物馆，纪念二战时期何凤山博士救助犹太人。外立面的层层钢板象征签证文件，狭窄而棱角分明的入口给人一种压抑的感觉，进入后的空间逐渐走向释放和光明。（ via ） 脑腐状态 最近学到一个新词\"脑腐\"（brain rot）。 它就是字面意思。有些人看上去是正常的，但是大脑已经变异了，有些部分腐烂了。 根据 介绍文章 ， \"脑腐\"的症状就是思考能力下降，难以长时间集中注意力 ，进行深入的推理和反思。 一遇到比较难、需要反复思考",
-          "ai_summary": "本期科技爱好者周刊介绍了新词“脑腐”（brain rot），指的是一种思考能力下降、难以长时间集中注意力进行深入推理和反思的状态。"
+          "ai_summary": "科技爱好者周刊第393期介绍了“脑腐”（brain rot）这一新词，描述了人们思考能力下降、难以长时间集中注意力的状态。"
         }
       ],
       "stale": false
@@ -657,7 +707,7 @@
           "parsed_date": "2026-05-18T18:21:39+00:00",
           "is_new": false,
           "snippet": "Biologists use Co-Scientist to find novel factors that successfully rejuvenate human cells.",
-          "ai_summary": "生物学家正在利用 Co-Scientist 工具来快速追踪并发现新的遗传因子，这些因子已成功实现人类细胞的逆向衰老。"
+          "ai_summary": "生物学家正利用Co-Scientist工具，加速发现能成功逆转人类细胞衰老的新型基因因子。"
         },
         {
           "title": "Simulate real-world places with Project Genie and Street View",
@@ -665,7 +715,7 @@
           "parsed_date": "2026-05-17T19:53:18+00:00",
           "is_new": false,
           "snippet": "We’re expanding access to Google AI Ultra subscribers globally and introducing a new capability powered by Street View.",
-          "ai_summary": "Google AI Ultra 订阅者现已在全球范围内开放，并引入了由 Street View 提供支持的新功能，可模拟现实世界中的地点。"
+          "ai_summary": "Google正在扩大Google AI Ultra订阅用户的访问权限，并推出一项由Street View提供支持的新功能，可模拟真实世界地点。"
         },
         {
           "title": "Introducing Gemini Omni",
@@ -685,55 +735,6 @@
       "stale": false
     },
     {
-      "name": "Xe Iaso",
-      "category": "AI & DevOps",
-      "group": "blog",
-      "latest_date": "2026-05-21T00:00:00+00:00",
-      "entries": [
-        {
-          "title": "\"No way to prevent this\" say users of only package manager where this regularly happens",
-          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
-          "parsed_date": "2026-05-21T00:00:00+00:00",
-          "is_new": false,
-          "snippet": "In the hours following the news that art-template fell victim to a supply chain attack via NPM, developers and systems administrators scrambled ensure all of their projects were unaffected from a supply chain attack where attackers have controlled the repository since 2025 and are using it to load unauthorized JavaScri",
-          "ai_summary": "art-template 项目因 NPM 供应链攻击受害后，开发者们争相检查项目是否受影响，据悉攻击者自 2025 年起已控制该仓库并用于加载未经授权的 JavaScript。"
-        },
-        {
-          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45250/",
-          "parsed_date": "2026-05-21T00:00:00+00:00",
-          "is_new": false,
-          "snippet": "In the hours following the release of CVE-2026-45250 for the project FreeBSD , site reliability workers and systems administrators scrambled to desperately rebuild and patch all their systems to fix a kernel stack overflow when validating permissions of the setcred(2) system call, allowing arbitrary code execution in t",
-          "ai_summary": "在 FreeBSD 项目 CVE-2026-45250 漏洞发布后，SRE 和系统管理员们争相重建和修补系统，以修复 setcred(2) 系统调用权限验证时的内核栈溢出漏洞，该漏洞允许任意代码执行。"
-        },
-        {
-          "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-          "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
-          "parsed_date": "2026-05-20T00:00:00+00:00",
-          "is_new": false,
-          "snippet": "In the hours following the release of CVE-2026-45584 for the project Microsoft Windows , site reliability workers and systems administrators scrambled to desperately rebuild and patch all their systems to fix a memory safety vulnerability resulting in arbitrary code execution inside the virus scanner Windows Defender.",
-          "ai_summary": "在 Microsoft Windows 项目 CVE-2026-45584 漏洞发布后，SRE 和系统管理员们紧急重建和修补系统，以修复 Windows Defender 病毒扫描程序中的内存安全漏洞，该漏洞导致任意代码执行。"
-        },
-        {
-          "title": "Amazonbot is finally respecting robots.txt",
-          "link": "https://xeiaso.net/notes/2026/amazonbot-respecting-robots-txt/",
-          "parsed_date": "2026-05-14T00:00:00+00:00",
-          "is_new": false,
-          "snippet": "I just got an email from Amazon saying they're finally going to respect robots.txt . Here's the verbatim email I got: We are writing to inform you that starting Monday, June 15, 2026, crawl preferences for Amazonbot will be managed solely through the industry-standard directives.",
-          "ai_summary": "亚马逊宣布 Amazonbot 将从 2026 年 6 月 15 日起完全遵循行业标准 robots.txt 指令来管理抓取偏好，这意味着 Amazonbot 终于开始尊重 robots.txt 协议。"
-        },
-        {
-          "title": "I'm really frustrated that GitLab is doing layoffs",
-          "link": "https://xeiaso.net/notes/2026/gitlab-layoffs/",
-          "parsed_date": "2026-05-11T00:00:00+00:00",
-          "is_new": false,
-          "snippet": "GitLab announced layoffs today . They don't state how many people are affected, but honestly I find this really frustrating for several reasons: This is the one time where they could have won by doing relatively nothing. GitHub is having big outages on a daily cadence.",
-          "ai_summary": "GitLab 今日宣布裁员，作者对此感到非常沮丧，尤其是在 GitHub 频繁发生大规模宕机的情况下，GitLab 本有机会通过不作为而取胜。"
-        }
-      ],
-      "stale": false
-    },
-    {
       "name": "Sean Goedecke",
       "category": "Software Engineering",
       "group": "blog",
@@ -745,7 +746,7 @@
           "parsed_date": "2026-05-21T00:00:00+00:00",
           "is_new": false,
           "snippet": "In April last year, Kelsey Piper discovered that OpenAI’s o3 model was surprisingly good at figuring out where a photo was taken from. Like human “geoguessr” pros , o3 could sometimes take a nondescript photo of a beach and tell you exactly where it is.",
-          "ai_summary": "去年 4 月，Kelsey Piper 发现 OpenAI 的 o3 模型在识别照片拍摄地点方面表现出色，但作者的“GeoGuessr”提示却未能奏效。"
+          "ai_summary": "作者发现著名的o3“GeoGuessr”提示词未能成功，OpenAI的o3模型去年曾因擅长从照片中识别地理位置而闻名。"
         },
         {
           "title": "Prompts are technical debt too",
@@ -753,7 +754,7 @@
           "parsed_date": "2026-05-20T00:00:00+00:00",
           "is_new": false,
           "snippet": "It’s common and correct to say that “all code is technical debt”. Adding code is a necessary evil for developing new features: you almost always have to do it, but each line of code adds to the complexity and maintenance burden of the system.",
-          "ai_summary": "文章指出，“所有代码都是技术债务”是普遍且正确的说法，并进一步提出“提示（prompts）也是技术债务”，因为它们同样增加了系统的复杂性和维护负担。"
+          "ai_summary": "作者认为，就像所有代码一样，提示词（prompts）也应被视为技术债务，因为它增加了系统的复杂性和维护负担。"
         },
         {
           "title": "The just-say-no engineer was a ZIRP phenomenon",
@@ -761,7 +762,7 @@
           "parsed_date": "2026-05-18T00:00:00+00:00",
           "is_new": false,
           "snippet": "The engineer who says no all the time is a real archetype among senior and staff engineers. Their role is to slow things down, to block the development of features that add complexity, and to ensure that as little code gets written as possible (since code is a liability).",
-          "ai_summary": "文章认为，在零利率政策（ZIRP）时期，“总是说不”的工程师作为资深工程师的典型角色出现，他们的职责是减缓进度、阻止增加复杂性的功能开发，并确保尽可能少地编写代码。"
+          "ai_summary": "“只说不”的工程师——通过阻止增加复杂性的功能来减缓开发进程的角色——被认为是零利率政策（ZIRP）时期的一种现象。"
         },
         {
           "title": "How I use LLMs as a staff engineer in 2026",
@@ -769,7 +770,7 @@
           "parsed_date": "2026-05-17T00:00:00+00:00",
           "is_new": false,
           "snippet": "A bit over a year ago I wrote How I use LLMs as a staff engineer .",
-          "ai_summary": "作者分享了他作为一名资深工程师在 2026 年如何使用大型语言模型（LLMs），延续了他一年前撰写的相关文章。"
+          "ai_summary": "作者分享了作为一名资深工程师，在2026年如何使用大型语言模型（LLMs）的经验，并回顾了去年此话题的文章。"
         },
         {
           "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
@@ -777,7 +778,7 @@
           "parsed_date": "2026-05-16T00:00:00+00:00",
           "is_new": false,
           "snippet": "Ever since Golden Gate Claude I’ve been fascinated with “steering”: the idea that you can guide LLM outputs by directly manipulating the activations of the model mid-flight.",
-          "ai_summary": "文章指出 DeepSeek-V4-Flash 的出现让 LLM 转向（steering）技术再次变得有趣，作者自 Golden Gate Claude 以来一直对通过直接操纵模型激活来引导 LLM 输出的概念着迷。"
+          "ai_summary": "DeepSeek-V4-Flash的出现使得LLM转向（steering）技术再次受到关注，该技术通过直接操纵模型激活来指导LLM输出。"
         }
       ],
       "stale": false
@@ -794,7 +795,7 @@
           "parsed_date": "2026-05-08T15:07:42-05:00",
           "is_new": false,
           "snippet": "This video is brought to you by PodPitch , the AI-powered platform for PR experts. PodPitch is the first and only software that finds, writes, and sends pitches to podcast hosts from your actual email address.",
-          "ai_summary": "《Kyle Kingsbury Podcast》第二集邀请了 Dave Rossi，本期节目由 AI 驱动的公关平台 PodPitch 赞助。"
+          "ai_summary": "Kyle Kingsbury播客的第二集邀请了Dave Rossi作为嘉宾，本期节目由AI驱动的PR平台PodPitch赞助。"
         },
         {
           "title": "The Kyle Kingsbury Podcast Podcast - Episode 1 - Alex Dripchak",
@@ -802,7 +803,7 @@
           "parsed_date": "2026-05-07T18:17:13-05:00",
           "is_new": false,
           "snippet": "For the last few weeks publicists have bombarded me with emails asking if I’d interview their clients on the Kyle Kingsbury podcast. While my name is Kyle Kingsbury, and I have been a guest on several podcasts, I’ve never hosted one myself.",
-          "ai_summary": "《Kyle Kingsbury Podcast》第一集邀请了 Alex Dripchak，作者 Kyle Kingsbury 澄清尽管他被视为播客嘉宾，但他从未主持过自己的播客。"
+          "ai_summary": "尽管从未主持过播客，Kyle Kingsbury还是发布了他的首期播客，邀请了Alex Dripchak作为嘉宾。"
         },
         {
           "title": "JStack by Command String",
@@ -810,7 +811,7 @@
           "parsed_date": "2026-05-04T10:30:26-05:00",
           "is_new": false,
           "snippet": "This has been bugging me for years: you often run a JVM by a shell script wrapper, then want to jstack it to figure out what it’s doing, but can’t figure out what PID to ask for. Running jps gives remarkably unhelpful output, especially for tools like Leiningen.",
-          "ai_summary": "文章解决了困扰作者多年的问题：当 JVM 通过 shell 脚本封装运行时，难以确定要 jstack 的 PID，因为 jps 命令的输出信息往往不够清晰。"
+          "ai_summary": "文章解决了使用jstack时难以通过PID识别JVM进程的问题，指出jps输出在某些工具（如Leiningen）中不尽如人意。"
         },
         {
           "title": "The Future of Everything is Lies, I Guess: Where Do We Go From Here?",
@@ -818,7 +819,7 @@
           "parsed_date": "2026-04-16T08:30:01-05:00",
           "is_new": false,
           "snippet": "Table of Contents This is a long article, so I've broken it up into a series of posts, listed below. You can also read the full work as a PDF or EPUB . Introduction Dynamics Culture Information Ecology Annoyances Psychological Hazards Safety Work New Jobs Where Do We Go From Here Previously: New Jobs .",
-          "ai_summary": "本文探讨了“一切的未来都是谎言”这一主题的深层内容，作为系列文章的结尾部分，思考了我们何去何从，并提供了 PDF 或 EPUB 版本供完整阅读。"
+          "ai_summary": "文章探讨了“一切的未来都是谎言”这一主题，并讨论了我们应该何去何从，内容被分为多个部分。"
         },
         {
           "title": "The Future of Everything is Lies, I Guess: New Jobs",
@@ -826,7 +827,7 @@
           "parsed_date": "2026-04-15T08:19:45-05:00",
           "is_new": false,
           "snippet": "Table of Contents This is a long article, so I've broken it up into a series of posts, listed below. You can also read the full work as a PDF or EPUB . Introduction Dynamics Culture Information Ecology Annoyances Psychological Hazards Safety Work New Jobs Where Do We Go From Here Previously: Work .",
-          "ai_summary": "本文作为“一切的未来都是谎言”系列文章的一部分，探讨了“新工作”这一主题，并提供了 PDF 或 EPUB 版本供完整阅读。"
+          "ai_summary": "文章探讨了“一切的未来都是谎言”的背景下，未来可能出现的新工作类型。"
         }
       ],
       "stale": false
@@ -843,7 +844,7 @@
           "parsed_date": "2026-04-30T16:00:00+00:00",
           "is_new": false,
           "snippet": "I did a fireside chat at Sequoia Ascent 2026.",
-          "ai_summary": "本文总结了 Karpathy 在 Sequoia Ascent 2026 活动中炉边谈话的内容。"
+          "ai_summary": "作者在Sequoia Ascent 2026大会上进行了一次炉边谈话，并分享了会议总结。"
         },
         {
           "title": "2025 LLM Year in Review",
@@ -851,7 +852,7 @@
           "parsed_date": "2025-12-19T18:00:00+00:00",
           "is_new": false,
           "snippet": "2025 has been a strong and eventful year of progress in LLMs. The following is a list of personally notable and mildly surprising \"paradigm changes\" - things that altered the landscape and stood out to me conceptually. 1.",
-          "ai_summary": "本文总结了 2025 年大型语言模型（LLMs）领域取得的显著进展和具有“范式转变”意义的个人亮点。"
+          "ai_summary": "作者总结了2025年大型语言模型（LLM）领域的重大进展和“范式转变”。"
         },
         {
           "title": "Chemical hygiene",
@@ -859,7 +860,7 @@
           "parsed_date": "2025-12-18T18:00:00+00:00",
           "is_new": false,
           "snippet": "Following up on digital hygiene , I wanted to write up my (evolving, opinionated) guide to chemical hygiene.",
-          "ai_summary": "作者延续了“数字卫生”的主题，撰写了关于“化学卫生”的个人指南，其中包含了不断演变且带有个人观点的建议。"
+          "ai_summary": "作者继“数字卫生”之后，撰写了一份关于“化学卫生”的指南，分享其不断演变且带有个人观点的建议。"
         },
         {
           "title": "Auto-grading decade-old Hacker News discussions with hindsight",
@@ -867,7 +868,7 @@
           "parsed_date": "2025-12-10T15:00:00+00:00",
           "is_new": false,
           "snippet": "TLDR: https://karpathy.ai/hncapsule/ Yesterday I stumbled on this HN thread Show HN: Gemini Pro 3 hallucinates the HN front page 10 years from now , where Gemini 3 was hallucinating the frontpage of 10 years from now.",
-          "ai_summary": "作者利用事后诸葛亮的方式，对十年前的 Hacker News 讨论进行了自动评分，这源于 Gemini 3 曾幻想起十年后的 HN 头版内容。"
+          "ai_summary": "作者开发了一个工具，能够用事后洞察力自动评估十年前的Hacker News讨论，以检验Gemini 3对未来预测的准确性。"
         },
         {
           "title": "The space of minds",
@@ -875,7 +876,7 @@
           "parsed_date": "2025-11-29T18:00:00+00:00",
           "is_new": false,
           "snippet": "The space of intelligences is large and animal intelligence (the only kind we've ever known) is only a single point (or a little cloud), arising from a very specific kind of optimization that is fundamentally distinct from that of our technology. Above: humorous portrayals of human vs.",
-          "ai_summary": "文章指出智能空间广阔，而动物智能（我们唯一已知的类型）只是一个点或一小团云，其优化方式与科技智能截然不同。"
+          "ai_summary": "文章探讨了智能的广阔空间，指出动物智能仅是其中一个点，与我们技术所产生的智能有着根本区别。"
         }
       ],
       "stale": false
@@ -936,7 +937,7 @@
           "parsed_date": "2026-03-03T00:00:00+00:00",
           "is_new": false,
           "snippet": "In “Why is Claude an Electron App?” Drew Breunig wonders: Claude spent $20k on an agent swarm implementing (kinda) a C-compiler in Rust, but desktop Claude is an Electron app. If code is free, why aren’t all apps native? And then argues that the answer is that LLMs are not good enough yet.",
-          "ai_summary": "Drew Breunig 疑问 Claude 为什么是一个 Electron 应用程序，作者认为这是因为我们失去了原生应用开发的能力，而并非 LLMs 尚未足够好。"
+          "ai_summary": "作者认为Claude选择使用Electron而非原生应用，是因为我们已经失去了原生应用的优势，且LLM目前仍不够优秀。"
         },
         {
           "title": "Podcast: На Маке нет никаких шкафов @ Думаем дальше",
@@ -944,7 +945,7 @@
           "parsed_date": "2026-01-15T00:00:00+00:00",
           "is_new": false,
           "snippet": "С Ильей Бирманом провожаем Алана Дая, вспоминая, в чём состоят достижения Мака, Джобса и ХИГа (но и Винду добрым словом тоже вспоминаем).",
-          "ai_summary": "在播客中，作者与 Ilya Birman 告别 Alan Dye，回顾了 Mac、乔布斯和 HIG 的成就，同时也提到了 Windows。"
+          "ai_summary": "播客节目《Думаем дальше》中，Ilya Birman与嘉宾告别Alan Dye，回顾了Mac、乔布斯和HIG的成就，也以积极的口吻提到了Windows。"
         },
         {
           "title": "It’s hard to justify Tahoe icons",
@@ -952,7 +953,7 @@
           "parsed_date": "2026-01-05T00:00:00+00:00",
           "is_new": false,
           "snippet": "Translations: Chinese 1 Chinese 2 Russian I was reading Macintosh Human Interface Guidelines from 1992 and found this nice illustration: accompanied by explanation: Fast forward to 2025. Apple releases macOS Tahoe. Main attraction?",
-          "ai_summary": "文章通过引用 1992 年的 Macintosh 人机界面指南，质疑 macOS Tahoe 在 2025 年发布时采用的新图标设计是否合理。"
+          "ai_summary": "作者阅读了1992年的Macintosh人机界面指南后，认为macOS Tahoe的图标难以被证明合理，缺乏美学或功能上的依据。"
         },
         {
           "title": "Statistics made simple",
@@ -960,7 +961,7 @@
           "parsed_date": "2025-12-15T00:00:00+00:00",
           "is_new": false,
           "snippet": "I have a weird relationship with statistics: on one hand, I try not to look at it too often. Maybe once or twice a year. It’s because analytics is not actionable: what difference does it make if a thousand people saw my article or ten thousand?",
-          "ai_summary": "作者分享了他与统计数据之间复杂的关系，通常一年只看一两次，因为他认为分析结果不具可操作性。"
+          "ai_summary": "作者分享了他与统计数据的奇特关系：倾向于不频繁查看，因为分析数据往往无法直接转化为行动。"
         },
         {
           "title": "How to get hired in 2025",
@@ -968,7 +969,7 @@
           "parsed_date": "2025-11-26T00:00:00+00:00",
           "is_new": false,
           "snippet": "It’s 2025 and you are applying for a software engineer position. They give you a test assignment. You complete it yourself, send it over, and get rejected.",
-          "ai_summary": "文章探讨了 2025 年的招聘现状，指出求职者即使自己完成测试任务也可能被拒绝，暗示 AI 在招聘中可能扮演的角色或带来的挑战。"
+          "ai_summary": "文章描述了2025年求职软件工程师的场景，即使独立完成测试作业也可能被拒绝，暗示了AI在招聘中的影响。"
         }
       ],
       "stale": true
@@ -985,7 +986,7 @@
           "parsed_date": "2026-01-18T00:00:00+00:00",
           "is_new": false,
           "snippet": "Formats over apps.",
-          "ai_summary": "这篇文章主张“格式优于应用程序”，探讨了社交文件系统这一概念的核心思想。"
+          "ai_summary": "文章倡导“格式优于应用”的理念，呼吁构建一个社交文件系统，以更好地组织和分享信息。"
         },
         {
           "title": "Introducing RSC Explorer",
@@ -993,7 +994,7 @@
           "parsed_date": "2025-12-19T00:00:00+00:00",
           "is_new": false,
           "snippet": "My new hobby project.",
-          "ai_summary": "作者介绍了他的新爱好项目——RSC Explorer，旨在探索 React Server Components 的可能性。"
+          "ai_summary": "作者介绍了他的新爱好项目RSC Explorer。"
         },
         {
           "title": "Hire Me in Japan",
@@ -1001,7 +1002,7 @@
           "parsed_date": "2025-11-11T00:00:00+00:00",
           "is_new": false,
           "snippet": "I'm looking for a new job.",
-          "ai_summary": "作者表达了在日本寻找新工作的意愿。"
+          "ai_summary": "作者表示正在日本寻找新工作。"
         },
         {
           "title": "How to Fix Any Bug",
@@ -1009,7 +1010,7 @@
           "parsed_date": "2025-10-21T00:00:00+00:00",
           "is_new": false,
           "snippet": "The joys of vibecoding.",
-          "ai_summary": "文章探讨了如何修复任何 bug 的方法，并提到了“vibecoding”的乐趣。"
+          "ai_summary": "文章探讨了“vibecoding”（凭感觉编码）的乐趣，并暗示了修复任何bug的方法，强调了直觉和经验的重要性。"
         },
         {
           "title": "Where It's at://",
@@ -1017,7 +1018,7 @@
           "parsed_date": "2025-10-02T00:00:00+00:00",
           "is_new": false,
           "snippet": "From handles to hosting.",
-          "ai_summary": "文章探讨了从句柄到托管服务的演变，并以“Where It's at://”为主题。"
+          "ai_summary": "文章讨论了从句柄到托管服务的演变，探索了网络身份和数据存储方式的变化。"
         }
       ],
       "stale": true
@@ -1078,7 +1079,7 @@
           "parsed_date": "2024-06-19T00:00:00+00:00",
           "is_new": false,
           "snippet": "Coming back to JavaScript and TypeScript after a few years neck deep in Python and Hack, I kept hitting a number of new, cryptic errors when running NodeJS code in my dev environment: # when I ran ESM TypeScript code the wrong way: Error [ ERR_REQUIRE_ESM]: Must use import to load ES Module # when I imported an ESModul",
-          "ai_summary": "作者在重回 JavaScript 和 TypeScript 开发后，遇到了 NodeJS ES 模块使用上的诸多困扰，认为 NPM 和 NodeJS 应采取更多措施简化 ES 模块的使用。"
+          "ai_summary": "作者指出NPM和NodeJS在简化ES模块使用方面做得不够，导致开发者在使用ESM TypeScript代码时遇到各种新且难以理解的错误。"
         },
         {
           "title": "Learning to work (very) remotely",
@@ -1086,7 +1087,7 @@
           "parsed_date": "2023-12-10T00:00:00+00:00",
           "is_new": false,
           "snippet": "For the last year and a half, I have been working at Instagram in Japan. It’s a bit of an unusual setup: I live and work remotely from Nara, Japan, in a timezone that few other Meta engineers work in (most of Instagram and Meta are spread across the US and Europe).",
-          "ai_summary": "作者在过去一年半里一直在日本奈良远程为 Instagram 工作，处于一个与大多数 Meta 工程师时区不同的独特远程工作环境。"
+          "ai_summary": "作者分享了过去一年半在日本奈良远程为Instagram工作的经验，尽管与大多数Meta工程师处于不同时区，这种远程工作设置相对不寻常。"
         },
         {
           "title": "Time and Timing",
@@ -1094,7 +1095,7 @@
           "parsed_date": "2022-09-07T00:00:00+00:00",
           "is_new": false,
           "snippet": "You often hear that “timing matters”. It helps to think about this as two related concepts: time and timing. For some things, time is more important than timing: Investing (long term) .",
-          "ai_summary": "文章探讨了“时机很重要”这一说法，并将其分解为时间（time）和时机（timing）两个相关概念，指出对于某些事情，时间比时机更重要，例如长期投资。"
+          "ai_summary": "文章探讨了“时间”和“时机”这两个相关概念，指出对于某些事情（如长期投资），时间比时机更重要。"
         },
         {
           "title": "Dinosaur Food: 100 million year old foods we still eat today",
@@ -1102,7 +1103,7 @@
           "parsed_date": "2022-01-17T00:00:00+00:00",
           "is_new": false,
           "snippet": "I just finished Oliver Sacks’ excellent Everything in Its Place . In it, he mentioned as an aside that the Ginkgo biloba tree is hundreds of millions of years old, and its phenotype has been practically frozen since then – a living fossil.",
-          "ai_summary": "作者在阅读 Oliver Sacks 的著作后，探讨了如银杏树等已有数亿年历史的“恐龙食物”，它们作为活化石，其表型自那时起几乎没有改变。"
+          "ai_summary": "作者读完Oliver Sacks的书后，探讨了我们今天仍在食用的、已有上亿年历史的“恐龙食物”，例如银杏。"
         },
         {
           "title": "Data Management on the Web Still Sucks",
@@ -1110,51 +1111,7 @@
           "parsed_date": "2021-03-13T00:00:00+00:00",
           "is_new": false,
           "snippet": "It’s 2021, and data management on the web still sucks. This is crazy! If you’re building a web app at scale you have plenty of options for data fetching, transport, caching, and management: fetch , XMLHTTPRequest , etc.",
-          "ai_summary": "文章指出，尽管到了 2021 年，Web 上的数据管理仍然很糟糕，即使有多种数据获取、传输、缓存和管理选项，如 fetch 和 XMLHTTPRequest。"
-        }
-      ],
-      "stale": true
-    },
-    {
-      "name": "Matt Shumer",
-      "category": "AI",
-      "group": "blog",
-      "latest_date": "",
-      "entries": [
-        {
-          "title": "The Ultimate Guide to Prompting AI Agents",
-          "link": "https://shumer.dev/prompting-ai-agents",
-          "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
-        },
-        {
-          "title": "My GPT-5.5 Review: A Big Upgrade That Doesn't Always Feel Like One",
-          "link": "https://shumer.dev/gpt55review",
-          "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
-        },
-        {
-          "title": "Something Big Is Happening",
-          "link": "https://shumer.dev/something-big-is-happening",
-          "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
-        },
-        {
-          "title": "My GPT-5.3-Codex Review: Full Autonomy Has Arrived",
-          "link": "https://shumer.dev/gpt53-codex-review",
-          "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
-        },
-        {
-          "title": "GPT-5.2 Pro Deep Dive: I Can't Live Without It",
-          "link": "https://shumer.dev/gpt52prodeepdive",
-          "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
+          "ai_summary": "文章指出，尽管到了2021年，网页数据管理仍然很糟糕，大规模Web应用有多种数据获取和管理选项，但问题依然存在。"
         }
       ],
       "stale": true
@@ -1213,8 +1170,7 @@
           "title": "访问博客",
           "link": "https://www.anthropic.com/news",
           "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
+          "is_new": false
         }
       ],
       "stale": true
@@ -1229,8 +1185,7 @@
           "title": "访问博客",
           "link": "https://deepseek.ai/blog/",
           "parsed_date": "",
-          "is_new": false,
-          "snippet": ""
+          "is_new": false
         }
       ],
       "stale": true

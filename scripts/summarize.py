@@ -68,10 +68,6 @@ def get_prev_featured(digests_dir: Path, today: str) -> set[str]:
         if not prev_files:
             return set()
         content = prev_files[-1].read_text(encoding="utf-8")
-        # Only the featured sections, not the full table
-        cut = content.find("## 📰 全部条目")
-        if cut != -1:
-            content = content[:cut]
         return set(re.findall(r'\]\((https?://[^)]+)\)', content))
     except Exception:
         return set()
@@ -215,32 +211,14 @@ def render(
         L.append("")
         for e in group:
             L.append(f"**[{e['title']}]({e['link']})** | {fmt_long(e.get('parsed_date'))} | {e['_score']}/5")
+            L.append("")
             brief = e["_brief"] or e["_summary"]
             if brief:
                 L.append(brief)
+                L.append("")
             if e["_rationale"]:
                 L.append(f"*评分理由: {e['_rationale']}*")
             L.append("")
-
-    L += ["---", ""]
-
-    # 📰 Full table
-    L.append("## 📰 全部条目 (按来源分组)")
-    L.append("")
-    for src, group in group_by_source(entries):
-        L.append(f"### {src}")
-        L.append("")
-        L.append("| 日期 | 标题 | 评分 | 备注 |")
-        L.append("|------|------|------|------|")
-        for e in group:
-            title = e["title"][:60].replace("|", "&#124;")
-            L.append(
-                f"| {fmt_short(e.get('parsed_date'))} "
-                f"| [{title}]({e['link']}) "
-                f"| {e['_score']}/5 "
-                f"| {e['_flag']} |"
-            )
-        L.append("")
 
     return "\n".join(L)
 

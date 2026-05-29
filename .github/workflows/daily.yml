@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch feeds
-        run: python scripts/fetch_feeds.py --hours 72 --web-cache data/web_seen.json --reader-out _data/latest_entries.json
+        run: python scripts/fetch_feeds.py --hours 72 --web-cache scripts/cache/web_seen.json --reader-out _data/latest_entries.json
 
       - name: Summarize
         env:
@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _digests/ _data/ data/
+          git add _digests/ _data/ scripts/cache/
           git diff --cached --quiet || git commit -m "digest: $(date -u +%Y-%m-%d)"
           git push
 

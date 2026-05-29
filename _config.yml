@@ -28,7 +28,6 @@ defaults:
 
 exclude:
   - scripts/
-  - data/
   - sources.yaml
   - requirements.txt
   - Gemfile.lock

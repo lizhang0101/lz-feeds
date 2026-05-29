@@ -7,19 +7,20 @@
 ## 功能
 
 - **RSS 阅读**：展示所有订阅源的近期文章（每源 5 条），按更新时间排序，分厂商 / 个人博客两组；30 天未更新的博客折叠到分隔线下方；Gemini 生成中文摘要，新文章（72h 内）加 NEW 标记
-- **每日摘要**：每天 08:17（北京时间）自动抓取 72h 内新文章，Gemini 打分（1-5）并生成中文摘要，重点推荐 5 篇 + 扩展阅读 5 篇
+- **每日摘要**：每天 01:23（北京时间）自动抓取 72h 内新文章，Gemini 打分（1-5）并生成中文摘要，重点推荐 5 篇 + 扩展阅读 5 篇
 - **知乎热榜**：每 2 小时自动抓取，实时更新
 
 ## 目录结构
 
 ```
 lz-feeds/
-├── sources.yaml              # RSS 订阅源配置
 ├── scripts/
+│   ├── sources.yaml          # RSS 订阅源配置
 │   ├── fetch_feeds.py        # RSS 抓取；--reader-out 输出按源分组的阅读器 JSON
 │   ├── fetch_hotlist.py      # 热榜抓取
 │   ├── summarize.py          # Gemini 摘要，生成 _digests/YYYY-MM-DD.md
-│   ├── enrich_reader.py      # 为阅读器条目生成 AI 摘要（重构后从 summarize.py 拆出）
+│   ├── enrich_reader.py      # 为阅读器条目生成 AI 摘要
+│   ├── cache/                # 运行时状态（web 源去重缓存）
 │   └── lib/                  # 共享工具：http、parsing、models、feed_parser
 ├── _digests/                 # Jekyll collection：每日摘要
 │   └── YYYY-MM-DD.md
@@ -28,23 +29,19 @@ lz-feeds/
 ├── _data/
 │   └── latest_entries.json   # 阅读器数据（按源分组，含 AI 摘要）
 ├── _layouts/                 # Jekyll 布局模板
-├── assets/css/style.css      # 样式
-├── data/
-│   ├── source_stats.json     # 历史统计
-│   └── web_seen.json         # web 源去重缓存
-├── digests/index.html        # 摘要列表页
-├── hotlist/index.html        # 热榜列表页
-├── reader/index.html         # RSS 阅读页
+├── _includes/                # Jekyll 可复用片段
+├── assets/                   # CSS / JS
+├── pages/                    # 站点页面（reader / digests / hotlist）
 ├── index.md                  # 首页
 ├── _config.yml               # Jekyll 配置
 ├── Gemfile                   # Ruby 依赖
 ├── requirements.txt          # Python 依赖
 ├── docs/
-│   ├── architecture.md       # 架构与重构契约
+│   ├── architecture.md       # 架构说明
 │   ├── sources.md            # 订阅源管理指南
 │   └── operations.md         # 流水线运行与本地开发
 └── .github/workflows/
-    ├── daily.yml             # 每日摘要 + 阅读器更新（UTC 00:17）
+    ├── daily.yml             # 每日摘要 + 阅读器更新（北京时间 01:23）
     ├── hotlist.yml           # 热榜更新（每 2 小时）
     └── pages.yml             # GitHub Pages 部署
 ```
@@ -58,7 +55,7 @@ lz-feeds/
 pip install -r requirements.txt
 
 # 抓取 RSS 并生成阅读器数据
-python scripts/fetch_feeds.py --hours 72 --web-cache data/web_seen.json \
+python scripts/fetch_feeds.py --hours 72 --web-cache scripts/cache/web_seen.json \
   --reader-out _data/latest_entries.json
 
 # 生成每日摘要
@@ -86,7 +83,7 @@ bundle exec jekyll serve
 
 ## 添加订阅源
 
-编辑 `sources.yaml`，支持四种类型：
+编辑 `scripts/sources.yaml`，支持四种类型：
 
 ```yaml
 - name: 示例博客

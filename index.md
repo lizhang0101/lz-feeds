@@ -3,7 +3,7 @@ layout: default
 title: 首页
 ---
 
-个人信息摘要，每天早上 8:17 更新。
+个人信息摘要。{% if site.data.latest_entries %}最后更新：{{ site.data.latest_entries.fetched_at_beijing | default: site.data.latest_entries.fetched_at | slice: 0, 16 }} 北京时间{% endif %}
 
 | 版块 | 说明 | 更新频率 |
 |------|------|----------|

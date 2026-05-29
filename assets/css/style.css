@@ -36,7 +36,7 @@ header {
   color: rgba(255,255,255,0.75);
   text-decoration: none;
   padding: 14px 14px;
-  font-size: 13px;
+  font-size: 15px;
   white-space: nowrap;
   border-bottom: 3px solid transparent;
   transition: color 0.15s, border-color 0.15s;
@@ -47,14 +47,14 @@ header {
 
 /* ── Main content ──────────────────────────────── */
 main:not(.page-content) {
-  max-width: 1100px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 28px 16px 48px;
 }
 
 /* ── Sidebar layout ────────────────────────────── */
 .page-with-sidebar {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
@@ -85,7 +85,7 @@ main.page-content {
 
 .sidebar-label {
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -96,8 +96,8 @@ main.page-content {
 
 .sidebar-nav a {
   display: block;
-  padding: 4px 8px;
-  font-size: 12px;
+  padding: 7px 8px;
+  font-size: 14px;
   color: var(--text);
   text-decoration: none;
   border-radius: 4px;
@@ -122,7 +122,7 @@ main.page-content {
 }
 
 .sidebar-meta {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   margin-left: 4px;
 }
@@ -130,7 +130,7 @@ main.page-content {
 .sidebar-nav a.active .sidebar-meta { color: rgba(255,255,255,0.75); }
 
 .sidebar-empty {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   padding: 4px 8px;
 }
@@ -173,10 +173,10 @@ main.page-content {
   .sidebar-nav a {
     flex-shrink: 0;
     white-space: nowrap;
-    padding: 4px 12px;
+    padding: 7px 14px;
     border: 1px solid var(--border);
     border-radius: 16px;
-    font-size: 12px;
+    font-size: 14px;
     background: #fff;
   }
 
@@ -245,7 +245,7 @@ tr:hover td { background: #fafafa; }
 /* ── Meta / tags ───────────────────────────────── */
 .meta {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
@@ -253,7 +253,7 @@ tr:hover td { background: #fafafa; }
   background: var(--bg-alt);
   border-radius: 4px;
   padding: 8px 12px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   margin-bottom: 20px;
 }
@@ -283,9 +283,9 @@ tr:hover td { background: #fafafa; }
 
 .snippet {
   margin: 3px 0 0;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .stale-divider {
@@ -319,9 +319,9 @@ tr:hover td { background: #fafafa; }
 
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 600px) {
-  .tabs a { padding: 12px 10px; font-size: 12px; }
-  table { font-size: 12px; }
-  th, td { padding: 6px 8px; }
+  .tabs a { padding: 12px 10px; font-size: 14px; }
+  table { font-size: 14px; }
+  th, td { padding: 8px 8px; }
 }
 
 /* ── Reader: mark as read ──────────────────────── */
@@ -330,7 +330,7 @@ tr:hover td { background: #fafafa; }
   align-items: center;
   gap: 12px;
   margin: 4px 0 16px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
 }
 

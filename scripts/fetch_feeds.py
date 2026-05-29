@@ -318,7 +318,7 @@ def main() -> None:
     parser.add_argument("--hours", type=int, default=24,
                         help="How many hours back to look (default: 24)")
     parser.add_argument("--sources", type=Path,
-                        default=Path(__file__).parent.parent / "sources.yaml",
+                        default=Path(__file__).parent / "sources.yaml",
                         help="Path to sources.yaml")
     parser.add_argument("--output", type=Path, default=Path("/tmp/feed_entries.json"),
                         help="Output JSON path")

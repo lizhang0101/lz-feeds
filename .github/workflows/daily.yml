@@ -1,8 +1,8 @@
 name: Daily Digest
 
 on:
-  schedule:
-    - cron: '23 17 * * *'  # UTC 17:23 = 北京次日 01:23
+  # schedule:
+  #   - cron: '23 17 * * *'  # UTC 17:23 = 北京次日 01:23
   workflow_dispatch:       # 支持手动触发
 
 env:
